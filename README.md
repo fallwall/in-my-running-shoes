@@ -27,6 +27,9 @@
 ![wireframe2](https://i.imgur.com/plOehHI.png)
 ![wireframe3](https://i.imgur.com/kouKcUL.png)
 
+## React Component Hierarchy 
+![react](https://i.imgur.com/UiMcZIG.png)
+
 ## MVP
  - User to register an account.
  - User to login.
