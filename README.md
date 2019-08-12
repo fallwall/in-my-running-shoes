@@ -21,7 +21,7 @@ Post MVP:
 - React (react-router-dom, axios)
 
 ## ERD
-![erd]("./in_my_running_shoes.png")
+![erd](https://i.imgur.com/XRQt2go.png)
 
 ## Wireframes
 
