@@ -6,15 +6,14 @@
   Multi user running/race journal.
   
 ## User Stories
-Before Resgiter/Login:
-- As a prospect user, I can view about section of the site so that I understand how the site works.
-After Register/Login:
-- As a runner who does many races, I can view others' race listing so that I know what races are going on.
-- As a runner who just finished a race, I can add this race to listing and add note on it so that others can see my opinion of this race and dos and donts. 
-- As a runner who just finished a race, I can modify my race listing so that the infomation can reflect on the site more acuurately.
-- As a runner who's about to participate in a race, I can see what's others notes on this race so that I can be prepared.
-Post MVP:
-- (As a runner who participates in races, I want to see the list of my races and notes.)
+- Before Resgiter/Login: As a prospect user, I can view about section of the site so that I understand how the site works.
+
+- After Register/Login: As a runner who does many races, I can view others' race listing so that I know what races are going on.
+- After Register/Login: As a runner who just finished a race, I can add this race to listing and add note on it so that others can see my opinion of this race and dos and donts. 
+- After Register/Login: As a runner who just finished a race, I can modify my race listing so that the infomation can reflect on the site more acuurately.
+- After Register/Login: As a runner who's about to participate in a race, I can see what's others notes on this race so that I can be prepared.
+
+- Post MVP: (As a runner who participates in races, I want to see the list of my races and notes.)
 
 ## Tools
 - Rails (jwt, bcrypt, rack-cors)
