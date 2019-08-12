@@ -1,4 +1,7 @@
 class NotesController < ApplicationController
+  before_action :set_note, only: %i[show update destroy]
+  before_action :authorize_request, except: %i[index show]
+
   def index
     @race = Race.find(params:[:race_id])
     @notes = Note.where(race_id: @race.id)
@@ -37,6 +40,11 @@ class NotesController < ApplicationController
   end
 
   private
+  def set_note
+    @note = Note.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    render json: { message: 'no note matches that ID' }, status: 404
+  end
 
   def note_params
     params.require(:note).permit(:message, :finish_time, :bib_number, :race_id)

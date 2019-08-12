@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: %i[show update destroy]
+  before_action :authorize_request, except: :create
+  
   def index
     @users = User.all
     render json: @users, include: {races: {include: :note}}, status: :ok
@@ -19,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def update
-  @user =User.find(params[:id])
+  @user = User.find(params[:id])
     if @user.update(user_params)
       render json: @user, status: :updated
     else
@@ -28,7 +31,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.destroy
+    @user = User.find(params[:id])
     if @user.destroy
       head 204
     end
