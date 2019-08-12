@@ -23,7 +23,8 @@
 ![erd](https://i.imgur.com/XRQt2go.png)
 
 ## Wireframes
-
+![wireframe1](https://i.imgur.com/plOehHI.png)
+![wireframe1](https://i.imgur.com/kouKcUL.png)
 
 ## MVP
  - User to register an account.
