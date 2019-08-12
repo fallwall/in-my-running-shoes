@@ -16,3 +16,8 @@ export const registerUser = async (registerData) => {
   const resp = await api.post('/users/', { user: registerData })
   return resp.data
 }
+
+export const fetchRaces = async () => { 
+  const resp = await api.get('/races');
+  return resp.data;
+}

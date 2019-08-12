@@ -101,6 +101,9 @@ class App extends React.Component {
             handleRegister={this.handleRegister}
             handleChange={this.authHandleChange}
             formData={this.state.authFormData} />)} />
+         <Route exact path="/races" render={() => (
+          <Races
+            races={this.state.races} />)} />
       </div>
     );
   }
