@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_12_015212) do
+ActiveRecord::Schema.define(version: 2019_08_12_041453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "races", force: :cascade do |t|
+    t.string "name"
+    t.date "date"
+    t.string "description"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.string "organization"
+    t.float "distance"
+    t.string "website"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_races_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -25,4 +41,5 @@ ActiveRecord::Schema.define(version: 2019_08_12_015212) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "races", "users"
 end
