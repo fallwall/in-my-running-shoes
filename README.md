@@ -3,17 +3,25 @@
 ![cover](https://media.giphy.com/media/xTiTnwyufCBTD7C69q/giphy.gif)
 
 ## Description
-  A running journal. 
+  Multi user running/race journal.
   
 ## User Stories
-  
+Before Resgiter/Login:
+- As a prospect user, I can view about section of the site so that I understand how the site works.
+After Register/Login:
+- As a runner who does many races, I can view others' race listing so that I know what races are going on.
+- As a runner who just finished a race, I can add this race to listing and add note on it so that others can see my opinion of this race and dos and donts. 
+- As a runner who just finished a race, I can modify my race listing so that the infomation can reflect on the site more acuurately.
+- As a runner who's about to participate in a race, I can see what's others notes on this race so that I can be prepared.
+Post MVP:
+- (As a runner who participates in races, I want to see the list of my races and notes.)
 
-## Technologies to be Used
-- Rails
-- React
+## Tools
+- Rails (jwt, bcrypt, rack-cors)
+- React (react-router-dom, axios)
 
 ## ERD
-
+![erd](in_my_running_shoes.png)
 
 ## Wireframes
 
@@ -34,8 +42,10 @@
  - User to view all notes from all users under a race.
 
 ## Post-MVP
+- Race listing to be sorted by distance/ date.
 - User to see list of one's own races listing.
 - Above, categorized by race distance and location.
+- Above, group date of annually occuring events.
 - Above with data visualization.
 - email service for user info and marketing email?
 
