@@ -6,15 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 User.create(
-  [
     username:"luis", 
     name: "Luis Carbonel", 
     email: "luis.carbonel.gk@hotmail.com", 
     dob:"1996-08-05", 
     password_digest: "luisluis"
-  ]
   )
 
   Race.create(
@@ -29,6 +26,7 @@ User.create(
     website: "https://generalassemb.ly",
     user_id: 1
   )
+
   Race.create(
     name: "Sleepy Half",
     date: "2019-05-28",
@@ -41,6 +39,7 @@ User.create(
     website: "https://generalassemb.ly",
     user_id: 1
    )
+
   Race.create(
     name: "Sleepy Half",
     date: "2019-06-19",
@@ -60,12 +59,14 @@ User.create(
     bib_number: 2332,
     race_id: 2
   )
+
   Note.create(
     message: "Best rainbow bagels post-race.",
     finish_time: 020000,
     bib_number: 111,
     race_id: 1
   )
+  
   Note.create(
     message: "Best rainbow bagels post-race.",
     finish_time: 005000,
