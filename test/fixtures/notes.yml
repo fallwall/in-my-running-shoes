@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  message: MyString
+  finish_time: 2019-08-12 10:22:37
+  bib_number: 1
+  race: one
+
+two:
+  message: MyString
+  finish_time: 2019-08-12 10:22:37
+  bib_number: 1
+  race: two

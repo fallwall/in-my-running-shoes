@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   def index
     @users = User.all
-    render json: @users
+    render json: @users, include: {races: {include: :note}}, status: :ok
   end
 
   def show
-    render json: @user
+    @user = User.find(params[:id])
+    render json: @user, include: :races, status: :ok
   end
 
   def create
@@ -13,13 +14,14 @@ class UsersController < ApplicationController
     if @user.save
       render json: @user, status: :created, location: @user
     else
-      render json: @user.errors, status: :unprocessable_entity
+      render json: {@user.errors}, status: :unprocessable_entity
     end
   end
 
   def update
+  @user =User.find(params[:id])
     if @user.update(user_params)
-      render json: @user
+      render json: @user, status: :updated
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -27,6 +29,9 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
+    if @user.destroy
+      head 204
+    end
   end
 
   private
