@@ -1782,3 +1782,21 @@ Processing by RacesController#index as HTML
 Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/races" for ::1 at 2019-08-12 16:22:44 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RacesController#index as HTML
+Completed 404 Not Found in 9ms (ActiveRecord: 3.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/races_controller.rb:5:in `index'
+Started GET "/races" for ::1 at 2019-08-12 16:23:14 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 1.5ms)
+
+

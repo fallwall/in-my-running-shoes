@@ -2,7 +2,6 @@ class RacesController < ApplicationController
   before_action :set_race, only: %i[show update destroy]
   before_action :authorize_request, except: %i[index show]
   def index
-    @user = User.find(params[:user_id])
     @races = Race.all
     render json: @races, include: {user: {include: :notes}}, status: :ok
   end
