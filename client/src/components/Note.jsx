@@ -19,12 +19,15 @@ class Note extends React.Component {
   }
 
   componentDidMount = async () => {
-    const note = await oneNote(this.props.race_id, this.props.id);
+    const race_id = parseInt(this.props.race_id);
+    const id = parseInt(this.props.id);
+    const note = await oneNote(race_id, id);
+    console.log(note);
     this.setState(prevState => ({
       note: note,
       noteUpdateForm: {
         ...prevState.noteUpdateForm,
-        race_id: this.props.race_id
+        race_id: race_id
       }
     }))
   }
@@ -51,15 +54,18 @@ class Note extends React.Component {
     }))
   }
 
-  updateSubmit = async () => {
-    const note = await updateNote(this.props.race_id, this.props.id, this.state.noteUpdateForm);
+  updateSubmit = async (ev) => {
+    ev.preventDefault();
+    const race_id = parseInt(this.props.race_id);
+    const id = parseInt(this.props.id);
+    const note = await updateNote(race_id, id, this.state.noteUpdateForm);
     this.setState({
       note: note
     })
   }
 
-  removeNote = async (race_id, id) => {
-    await deleteNote(race_id, id);
+  removeNote = async () => {
+    await deleteNote(this.props.race_id, this.props.id);
     this.props.history.push(`/races/${this.props.race_id}`);
   }
 
@@ -67,11 +73,12 @@ class Note extends React.Component {
   render() {
     return (
       <div>
+        <h2>this is the single note page</h2>
         <h2>{this.state.note.message}</h2>
         <p>{this.state.note.finish_time}</p>
         <p>{this.state.note.bib_number}</p>
         <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>
-        <button onClick={() => this.removeNote(this.props.race_id, this.props.id)}>Delete</button>
+        <button onClick={() => this.removeNote()}>Delete</button>
         {this.state.isUpdating && <NoteUpdate
           noteForm={this.state.noteUpdateForm}
           handleNoteFormChange={this.handleNoteFormChange}

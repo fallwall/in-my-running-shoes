@@ -64,12 +64,12 @@ export const fetchNotes = async (race_id) => {
  }
 
  export const oneNote = async (race_id, id) => {
-  const resp = await api.post(`/races/${race_id}/notes/${id}`);
+  const resp = await api.get(`/races/${race_id}/notes/${id}`);
   return resp.data;
  }
 
  export const updateNote = async (race_id, id, data) => {
-  const resp = await api.post(`/races/${race_id}/notes/${id}`, { note: data });
+  const resp = await api.put(`/races/${race_id}/notes/${id}`, { note: data });
   return resp.data;
  }
 

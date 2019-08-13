@@ -170,6 +170,7 @@ class App extends React.Component {
           <Races
             races={this.state.races} />)} />
         <Route
+          exact
           path="/races/:id"
           render={(props) => (
             <Race id={props.match.params.id}
@@ -177,6 +178,7 @@ class App extends React.Component {
             />
           )} />
         <Route
+          exact
           path="/new/race"
           render={() => (
             <RaceForm
@@ -185,10 +187,11 @@ class App extends React.Component {
               newRace={this.newRace} />
           )} />
         <Route
-          path="races/:race_id/notes/:id"
+          exact
+          path="/races/:race_id/notes/:id"
           render={(props) => (
             <Note
-              race_id={this.props.match.params.race_id}
+              race_id={props.match.params.race_id}
               id={props.match.params.id}
                />
           )} />

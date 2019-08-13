@@ -4,13 +4,13 @@ class NotesController < ApplicationController
   def index
     @race = Race.find(params[:race_id])
     @notes = Note.where(race_id: @race.id)
-    render json: @notes, include: {race: {include: :user}}, status: :ok
+    render json: @notes, status: :ok
   end
 
   def show
     @race = Race.find(params[:race_id])
     @note = Note.find(params[:id])
-    render json: @note, include: {race: {include: :user}}, status: :ok
+    render json: @note, status: :ok
   end
 
   def create
@@ -32,7 +32,7 @@ class NotesController < ApplicationController
   end
 
   def destroy
-    @note = Note.find(params:[:id])
+    @note = Note.find(params[:id])
     if @note.destroy
       head 204
     end
