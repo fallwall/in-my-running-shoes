@@ -38,8 +38,18 @@ export const createRace = async (data) => {
   return resp.data;
 }
 
-export const OneRace = async (id) => {
+export const oneRace = async (id) => {
   const resp = await api.get(`/races/${id}`);
+  return resp.data;
+}
+
+export const deleteRace = async (id) => {
+  const resp = await api.delete(`/races/${id}`);
+  return resp.data;
+}
+
+export const updateRace = async (id, data) => {
+  const resp = await api.put(`/races/${id}`, data);
   return resp.data;
 }
 
