@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
+import Race from './components/Race';
 
 import './App.css';
 
@@ -58,6 +59,7 @@ class App extends React.Component {
 
   getRaces = async () => {
     const races = await fetchRaces();
+    console.log(races);
     this.setState({
       races
     })
@@ -166,6 +168,13 @@ class App extends React.Component {
           <Races
             races={this.state.races} />)} />
         <Route
+          path="/races/:id"
+          render={(props) => (
+            <Race id={props.match.params.id}
+              user_id={this.state.raceForm.user_id}
+            />
+          )} />
+        <Route
           path="/new/race"
           render={() => (
             <RaceForm
@@ -173,7 +182,7 @@ class App extends React.Component {
               raceForm={this.state.raceForm}
               newRace={this.newRace} />
           )} />
-  
+
       </div>
     );
   }

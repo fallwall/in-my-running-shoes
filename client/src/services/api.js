@@ -38,3 +38,8 @@ export const createRace = async (data) => {
   return resp.data;
 }
 
+export const OneRace = async (id) => {
+  const resp = await api.get(`/races/${id}`);
+  return resp.data;
+}
+

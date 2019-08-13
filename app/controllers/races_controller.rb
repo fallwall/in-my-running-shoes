@@ -1,9 +1,9 @@
 class RacesController < ApplicationController
   before_action :authorize_request, except: %i[index show]
-  
+
   def index
     @races = Race.all
-    render json: @races, include: {user: {include: :notes}}, status: :ok
+    render json: @races, status: :ok
   end
 
   def show
