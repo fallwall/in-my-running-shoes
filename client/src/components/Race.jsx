@@ -149,11 +149,11 @@ export default class Race extends React.Component {
       <div>
         <div className="race-info">
           <p>{this.state.race.name}</p>
-          <p>Description: {this.state.race.description}</p>
-          <p>Location: {this.state.race.city}, {this.state.race.state}, {this.state.race.country}</p>
-          <p>Organizer: {this.state.race.organization}</p>
-          <p>Distance (in Mile): {this.state.race.distance}</p>
-          <p>Website: {this.state.race.website}</p>
+          <p><span>Description:</span> {this.state.race.description}</p>
+          <p><span>Location:</span> {this.state.race.city}, {this.state.race.state}, {this.state.race.country}</p>
+          <p><span>Organizer:</span> {this.state.race.organization}</p>
+          <p><span>Distance: </span>(in Mile): {this.state.race.distance}</p>
+          <p><span>Website: </span>{this.state.race.website}</p>
           <button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button>
           <button onClick={() => this.removeRace(this.props.id)}>Delete</button>
           <button onClick={() => this.addNote(this.props.id)}>Add A Note</button>

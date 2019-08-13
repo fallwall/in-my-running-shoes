@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Login(props) {
   return (
@@ -8,12 +8,21 @@ export default function Login(props) {
       <hr />
       <form onSubmit={(ev) => {
         ev.preventDefault();
-        props.handleLogin();}} >
+        props.handleLogin();
+      }} >
         <p>Username:</p>
-        <input name="username" type="text" value={props.formData.username} onChange={props.handleChange} />
+        <input
+          name="username"
+          type="text"
+          value={props.formData.username}
+          onChange={props.handleChange} />
         <p>Password:</p>
-        <input name="password" type="password" value={props.formData.password} onChange={props.handleChange} />
-        <hr/>
+        <input
+          name="password"
+          type="password"
+          value={props.formData.password}
+          onChange={props.handleChange} />
+        <hr />
         <button>Login</button>
         <Link to="/register">Register</Link>
       </form>

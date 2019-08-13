@@ -156,10 +156,10 @@ class App extends React.Component {
             }
           </div>
         </header>
-        <SideBar currentUser={this.state.currentUser}
+        {/* <SideBar currentUser={this.state.currentUser}
           handleLogout={this.handleLogout}
           handleLoginButton={this.handleLoginButton}
-        />
+        /> */}
 
         <Route exact path="/login" render={() => (
           <Login
@@ -178,8 +178,9 @@ class App extends React.Component {
           exact
           path="/races/:id"
           render={(props) => (
-            <Race id={props.match.params.id}
-              user_id={this.state.raceForm.user_id}
+          <Race
+            id={props.match.params.id}
+            user_id={this.state.raceForm.user_id}
             />
           )} />
         <Route

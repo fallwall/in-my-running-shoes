@@ -16,7 +16,7 @@ export default class SideBar extends Component {
         </div>
         <button>Profile</button>
         <Link to="/new/race">Add A Race</Link>
-        <div>
+        <div className="login">
             {this.props.currentUser
               ?
               <>
@@ -26,8 +26,12 @@ export default class SideBar extends Component {
               :
               <button onClick={this.props.handleLoginButton}>LOGIN/REG</button>
             }
-          </div>
+        </div>
+        <div className="social">
+          
+        </div>
       </div>
+      
     )
   }
 }
