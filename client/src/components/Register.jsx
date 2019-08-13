@@ -20,9 +20,10 @@ export default function Register(props) {
           value={props.formData.email}
           onChange={props.handleChange} />
         <p>DOB:</p>
-        <input name="dob" type="date"
-          value={props.formData.password}
-          onChange={props.handleChange} />
+        <input name="dob" type="text"
+          value={props.formData.dob}
+          onChange={props.handleChange}
+          placeholder="YYYY-MM-DD"/>
         <p>Password:</p>
         <input name="password" type="password"
           value={props.formData.password}

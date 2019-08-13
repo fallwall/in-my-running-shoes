@@ -1800,3 +1800,2439 @@ Processing by RacesController#index as HTML
 Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/races" for ::1 at 2019-08-12 16:24:02 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:26:20 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:28:38 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:49:59 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:51:34 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:51:39 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 17:51:48 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 200ms (Views: 0.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:51:51 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:52:09 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:53:14 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:54:49 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:54:51 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:55:08 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:55:10 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:55:23 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:55:33 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:55:59 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (32.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 32.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:56:02 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:56:17 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:56:20 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:58:26 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 17:59:32 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:00:23 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"Pandemonium 5k", "date"=>"2019-08-11", "description"=>"Best Trash Panda Wins", "city"=>"New York", "state"=>"New York", "country"=>"United States", "organization"=>"General Assembly", "distance"=>"3.1", "website"=>"https://api.rubyonrails.org/v4.2/classes/Date.html"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:10:49 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:10:56 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (4.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:15:43 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:15:58 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 18:16:31 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 18:16:38 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 186ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:16:43 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:17:31 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"panda marathon", "date"=>"", "description"=>"trash panda finest", "city"=>"New York", "state"=>"New York", "country"=>"United States", "organization"=>"GA", "distance"=>"26.2", "website"=>"http://www.ga.com"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:17:42 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"panda marathon", "date"=>"", "description"=>"trash panda finest", "city"=>"New York", "state"=>"New York", "country"=>"United States", "organization"=>"GA", "distance"=>"26.2", "website"=>"http://www.ga.com"}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:19:39 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:19:40 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:19:46 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:20:03 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 18:20:04 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:21:23 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"panda marathon", "date"=>"2019-08-30", "description"=>"trash panda's finest", "city"=>"New York", "state"=>"New York", "country"=>"United States", "organization"=>"GA", "distance"=>"26.2", "website"=>"http://www.ga.com", "user_id"=>1}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:24:23 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"panda marathon", "date"=>"2019-08-30", "description"=>"trash panda's finest", "city"=>"New York", "state"=>"New York", "country"=>"United States", "organization"=>"GA", "distance"=>"26.2", "website"=>"http://www.ga.com", "user_id"=>1}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.1ms | ActiveRecord: 4.7ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (218.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "in-my-running-shoes_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (220.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "in-my-running-shoes_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (401.3ms)[0m  [1m[35mCREATE DATABASE "in-my-running-shoes_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (407.5ms)[0m  [1m[35mCREATE DATABASE "in-my-running-shoes_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "message" character varying, "finish_time" time, "bib_number" integer, "race_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_notes_on_race_id" ON "notes"  ("race_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "races" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "races" ("id" bigserial primary key, "name" character varying, "date" date, "description" character varying, "city" character varying, "state" character varying, "country" character varying, "organization" character varying, "distance" float, "website" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_races_on_user_id" ON "races"  ("user_id")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:44
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "name" character varying, "email" character varying, "dob" date, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:44
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "notes" ADD CONSTRAINT "fk_rails_42a22c2183"
+FOREIGN KEY ("race_id")
+  REFERENCES "races" ("id")
+[0m
+  ↳ db/schema.rb:54
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "races" ADD CONSTRAINT "fk_rails_fa07601dff"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:55
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190812142237)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190812041453),
+(20190812015212);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-12 22:24:46.403633"], ["updated_at", "2019-08-12 22:24:46.403633"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "message" character varying, "finish_time" time, "bib_number" integer, "race_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_notes_on_race_id" ON "notes"  ("race_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "races" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "races" ("id" bigserial primary key, "name" character varying, "date" date, "description" character varying, "city" character varying, "state" character varying, "country" character varying, "organization" character varying, "distance" float, "website" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_races_on_user_id" ON "races"  ("user_id")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:44
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "name" character varying, "email" character varying, "dob" date, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:44
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "notes" ADD CONSTRAINT "fk_rails_42a22c2183"
+FOREIGN KEY ("race_id")
+  REFERENCES "races" ("id")
+[0m
+  ↳ db/schema.rb:54
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "races" ADD CONSTRAINT "fk_rails_fa07601dff"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:55
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190812142237)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190812041453),
+(20190812015212);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-12 22:24:46.449043"], ["updated_at", "2019-08-12 22:24:46.449043"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-08-12 22:24:46.451265"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis.carbonel.gk@hotmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:70
+Started POST "/races" for ::1 at 2019-08-12 18:24:57 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"panda marathon", "date"=>"2019-08-30", "description"=>"trash panda's finest", "city"=>"New York", "state"=>"New York", "country"=>"United States", "organization"=>"GA", "distance"=>"26.2", "website"=>"http://www.ga.com", "user_id"=>1}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 18:25:20 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started GET "/races" for ::1 at 2019-08-12 18:25:35 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:5
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:26:11 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"new race", "date"=>"2019-10-10", "description"=>"new race", "city"=>"nyc", "state"=>"nyc", "country"=>"usa", "organization"=>"ga", "distance"=>"26.2", "website"=>"http://www.ga.com", "user_id"=>""}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 18:26:58 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"new race", "date"=>"2019-10-10", "description"=>"new race", "city"=>"nyc", "state"=>"nyc", "country"=>"usa", "organization"=>"ga", "distance"=>"26.2", "website"=>"http://www.ga.com", "user_id"=>""}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 19:10:22 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"new race", "date"=>"2019-10-10", "description"=>"new race", "city"=>"nyc", "state"=>"nyc", "country"=>"usa", "organization"=>"ga", "distance"=>"26.2", "website"=>"http://www.ga.com", "user_id"=>""}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 19:10:42 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:5
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 19:11:08 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.5ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:16:13 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.8ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started GET "/races" for ::1 at 2019-08-12 21:17:36 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 21:17:47 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started GET "/races" for ::1 at 2019-08-12 21:17:54 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 21:18:19 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"efbghjw", "date"=>"1998-12-26", "description"=>"fsda", "city"=>"dsaf", "state"=>"sdfa", "country"=>"dsfa", "organization"=>"fdsa", "distance"=>"2", "website"=>"http://www.aol.com", "user_id"=>""}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 21:18:26 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"efbghjw", "date"=>"1998-12-26", "description"=>"fsda", "city"=>"dsaf", "state"=>"sdfa", "country"=>"dsfa", "organization"=>"fdsa", "distance"=>"2", "website"=>"http://www.aol.com", "user_id"=>""}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 21:32:33 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 21:32:40 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:32:42 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:32:44 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:32:45 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:33:16 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:34:57 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:35:03 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:35:06 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:18:in `login'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (219.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "in-my-running-shoes_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (166.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "in-my-running-shoes_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (379.7ms)[0m  [1m[35mCREATE DATABASE "in-my-running-shoes_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (404.6ms)[0m  [1m[35mCREATE DATABASE "in-my-running-shoes_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "message" character varying, "finish_time" time, "bib_number" integer, "race_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_notes_on_race_id" ON "notes"  ("race_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "races" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "races" ("id" bigserial primary key, "name" character varying, "date" date, "description" character varying, "city" character varying, "state" character varying, "country" character varying, "organization" character varying, "distance" float, "website" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_races_on_user_id" ON "races"  ("user_id")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:44
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "name" character varying, "email" character varying, "dob" date, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:44
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "notes" ADD CONSTRAINT "fk_rails_42a22c2183"
+FOREIGN KEY ("race_id")
+  REFERENCES "races" ("id")
+[0m
+  ↳ db/schema.rb:54
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "races" ADD CONSTRAINT "fk_rails_fa07601dff"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:55
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190812142237)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190812041453),
+(20190812015212);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-13 01:35:44.538164"], ["updated_at", "2019-08-13 01:35:44.538164"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "message" character varying, "finish_time" time, "bib_number" integer, "race_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_notes_on_race_id" ON "notes"  ("race_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "races" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "races" ("id" bigserial primary key, "name" character varying, "date" date, "description" character varying, "city" character varying, "state" character varying, "country" character varying, "organization" character varying, "distance" float, "website" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_races_on_user_id" ON "races"  ("user_id")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:44
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "name" character varying, "email" character varying, "dob" date, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:44
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "notes" ADD CONSTRAINT "fk_rails_42a22c2183"
+FOREIGN KEY ("race_id")
+  REFERENCES "races" ("id")
+[0m
+  ↳ db/schema.rb:54
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "races" ADD CONSTRAINT "fk_rails_fa07601dff"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/schema.rb:55
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190812142237)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190812041453),
+(20190812015212);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-13 01:35:44.600242"], ["updated_at", "2019-08-13 01:35:44.600242"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-08-13 01:35:44.603129"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis.carbonel.gk@hotmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/races" for ::1 at 2019-08-12 21:36:07 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 21:38:41 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 21:38:51 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 21:39:28 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 21:39:34 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 21:39:40 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-12 21:39:59 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@gmail.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "luis"], ["name", "luis"], ["email", "luis@gmail.com"], ["dob", "1991-12-25"], ["password_digest", "$2a$12$T3uYRyslaOn6Q1mrvCFSmO8zJT60.CXweeMzWAV4a0.EkG0FYrS3K"], ["created_at", "2019-08-13 01:39:59.538826"], ["updated_at", "2019-08-13 01:39:59.538826"]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:17
+Completed 201 Created in 193ms (Views: 0.6ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 21:39:59 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "name"=>"luis", "email"=>"luis@gmail.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25", "authentication"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@gmail.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 171ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 21:41:49 -0400
+  
+AbstractController::ActionNotFound (The action 'verify' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/verify" for ::1 at 2019-08-12 21:41:56 -0400
+  
+AbstractController::ActionNotFound (The action 'verify' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/verify" for ::1 at 2019-08-12 21:42:02 -0400
+  
+AbstractController::ActionNotFound (The action 'verify' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/verify" for ::1 at 2019-08-12 21:42:14 -0400
+  
+AbstractController::ActionNotFound (The action 'verify' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/auth/login" for ::1 at 2019-08-12 21:42:22 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 180ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 21:53:10 -0400
+  
+AbstractController::ActionNotFound (The action 'verify' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/" for ::1 at 2019-08-12 21:55:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@luis.luis", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis@luis.luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Completed 422 Unprocessable Entity in 192ms (Views: 0.2ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-12 21:55:42 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@luis.luis", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis@luis.luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Completed 422 Unprocessable Entity in 183ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-12 21:55:42 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@luis.luis", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis@luis.luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Completed 422 Unprocessable Entity in 186ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 21:56:10 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-12 21:56:33 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@aol.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:17
+Completed 422 Unprocessable Entity in 180ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-12 22:00:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"luis", "name"=>"luis", "email"=>"luis@aol.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luis@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 422 Unprocessable Entity in 188ms (Views: 0.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:01:21 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-12 22:03:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"steve", "name"=>"steve", "email"=>"steve@aol.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "steve"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "steve@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "steve"], ["name", "steve"], ["email", "steve@aol.com"], ["dob", "1991-12-25"], ["password_digest", "$2a$12$U1RggkUn5jrieA2teV5Z3.006XJ0GqOh/q7Xi/S6kWcFRXeaoJ8Hm"], ["created_at", "2019-08-13 02:03:21.170263"], ["updated_at", "2019-08-13 02:03:21.170263"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 201 Created in 183ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:03:21 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"steve", "name"=>"steve", "email"=>"steve@aol.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25", "authentication"=>{"username"=>"steve", "name"=>"steve", "email"=>"steve@aol.com", "password"=>"[FILTERED]", "dob"=>"1991-12-25"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "steve"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 170ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:03:51 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:03:55 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:04:15 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"steve", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"steve", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "steve"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 181ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:04:35 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:04:40 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"steve", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"steve", "name"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "steve"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 185ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/verify" for ::1 at 2019-08-12 22:09:08 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:09:43 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:17
+Completed 200 OK in 180ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:16:55 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.1ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:17:01 -0400
+  
+LoadError (Unable to autoload constant AuthenticationController, expected /Users/xx/pandas/Unit4/in-my-running-shoes/app/controllers/authentication_controller.rb to define it):
+  
+activesupport (5.2.3) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.3) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.3) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/verify" for ::1 at 2019-08-12 22:17:06 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:17:24 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:17:25 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:17:34 -0400
+  
+LoadError (Unable to autoload constant AuthenticationController, expected /Users/xx/pandas/Unit4/in-my-running-shoes/app/controllers/authentication_controller.rb to define it):
+  
+activesupport (5.2.3) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.3) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.3) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/" for ::1 at 2019-08-12 22:18:07 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fallwall", "password"=>"[FILTERED]", "name"=>"tibby", "email"=>"tibby@sherunsfreely.com", "dob"=>"1996-08-02"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tibby@sherunsfreely.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "fallwall"], ["name", "tibby"], ["email", "tibby@sherunsfreely.com"], ["dob", "1996-08-02"], ["password_digest", "$2a$12$7quY.fMjTbF0Jzh2PjROg.489WLn2zkfNEAoJX8XdrGY2nRHQGkSW"], ["created_at", "2019-08-13 02:18:07.652322"], ["updated_at", "2019-08-13 02:18:07.652322"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 201 Created in 192ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:18:07 -0400
+  
+LoadError (Unable to autoload constant AuthenticationController, expected /Users/xx/pandas/Unit4/in-my-running-shoes/app/controllers/authentication_controller.rb to define it):
+  
+activesupport (5.2.3) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.3) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.3) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/auth/login" for ::1 at 2019-08-12 22:20:15 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "name"=>"tibby", "email"=>"tibby@sherunsfreely.com", "dob"=>"1996-08-02", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]", "name"=>"tibby", "email"=>"tibby@sherunsfreely.com", "dob"=>"1996-08-02"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 196ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:29:36 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "name"=>"tibby", "email"=>"tibby@sherunsfreely.com", "dob"=>"1996-08-02", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]", "name"=>"tibby", "email"=>"tibby@sherunsfreely.com", "dob"=>"1996-08-02"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 193ms (Views: 0.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:30:27 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:30:28 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:30:42 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 401 Unauthorized in 187ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:30:49 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:30:49 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:31:35 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 186ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:33:22 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:33:22 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (3.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:33:29 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:33:29 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:33:39 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:33:39 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:33:41 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:33:41 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:33:48 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 401 Unauthorized in 186ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:33:50 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 401 Unauthorized in 184ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:33:51 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 401 Unauthorized in 185ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:33:55 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:33:55 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:34:37 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:34:37 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:35:06 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:35:06 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (29.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 29.1ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:35:13 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 184ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:35:39 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:35:39 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (16.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 18ms (Views: 0.9ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:35:44 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:35:44 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:35:49 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 191ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:36:12 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:36:12 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:36:26 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 182ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:36:48 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:36:48 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:36:50 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:36:50 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:36:57 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:36:57 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:36:59 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:36:59 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:37:06 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 184ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-12 22:37:10 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 182ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:38:40 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:38:40 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:38:43 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:38:43 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:38:56 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:38:56 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:39:03 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:39:03 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:39:14 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:39:14 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:39:22 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (21.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:39:22 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:39:29 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:39:29 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (5.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:42:10 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:42:10 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:42:47 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:42:47 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:42:49 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:42:49 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:43:07 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:43:07 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 22:57:58 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 22:57:58 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:10:56 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:10:56 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:11:16 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:11:16 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (5.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:11:19 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:11:19 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (2.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:11:23 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:11:23 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (2.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:12:01 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:12:01 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (4.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:12:13 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:12:13 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (4.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:12:15 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:12:15 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 23:12:49 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"panda", "date"=>"2019-08-20", "description"=>"panda", "city"=>"nyc", "state"=>"nyc", "country"=>"united states", "organization"=>"ga", "distance"=>"5", "website"=>"http://www.ga.com", "user_id"=>1}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/races_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+  [1m[36mRace Create (4.4ms)[0m  [1m[32mINSERT INTO "races" ("name", "date", "description", "city", "state", "country", "organization", "distance", "website", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "panda"], ["date", "2019-08-20"], ["description", "panda"], ["city", "nyc"], ["state", "nyc"], ["country", "united states"], ["organization", "ga"], ["distance", 5.0], ["website", "http://www.ga.com"], ["user_id", 1], ["created_at", "2019-08-13 03:12:49.694067"], ["updated_at", "2019-08-13 03:12:49.694067"]]
+  ↳ app/controllers/races_controller.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/races_controller.rb:16
+Completed 201 Created in 25ms (Views: 0.4ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-12 23:13:00 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:13:00 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 4.3ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff60494a8>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/users/verify" for ::1 at 2019-08-12 23:13:09 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:13:09 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (3.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 4.1ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff383a5e8>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/users/verify" for ::1 at 2019-08-12 23:13:26 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:13:26 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.1ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff2210628>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started POST "/auth/login" for ::1 at 2019-08-12 23:13:33 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 184ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users/verify" for ::1 at 2019-08-12 23:15:03 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:15:03 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff0c30380>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/users/verify" for ::1 at 2019-08-12 23:15:08 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:15:08 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff0c429e0>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/users/verify" for ::1 at 2019-08-12 23:15:12 -0400
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:15:12 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff2113090>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started POST "/auth/login" for ::1 at 2019-08-12 23:15:20 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 184ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:17:02 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff09ebb60>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started POST "/auth/login" for ::1 at 2019-08-12 23:17:15 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"fallwall", "password"=>"[FILTERED]", "authentication"=>{"username"=>"fallwall", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "fallwall"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 185ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:18:24 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 8.4ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff6012a48>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/races" for ::1 at 2019-08-12 23:18:48 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff1a23bb8>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/races" for ::1 at 2019-08-12 23:19:23 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff21b9b48>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/races" for ::1 at 2019-08-12 23:19:34 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 5.1ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff1a69dc0>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started POST "/auth/login" for ::1 at 2019-08-12 23:19:40 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 183ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:19:46 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff0bd8608>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started POST "/races" for ::1 at 2019-08-12 23:20:09 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"das", "date"=>"1991-12-25", "description"=>"sf", "city"=>"fa", "state"=>"daf", "country"=>"sdf", "organization"=>"sdf", "distance"=>"2", "website"=>"http://www.yes.com", "user_id"=>""}}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:24:43 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (8.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 8.8ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff6088b30>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/races" for ::1 at 2019-08-12 23:24:50 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff289b1a0>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Started GET "/races" for ::1 at 2019-08-12 23:25:22 -0400
+Processing by RacesController#index as HTML
+Started GET "/users/verify" for ::1 at 2019-08-12 23:25:22 -0400
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff214f658>):
+  
+app/controllers/races_controller.rb:6:in `index'
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/races" for ::1 at 2019-08-12 23:25:58 -0400
+Processing by RacesController#create as HTML
+  Parameters: {"race"=>{"name"=>"PANDA MARATHON", "date"=>"2019-10-19", "description"=>"AUTH STUFF", "city"=>"NYC", "state"=>"NYC", "country"=>"NYC", "organization"=>"GA", "distance"=>"2", "website"=>"http://www.ga.com", "user_id"=>1}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/races_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+  [1m[36mRace Create (0.9ms)[0m  [1m[32mINSERT INTO "races" ("name", "date", "description", "city", "state", "country", "organization", "distance", "website", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "PANDA MARATHON"], ["date", "2019-10-19"], ["description", "AUTH STUFF"], ["city", "NYC"], ["state", "NYC"], ["country", "NYC"], ["organization", "GA"], ["distance", 2.0], ["website", "http://www.ga.com"], ["user_id", 1], ["created_at", "2019-08-13 03:25:58.981389"], ["updated_at", "2019-08-13 03:25:58.981389"]]
+  ↳ app/controllers/races_controller.rb:16
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/races_controller.rb:16
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-12 23:26:25 -0400
+Started GET "/users/verify" for ::1 at 2019-08-12 23:26:25 -0400
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (42.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 43.0ms)
+
+
+  
+NoMethodError (undefined method `notes' for #<User:0x00007fcff2193c90>):
+  
+app/controllers/races_controller.rb:6:in `index'

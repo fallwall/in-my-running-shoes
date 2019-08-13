@@ -1,6 +1,6 @@
 class RacesController < ApplicationController
-  before_action :set_race, only: %i[show update destroy]
   before_action :authorize_request, except: %i[index show]
+  
   def index
     @races = Race.all
     render json: @races, include: {user: {include: :notes}}, status: :ok
@@ -37,11 +37,6 @@ class RacesController < ApplicationController
   end
 
   private
-  def set_race
-    @race = Race.find(params[:id])
-  rescue ActiveRecord::RecordNotFound
-    render json: { message: 'no race matches that ID' }, status: 404
-  end
 
   def race_params
     params.require(:race).permit(:name, :date, :description, :city, :state, :country, :organization, :distance, :website, :user_id)

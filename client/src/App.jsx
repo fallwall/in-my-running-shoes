@@ -3,10 +3,18 @@ import { Route, Link, withRouter } from 'react-router-dom';
 import decode from 'jwt-decode';
 import Login from './components/Login';
 import Register from './components/Register';
+import RaceForm from './components/RaceForm';
+import Races from './components/Races';
 
 import './App.css';
 
-import { loginUser, registerUser } from './services/api';
+import {
+  loginUser,
+  registerUser,
+  verifyUser,
+  fetchRaces,
+  createRace,
+} from './services/api';
 
 class App extends React.Component {
   constructor() {
@@ -16,40 +24,93 @@ class App extends React.Component {
       races: [],
       authFormData: {
         username: "",
-        name: "",
-        email: "",
         password: ""
-      }
+      },
+      raceForm: {
+        name: "",
+        date: "",
+        description: "",
+        city: "",
+        state: "",
+        country: "",
+        organization: "",
+        distance: "",
+        website: "",
+        user_id: ""
+      },
     }
   }
 
-  componentDidMount = () => {
-    const checkUser = localStorage.getItem("jwt");
-    if (checkUser) {
-      const user = decode(checkUser);
-      this.setState({
-        currentUser: user
-      })
+  componentDidMount = async () => {
+    this.getRaces();
+    const user = await verifyUser();
+    if (user) {
+      console.log(user);
+      this.setState(prevState => ({
+        currentUser: user,
+        raceForm: {
+          ...prevState.raceForm,
+          user_id: user.id
+        }
+      }))
     }
+  }
 
+  getRaces = async () => {
+    const races = await fetchRaces();
+    this.setState({
+      races
+    })
+  }
+
+
+  newRace = async (ev) => {
+    ev.preventDefault();
+    const race = await createRace(this.state.raceForm);
+    this.setState(prevState => ({
+      races: [...prevState.races, race],
+      raceForm: {
+        ...prevState.raceForm,
+        name: "",
+        date: "",
+        description: "",
+        city: "",
+        state: "",
+        country: "",
+        organization: "",
+        distance: "",
+        website: "",
+      }
+    }))
+  }
+
+  handleRaceFormChange = (e) => {
+    const { name, value } = e.target;
+    this.setState(prevState => ({
+      raceForm: {
+        ...prevState.raceForm,
+        [name]: value
+      }
+    }))
   }
 
   // -------------- BELOW IS AUTH ------------------
 
   handleLoginButton = () => {
-    this.props.history.push("/login")
+    this.props.history.push("/login");
   }
 
   handleLogin = async () => {
     const userData = await loginUser(this.state.authFormData);
+    console.log(userData);
     this.setState({
-      currentUser: decode(userData.token)
+      currentUser: decode(userData)
     })
-    localStorage.setItem("jwt", userData.token)
+    localStorage.setItem("jwt", userData);
   }
 
-  handleRegister = async (e) => {
-    e.preventDefault();
+  handleRegister = async (ev) => {
+    ev.preventDefault();
     await registerUser(this.state.authFormData);
     this.handleLogin();
   }
@@ -61,8 +122,8 @@ class App extends React.Component {
     })
   }
 
-  authHandleChange = (e) => {
-    const { name, value } = e.target;
+  authHandleChange = (ev) => {
+    const { name, value } = ev.target;
     this.setState(prevState => ({
       authFormData: {
         ...prevState.authFormData,
@@ -101,9 +162,18 @@ class App extends React.Component {
             handleRegister={this.handleRegister}
             handleChange={this.authHandleChange}
             formData={this.state.authFormData} />)} />
-         <Route exact path="/races" render={() => (
+        <Route exact path="/races" render={() => (
           <Races
             races={this.state.races} />)} />
+        <Route
+          path="/new/race"
+          render={() => (
+            <RaceForm
+              handleRaceFormChange={this.handleRaceFormChange}
+              raceForm={this.state.raceForm}
+              newRace={this.newRace} />
+          )} />
+  
       </div>
     );
   }
