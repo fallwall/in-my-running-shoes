@@ -83,6 +83,11 @@ export default class Race extends React.Component {
     }))
   }
 
+  const removeRace = async (id) => {
+    const resp = deleteRace(id);
+    this.props.history.push('/races');
+  }
+
   render() {
     return (
       <div>
@@ -94,7 +99,7 @@ export default class Race extends React.Component {
           <p>Distance (in Mile): {this.state.race.distance}</p>
           <p>Website: {this.state.race.website}</p>
           <button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button>
-          <button onClick={() => deleteRace(this.props.id)}>Delete</button>
+          <button onClick={() => this.removeRace(this.props.id)}>Delete</button>
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}
