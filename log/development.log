@@ -7646,3 +7646,29 @@ Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.2ms)
 ActiveRecord::RecordNotFound (Couldn't find Race with 'id'=3):
   
 app/controllers/races_controller.rb:10:in `show'
+Started GET "/races/3" for ::1 at 2019-08-13 00:39:53 -0400
+Started GET "/users/verify" for ::1 at 2019-08-13 00:39:53 -0400
+Started GET "/races" for ::1 at 2019-08-13 00:39:53 -0400
+Processing by RacesController#show as HTML
+Processing by UsersController#verify as HTML
+  Parameters: {"id"=>"3"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (7.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+  ↳ app/controllers/races_controller.rb:10
+Completed 404 Not Found in 11ms (ActiveRecord: 7.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Race with 'id'=3):
+  
+app/controllers/races_controller.rb:10:in `show'
+  [1m[36mRace Load (35.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 37ms (Views: 1.5ms | ActiveRecord: 35.1ms)
+
+

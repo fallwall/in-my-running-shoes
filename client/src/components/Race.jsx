@@ -83,7 +83,7 @@ export default class Race extends React.Component {
     }))
   }
 
-  const removeRace = async (id) => {
+  removeRace = async (id) => {
     const resp = deleteRace(id);
     this.props.history.push('/races');
   }
