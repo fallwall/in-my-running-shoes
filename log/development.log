@@ -15654,3 +15654,259 @@ Processing by NotesController#index as HTML
 Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/races/1/notes/4" for ::1 at 2019-08-13 13:56:18 -0400
+Processing by NotesController#show as HTML
+  Parameters: {"race_id"=>"1", "id"=>"4"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:11
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:12
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 13:56:23 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"1111", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.4ms)[0m  [1m[33mUPDATE "notes" SET "bib_number" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["bib_number", 1111], ["updated_at", "2019-08-13 17:56:23.016423"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 8ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 13:57:57 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"1111", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 13:59:45 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"62", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.4ms)[0m  [1m[33mUPDATE "notes" SET "bib_number" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["bib_number", 62], ["updated_at", "2019-08-13 17:59:45.168554"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:01:35 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here too", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"62", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.4ms)[0m  [1m[33mUPDATE "notes" SET "message" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["message", "Steve is here too"], ["updated_at", "2019-08-13 18:01:35.114933"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 6ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:04:38 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here too", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"622", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.3ms)[0m  [1m[33mUPDATE "notes" SET "bib_number" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["bib_number", 622], ["updated_at", "2019-08-13 18:04:38.356292"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 5ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:08:21 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here too", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"62211", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.4ms)[0m  [1m[33mUPDATE "notes" SET "bib_number" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["bib_number", 62211], ["updated_at", "2019-08-13 18:08:21.136242"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 7ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:10:11 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here too", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"62211", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 6ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:14:15 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here too", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"62211", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races/1/notes/4" for ::1 at 2019-08-13 14:14:34 -0400
+Started GET "/races" for ::1 at 2019-08-13 14:14:34 -0400
+Started GET "/users/verify" for ::1 at 2019-08-13 14:14:34 -0400
+Processing by NotesController#show as HTML
+  Parameters: {"race_id"=>"1", "id"=>"4"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:11
+  [1m[36mNote Load (8.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:12
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 8.6ms)
+
+
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (5.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 5.7ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:14:42 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here too", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>"1991", "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.4ms)[0m  [1m[33mUPDATE "notes" SET "bib_number" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["bib_number", 1991], ["updated_at", "2019-08-13 18:14:42.855170"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 9ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/races/1/notes/4" for ::1 at 2019-08-13 14:15:02 -0400
+Started GET "/races" for ::1 at 2019-08-13 14:15:02 -0400
+Started GET "/users/verify" for ::1 at 2019-08-13 14:15:02 -0400
+Processing by NotesController#show as HTML
+  Parameters: {"race_id"=>"1", "id"=>"4"}
+Processing by UsersController#verify as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (34.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 36ms (Views: 1.8ms | ActiveRecord: 34.2ms)
+
+
+  [1m[36mRace Load (40.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:11
+  [1m[36mUser Load (37.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 0.1ms | ActiveRecord: 37.4ms)
+
+
+  ↳ app/controllers/notes_controller.rb:12
+Completed 200 OK in 43ms (Views: 0.4ms | ActiveRecord: 40.5ms)
+
+
+Started PUT "/races/1/notes/4" for ::1 at 2019-08-13 14:15:11 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"Steve is here", "finish_time"=>"2000-01-01T02:00:00.000Z", "bib_number"=>1991, "race_id"=>1}, "race_id"=>"1", "id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.2ms)[0m  [1m[33mUPDATE "notes" SET "message" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["message", "Steve is here"], ["updated_at", "2019-08-13 18:15:11.697698"], ["id", 4]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 7ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/races/1/notes/4" for ::1 at 2019-08-13 14:15:15 -0400
+Started GET "/users/verify" for ::1 at 2019-08-13 14:15:15 -0400
+Started GET "/races" for ::1 at 2019-08-13 14:15:15 -0400
+Processing by UsersController#verify as HTML
+Processing by NotesController#show as HTML
+  Parameters: {"race_id"=>"1", "id"=>"4"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (6.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:11
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mRace Load (6.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 8.4ms)
+
+
+  ↳ app/controllers/notes_controller.rb:12
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 14ms (Views: 6.3ms | ActiveRecord: 6.9ms)
+
+
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 7.7ms)
+
+

@@ -22,7 +22,6 @@ class Note extends React.Component {
     const race_id = parseInt(this.props.race_id);
     const id = parseInt(this.props.id);
     const note = await oneNote(race_id, id);
-    console.log(note);
     this.setState(prevState => ({
       note: note,
       noteUpdateForm: {
@@ -58,6 +57,7 @@ class Note extends React.Component {
     ev.preventDefault();
     const race_id = parseInt(this.props.race_id);
     const id = parseInt(this.props.id);
+    console.log(id);
     const note = await updateNote(race_id, id, this.state.noteUpdateForm);
     this.setState({
       note: note
@@ -79,7 +79,8 @@ class Note extends React.Component {
         <p>{this.state.note.bib_number}</p>
         <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>
         <button onClick={() => this.removeNote()}>Delete</button>
-        {this.state.isUpdating && <NoteUpdate
+        {this.state.isUpdating &&
+          <NoteUpdate
           noteForm={this.state.noteUpdateForm}
           handleNoteFormChange={this.handleNoteFormChange}
           updateNote={this.updateSubmit}
