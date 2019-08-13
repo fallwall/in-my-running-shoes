@@ -58,13 +58,13 @@ class Note extends React.Component {
   }
 
   updateSubmit = async (ev) => {
-    ev.preventDefault();
     const race_id = parseInt(this.props.race_id);
     const id = parseInt(this.props.id);
     const note = await updateNote(race_id, id, this.state.noteUpdateForm);
     this.setState({
       note: note
     })
+    this.props.history.push(`/races/${race_id}/notes/${id}`);
   }
 
   removeNote = async () => {
@@ -84,10 +84,10 @@ class Note extends React.Component {
         <button onClick={() => this.removeNote()}>Delete</button>
         {this.state.isUpdating &&
           <NoteUpdate
-          noteForm={this.state.noteUpdateForm}
-          handleNoteFormChange={this.handleNoteFormChange}
-          updateNote={this.updateSubmit}
-        />}
+            noteForm={this.state.noteUpdateForm}
+            handleNoteFormChange={this.handleNoteFormChange}
+            updateNote={this.updateSubmit}
+          />}
       </div>
     )
   }

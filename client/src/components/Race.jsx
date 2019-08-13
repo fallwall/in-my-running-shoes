@@ -166,13 +166,14 @@ export default class Race extends React.Component {
           />
 
         }
-        <Notes race_id={this.props.id} notes={this.state.notes} />
-
         <NoteForm
           handleNoteFormChange={this.handleNoteFormChange}
           noteForm={this.state.noteForm}
           newNote={this.newNote}
         />
+
+        <Notes race_id={this.props.id} notes={this.state.notes} />
+
 
       </div>
 
