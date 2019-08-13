@@ -6,7 +6,7 @@ import Register from './components/Register';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';
-import NoteForm from './components/NoteForm';
+import Note from './components/Note';
 
 import './App.css';
 
@@ -15,8 +15,7 @@ import {
   registerUser,
   verifyUser,
   fetchRaces,
-  createRace,
-  createNote
+  createRace
 } from './services/api';
 
 class App extends React.Component {
@@ -40,11 +39,6 @@ class App extends React.Component {
         distance: "",
         website: "",
         user_id: ""
-      },
-      noteForm: {
-        message: "",
-        finish_time: "",
-        bib_number: ""
       }
     }
   }
@@ -102,31 +96,6 @@ class App extends React.Component {
       }
     }))
   }
-
-  // -------------- NOTE ------------------
-  newNote = async (ev) => {
-    ev.preventDefault();
-    const note = await createNote(this.state.noteForm);
-    this.setState({
-      noteForm: {
-        message: "",
-        finish_time: "",
-        bib_number: ""
-      }
-    })
-  }
-
-  handleNoteFormChange = (e) => {
-    const { name, value } = e.target;
-    this.setState(prevState => ({
-      noteForm: {
-        ...prevState.noteForm,
-        [name]: value
-      }
-    }))
-  }
-
-
 
 
   // -------------- BELOW IS AUTH ------------------
@@ -216,15 +185,14 @@ class App extends React.Component {
               newRace={this.newRace} />
           )} />
         <Route
-          exact
-          path="/races/:id/notes"
-          render={() => (
-            <NoteForm
-              handleNoteFormChange={this.handleNoteFormChange}
-              noteForm={this.state.noteForm}
-              newNote={this.newNote}
-            />
+          path="races/:race_id/notes/:id"
+          render={(props) => (
+            <Note
+              race_id={this.props.match.params.race_id}
+              id={props.match.params.id}
+               />
           )} />
+
 
       </div>
     );

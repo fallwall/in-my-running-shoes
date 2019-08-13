@@ -1,12 +1,17 @@
 import React from 'react';
 import RaceUpdate from './RaceUpdate';
 import Notes from './Notes';
+import NoteForm from './NoteForm';
+import Note from './Note';
+import { Route } from 'react-router-dom';
+
 
 import {
   oneRace,
   deleteRace,
   updateRace,
-  fetchNotes
+  fetchNotes,
+  createNote
 } from '../services/api';
 
 export default class Race extends React.Component {
@@ -27,7 +32,13 @@ export default class Race extends React.Component {
         website: "",
         user_id: ""
       },
-      isEditing: false
+      isEditing: false,
+      noteForm: {
+        messgae: "",
+        finish_time: "",
+        bib_number: "",
+        race_id: ""
+      }
     }
   }
 
@@ -40,6 +51,10 @@ export default class Race extends React.Component {
       raceUpdateForm: {
         ...prevState.raceUpdateForm,
         user_id: this.props.user_id
+      },
+      noteForm: {
+        ...prevState.noteForm,
+        race_id: this.props.id
       }
     }))
   }
@@ -48,6 +63,7 @@ export default class Race extends React.Component {
     this.setState(prevState => ({
       isEditing: !prevState.isEditing,
       raceUpdateForm: {
+        ...prevState.raceUpdateForm,
         name: this.state.race.name,
         date: this.state.race.date,
         description: this.state.race.description,
@@ -56,13 +72,12 @@ export default class Race extends React.Component {
         country: this.state.race.country,
         organization: this.state.race.organization,
         distance: this.state.race.distance,
-        website: this.state.race.website,
-        user_id: this.props.user_id
+        website: this.state.race.website
       }
     }))
   }
 
-  handleChange = (ev) => {
+  handleUpdateChange = (ev) => {
     const { name, value } = ev.target;
     this.setState(prevState => ({
       raceUpdateForm: {
@@ -87,7 +102,8 @@ export default class Race extends React.Component {
         organization: "",
         distance: "",
         website: ""
-      }
+      },
+      isAddingNewNote: false
     }))
   }
 
@@ -97,7 +113,35 @@ export default class Race extends React.Component {
   }
 
   addNote = (id) => {
-    this.props.history.push(`/races/${id}`);
+    this.setState(prevState => ({
+      isAddingNewNote: !prevState.isAddingNewNote
+    })
+    );
+  }
+
+  // -------------- CREATE NOTE ------------------
+  newNote = async (ev) => {
+    ev.preventDefault();
+    const note = await createNote(this.props.id, this.state.noteForm);
+    this.setState(prevState => ({
+      notes: [...prevState.notes, note],
+      noteForm: {
+        ...prevState.noteForm,
+        message: "",
+        finish_time: "",
+        bib_number: ""
+      }
+    }))
+  }
+
+  handleNoteFormChange = (e) => {
+    const { name, value } = e.target;
+    this.setState(prevState => ({
+      noteForm: {
+        ...prevState.noteForm,
+        [name]: value
+      }
+    }))
   }
 
   render() {
@@ -116,13 +160,20 @@ export default class Race extends React.Component {
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}
-            raceForm={this.state.raceUpdateForm}
-            handleChange={this.handleChange}
+            raceUpdateForm={this.state.raceUpdateForm}
+            handleUpdateChange={this.handleUpdateChange}
             handleUpdateSubmit={this.handleUpdateSubmit}
           />
 
         }
-        <Notes race_id={this.props.id} notes={this.state.notes}/>
+        <Notes race_id={this.props.id} notes={this.state.notes} />
+
+        <NoteForm
+          handleNoteFormChange={this.handleNoteFormChange}
+          noteForm={this.state.noteForm}
+          newNote={this.newNote}
+        />
+
       </div>
 
     )

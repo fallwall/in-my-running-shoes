@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
   has_many :races, dependent: :destroy
-  has_many :students, dependent: :destroy
+  has_many :notes, through: :races, dependent: :destroy
 
   validates :username, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true

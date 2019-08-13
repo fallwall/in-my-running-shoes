@@ -62,3 +62,18 @@ export const fetchNotes = async (race_id) => {
   const resp = await api.post(`/races/${race_id}/notes`, { note: data });
   return resp.data;
  }
+
+ export const oneNote = async (race_id, id) => {
+  const resp = await api.post(`/races/${race_id}/notes/${id}`);
+  return resp.data;
+ }
+
+ export const updateNote = async (race_id, id, data) => {
+  const resp = await api.post(`/races/${race_id}/notes/${id}`, { note: data });
+  return resp.data;
+ }
+
+ export const deleteNote = async (race_id, id) => {
+  const resp = await api.delete(`/races/${race_id}/notes/${id}`);
+  return resp.data;
+ }
