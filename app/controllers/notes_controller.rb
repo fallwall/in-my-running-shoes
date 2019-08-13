@@ -2,7 +2,7 @@ class NotesController < ApplicationController
   before_action :authorize_request, except: %i[index show]
 
   def index
-    @race = Race.find(params:[:race_id])
+    @race = Race.find(params[:race_id])
     @notes = Note.where(race_id: @race.id)
     render json: @notes, include: {race: {include: :user}}, status: :ok
   end

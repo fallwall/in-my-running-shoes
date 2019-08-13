@@ -49,7 +49,16 @@ export const deleteRace = async (id) => {
 }
 
 export const updateRace = async (id, data) => {
-  const resp = await api.put(`/races/${id}`, data);
+  const resp = await api.put(`/races/${id}`, { race: data });
   return resp.data;
 }
 
+export const fetchNotes = async (race_id) => {
+  const resp = await api.get(`/races/${race_id}/notes`);
+  return resp.data;
+ }
+
+ export const createNote = async (race_id, data) => {
+  const resp = await api.post(`/races/${race_id}/notes`, { note: data });
+  return resp.data;
+ }

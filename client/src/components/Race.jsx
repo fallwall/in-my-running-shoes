@@ -1,7 +1,13 @@
 import React from 'react';
 import RaceUpdate from './RaceUpdate';
+import Notes from './Notes';
 
-import { oneRace, deleteRace, updateRace } from '../services/api';
+import {
+  oneRace,
+  deleteRace,
+  updateRace,
+  fetchNotes
+} from '../services/api';
 
 export default class Race extends React.Component {
   constructor(props) {
@@ -27,8 +33,10 @@ export default class Race extends React.Component {
 
   componentDidMount = async () => {
     const race = await oneRace(this.props.id);
+    const notes = await fetchNotes(this.props.id);
     this.setState(prevState => ({
       race: race,
+      notes, notes,
       raceUpdateForm: {
         ...prevState.raceUpdateForm,
         user_id: this.props.user_id
@@ -88,6 +96,10 @@ export default class Race extends React.Component {
     this.props.history.push('/races');
   }
 
+  addNote = (id) => {
+    this.props.history.push(`/races/${id}`);
+  }
+
   render() {
     return (
       <div>
@@ -100,6 +112,7 @@ export default class Race extends React.Component {
           <p>Website: {this.state.race.website}</p>
           <button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button>
           <button onClick={() => this.removeRace(this.props.id)}>Delete</button>
+          <button onClick={() => this.addNote(this.props.id)}>Add A Note</button>
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}
@@ -109,6 +122,7 @@ export default class Race extends React.Component {
           />
 
         }
+        <Notes race_id={this.props.id} notes={this.state.notes}/>
       </div>
 
     )
