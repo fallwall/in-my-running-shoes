@@ -7,6 +7,7 @@ import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
+import SideBar from './components/sideBar/SideBar';
 
 import './App.css';
 
@@ -155,6 +156,10 @@ class App extends React.Component {
             }
           </div>
         </header>
+        <SideBar currentUser={this.state.currentUser}
+          handleLogout={this.handleLogout}
+          handleLoginButton={this.handleLoginButton}
+        />
 
         <Route exact path="/login" render={() => (
           <Login
@@ -193,7 +198,7 @@ class App extends React.Component {
             <Note
               race_id={props.match.params.race_id}
               id={props.match.params.id}
-               />
+            />
           )} />
 
 

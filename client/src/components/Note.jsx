@@ -1,5 +1,9 @@
 import React from 'react';
-import { oneNote, updateNote, deleteNote } from '../services/api';
+import {
+  oneNote,
+  updateNote,
+  deleteNote
+} from '../services/api';
 import { withRouter } from 'react-router-dom';
 import NoteUpdate from './NoteUpdate';
 
@@ -57,7 +61,6 @@ class Note extends React.Component {
     ev.preventDefault();
     const race_id = parseInt(this.props.race_id);
     const id = parseInt(this.props.id);
-    console.log(id);
     const note = await updateNote(race_id, id, this.state.noteUpdateForm);
     this.setState({
       note: note

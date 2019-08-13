@@ -9,3 +9,10 @@ a {
   background-color: black;
   margin: 10px;
 }
+
+.side-bar {
+  background: greenyellow;
+  height: 100vh;
+  width: 20vw;
+  z-index: 20;
+}

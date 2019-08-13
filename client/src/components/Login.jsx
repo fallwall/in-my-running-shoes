@@ -6,8 +6,8 @@ export default function Login(props) {
     <div>
       <h2>login</h2>
       <hr />
-      <form onSubmit={(e) => {
-        e.preventDefault();
+      <form onSubmit={(ev) => {
+        ev.preventDefault();
         props.handleLogin();}} >
         <p>Username:</p>
         <input name="username" type="text" value={props.formData.username} onChange={props.handleChange} />
