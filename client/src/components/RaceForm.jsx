@@ -77,7 +77,7 @@ function RaceForm(props) {
           value={props.raceForm.user_id}
           onChange={props.handleRaceFormChange} />
         <button>Submit</button>
-        <button onClick={props.newRace}>Cancel/Go Back</button>
+        <button onClick={props.addRace}>Cancel/Go Back</button>
       </form>
     </div >
   )

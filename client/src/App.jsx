@@ -219,7 +219,7 @@ class App extends React.Component {
           <RaceForm
             handleRaceFormChange={this.handleRaceFormChange}
             raceForm={this.state.raceForm}
-            newRace={this.newRace} />
+            addRace={this.addRace} />
         }
 
         <Route
