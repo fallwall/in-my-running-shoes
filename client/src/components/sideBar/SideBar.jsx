@@ -15,7 +15,7 @@ export default class SideBar extends Component {
         <div className="user-name">
         </div>
         <button>Profile</button>
-        <Link to="/new/race">Add A Race</Link>
+
         <div className="login">
           {this.props.currentUser
             ?
@@ -29,7 +29,7 @@ export default class SideBar extends Component {
         </div>
         <div className="regular-nav-link">
           <Link to="/races"> All Races </Link>
-          <Link to="/new/race"> Add a Race </Link>
+          <button onClick={this.props.addRace}>Add a Race</button>
         </div>
 
 

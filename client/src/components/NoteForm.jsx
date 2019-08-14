@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function NoteForm(props) {
   return (
-    <div className="note-form">
+    <div className="note-form" className={props.newRace ? "popup" : "hidden"}>
       <form onSubmit={props.newNote}>
         <label for="message"> Message </label>
         <input type="text"

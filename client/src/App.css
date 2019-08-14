@@ -115,8 +115,23 @@ input, button {
   font-size: 1.5em;
 }
 
-
-
+/* add race form */
+.race-form {
+  z-index: 40;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 63, 99, 0.7);
+  /* margin-left: 15vw;
+  margin-right: 15vh; */
+  padding-top: 5em;
+  animation: slidein;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  top: 0;
+}
 
 /* new race */
 
@@ -136,7 +151,7 @@ border: 2px black solid;
 }
 
 .new-race-back {
-  background-color:rgba(173, 216, 230, 0.2);
+  background-color:rgba(173, 216, 230, 1);
   width: 40vw;
   padding: 4em 4em 2em 0;
   z-index:-1;

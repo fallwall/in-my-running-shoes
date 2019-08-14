@@ -46,7 +46,8 @@ class App extends React.Component {
         website: "",
         user_id: ""
       },
-      sidebar: false
+      sidebar: false,
+      addRace: false
     }
   }
 
@@ -90,7 +91,8 @@ class App extends React.Component {
         organization: "",
         distance: "",
         website: ""
-      }
+      },
+      addRace: false
     }))
   }
 
@@ -112,12 +114,19 @@ class App extends React.Component {
     }))
   }
 
+  addRace = (ev) => {
+    ev.preventDefault();
+    this.setState(prevState => ({
+      addRace: !prevState.addRace
+    }))
+  }
+
   // -------------- BELOW IS AUTH ------------------
 
 
 
   handleLogin = async (ev) => {
-  
+
     const loginData = {
       username: this.state.authFormData.username,
       password: this.state.authFormData.password
@@ -131,7 +140,7 @@ class App extends React.Component {
   }
 
   handleRegister = async (ev) => {
- 
+
     console.log("register clicked!");
     await registerUser(this.state.authFormData);
     this.handleLogin();
@@ -178,6 +187,7 @@ class App extends React.Component {
           currentUser={this.state.currentUser}
           handleLogout={this.handleLogout}
           handleLoginButton={this.handleLoginButton}
+          addRace={this.addRace}
         />
 
         {/* <Route exact path="/login" render={() => (
@@ -205,15 +215,13 @@ class App extends React.Component {
               currentUser={this.state.currentUser}
             />
           )} />
-        <Route
-          exact
-          path="/new/race"
-          render={() => (
-            <RaceForm
-              handleRaceFormChange={this.handleRaceFormChange}
-              raceForm={this.state.raceForm}
-              newRace={this.newRace} />
-          )} />
+        {this.state.addRace &&
+          <RaceForm
+            handleRaceFormChange={this.handleRaceFormChange}
+            raceForm={this.state.raceForm}
+            newRace={this.newRace} />
+        }
+
         <Route
           exact
           path="/races/:race_id/notes/:id"

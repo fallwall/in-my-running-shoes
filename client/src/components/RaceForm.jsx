@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 function RaceForm(props) {
   return (
-    <div>
+    <div className="race-form">
       <h2>Create a new race</h2>
       <form onSubmit={props.newRace}>
         <p>Race name:</p>
@@ -67,6 +67,7 @@ function RaceForm(props) {
           value={props.raceForm.user_id}
           onChange={props.handleRaceFormChange} />
         <button>Submit</button>
+        <button onClick={props.newRace}>Cancel/Go Back</button>
       </form>
     </div >
   )
