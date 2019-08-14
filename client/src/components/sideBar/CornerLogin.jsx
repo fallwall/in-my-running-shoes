@@ -75,7 +75,6 @@ export default class CornerLogin extends Component {
           formData={this.props.formData}
           cancelLogout={this.cancelLogout}
         />
-
         <Register
           isReg={this.state.isReg}
           handleRegister={this.handleRegister2}

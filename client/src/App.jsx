@@ -224,7 +224,16 @@ class App extends React.Component {
               currentUser={this.state.currentUser}
             />
           )} />
-
+        <Route
+          exact
+          path="/races/:race_id/notes/:id"
+          render={(props) => (
+            <Note
+              race_id={props.match.params.race_id}
+              id={props.match.params.id}
+              currentUser={this.state.currentUser}
+            />
+          )} />
 
         <footer>
           <img
