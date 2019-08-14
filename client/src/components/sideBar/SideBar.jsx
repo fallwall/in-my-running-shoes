@@ -27,6 +27,11 @@ export default class SideBar extends Component {
             <button onClick={this.props.handleLoginButton}>LOGIN/REG</button>
           }
         </div>
+        <div className="regular-nav-link">
+          <Link to="/races"> All Races </Link>
+        </div>
+
+
         <div className="social">
 
         </div>

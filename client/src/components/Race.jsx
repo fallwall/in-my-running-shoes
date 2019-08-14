@@ -45,19 +45,19 @@ export default class Race extends React.Component {
     const race = await oneRace(this.props.id);
     const notes = await fetchNotes(this.props.id);
     this.props.currentUser &&
-    this.setState(prevState => ({
-      race: race,
-      notes: notes,
-      raceUpdateForm: {
-        ...prevState.raceUpdateForm,
-        user_id: this.props.user_id
-      },
-      noteForm: {
-        ...prevState.noteForm,
-        race_id: this.props.id,
-        user_id: this.props.currentUser.id
-      }
-    }))
+      this.setState(prevState => ({
+        race: race,
+        notes: notes,
+        raceUpdateForm: {
+          ...prevState.raceUpdateForm,
+          user_id: this.props.user_id
+        },
+        noteForm: {
+          ...prevState.noteForm,
+          race_id: this.props.id,
+          user_id: this.props.currentUser.id
+        }
+      }))
   }
 
   handleUpdate = () => {
@@ -131,7 +131,8 @@ export default class Race extends React.Component {
         message: "",
         finish_time: "",
         bib_number: ""
-      }
+      },
+      isAddingNewNote: false
     }))
   }
 
@@ -145,6 +146,17 @@ export default class Race extends React.Component {
     }))
   }
 
+  cancelAddingNote = () => {
+    this.setState(prevState => ({
+      noteForm: {
+        ...prevState.noteForm,
+        message: "",
+        finish_time: "",
+        bib_number: ""
+      },
+      isAddingNewNote: false
+    }))
+  }
 
 
   render() {
@@ -156,7 +168,7 @@ export default class Race extends React.Component {
           <p><span>Location:</span> {this.state.race.city}, {this.state.race.state}, {this.state.race.country}</p>
           <p><span>Organizer:</span> {this.state.race.organization}</p>
           <p><span>Distance: </span>(in Mile): {this.state.race.distance}</p>
-          <p><span>Website: </span>{this.state.race.website}</p>
+          <p><span>Website: </span><a href={this.state.race.website}>{this.state.race.website}</a></p>
           <button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button>
           <button onClick={() => this.removeRace(this.props.id)}>Delete</button>
           <button onClick={() => this.addNote(this.props.id)}>Add A Note</button>
@@ -169,12 +181,14 @@ export default class Race extends React.Component {
           />
 
         }
-        <NoteForm
-          handleNoteFormChange={this.handleNoteFormChange}
-          noteForm={this.state.noteForm}
-          newNote={this.newNote}
-          currentUser={this.props.currentUser}
-        />
+        {this.state.isAddingNewNote &&
+          <NoteForm
+            handleNoteFormChange={this.handleNoteFormChange}
+            noteForm={this.state.noteForm}
+            newNote={this.newNote}
+            currentUser={this.props.currentUser}
+            cancelAddingNote={this.cancelAddingNote}
+          />}
 
         <Notes race_id={this.props.id} notes={this.state.notes} />
 

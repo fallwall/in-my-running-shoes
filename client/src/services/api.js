@@ -105,3 +105,6 @@ export const fetchActivities = async () => {
   const resp = await api.get('/allnotes');
   return resp.data;
 }
+
+////// user profile calls //////
+

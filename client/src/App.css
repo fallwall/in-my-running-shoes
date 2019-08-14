@@ -45,7 +45,8 @@ input, button {
 }
 
 .main-title {
-  font-size: 5em;
+  margin-bottom: 1em;
+  font-size: 12em;
 }
 
 .shoe-container {
