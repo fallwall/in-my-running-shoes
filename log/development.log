@@ -21627,3 +21627,25 @@ Processing by UsersController#verify as HTML
 Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 3.0ms)
 
 
+Started POST "/auth/login" for ::1 at 2019-08-13 23:15:42 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 186ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-13 23:16:20 -0400
+Started GET "/users/verify" for ::1 at 2019-08-13 23:16:20 -0400
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (13.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 16ms (Views: 2.1ms | ActiveRecord: 13.6ms)
+
+
+  [1m[36mUser Load (16.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 16.5ms)
+
+

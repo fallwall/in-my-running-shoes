@@ -146,7 +146,7 @@ class App extends React.Component {
         <header className="App-header">
           <CornerLogin
             handleLogin={this.handleLogin}
-            currentUse={this.state.currentUser}
+            currentUser={this.state.currentUser}
             handleLogout={this.handleLogout}
             handleLoginButton={this.handleLoginButton}
             handleRegister={this.handleRegister}
