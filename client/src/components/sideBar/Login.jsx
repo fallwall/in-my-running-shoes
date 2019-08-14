@@ -3,13 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function Login(props) {
   return (
-    <div>
+    <div className={(props.isLogin && !props.isReg) ? "pop-up login-popup" : "hidden"}>
       <h2>login</h2>
-      <hr />
-      <form onSubmit={(ev) => {
-        ev.preventDefault();
-        props.handleLogin();
-      }} >
+      <form
+        onSubmit={props.handleLogin} >
         <p>Username:</p>
         <input
           name="username"
@@ -22,9 +19,8 @@ export default function Login(props) {
           type="password"
           value={props.formData.password}
           onChange={props.handleChange} />
-        <hr />
         <button>Login</button>
-        <Link to="/register">Register</Link>
+        <button onClick={props.handleRegButton}>Register</button>
       </form>
     </div>
   )

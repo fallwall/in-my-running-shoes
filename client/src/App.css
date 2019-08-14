@@ -46,15 +46,30 @@ input, button {
 }
 
 .shoe-left {
-
   z-index: 1;
 }
 
 .shoe-right {
-
   z-index: 2;
 }
 
+.pop-up {
+  position: fixed;
+  width: 70vw;
+  height: 70vh;
+  background-color: rgba(119, 136, 153, 0.6);
+  margin-left: 15vw;
+  margin-right: 15vh;
+  z-index: 20;
+  animation: slidein;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+}
+.hidden {
+  display: none; 
+}
 
 /* race-list */
 
@@ -88,4 +103,16 @@ input, button {
   padding: 2em;
   margin: 2em auto;
   width: 40vw; 
+}
+
+
+@keyframes slidein {
+  0%{
+    opacity:0;
+    transform: translateX(800px);
+  }
+  100%{
+    opacity:1;
+    transform: translateX(0);
+  }
 }

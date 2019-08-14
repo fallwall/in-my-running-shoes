@@ -3,9 +3,8 @@ import { Route, Link, withRouter } from 'react-router-dom';
 
 export default function Register(props) {
   return (
-    <div>
+    <div className={props.isReg ? "pop-up reg-popup" : "hidden"}>
       <h2>Register</h2>
-      <hr />
       <form onSubmit={props.handleRegister} >
         <p>Username:</p>
         <input name="username" type="text"
@@ -23,12 +22,11 @@ export default function Register(props) {
         <input name="dob" type="text"
           value={props.formData.dob}
           onChange={props.handleChange}
-          placeholder="YYYY-MM-DD"/>
+          placeholder="YYYY-MM-DD" />
         <p>Password:</p>
         <input name="password" type="password"
           value={props.formData.password}
           onChange={props.handleChange} />
-        <hr />
         <button>Register</button>
       </form>
     </div>

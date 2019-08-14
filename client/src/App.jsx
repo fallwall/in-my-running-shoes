@@ -102,13 +102,11 @@ class App extends React.Component {
 
   // -------------- BELOW IS AUTH ------------------
 
-  handleLoginButton = () => {
-    this.props.history.push("/login");
-  }
 
-  handleLogin = async () => {
+
+  handleLogin = async (ev) => {
+    ev.preventDefault();
     const userData = await loginUser(this.state.authFormData);
-    console.log(userData);
     this.setState({
       currentUser: decode(userData)
     })
@@ -148,7 +146,6 @@ class App extends React.Component {
             handleLogin={this.handleLogin}
             currentUser={this.state.currentUser}
             handleLogout={this.handleLogout}
-            handleLoginButton={this.handleLoginButton}
             handleRegister={this.handleRegister}
             handleChange={this.authHandleChange}
             formData={this.state.authFormData}
