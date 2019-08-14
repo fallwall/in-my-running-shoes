@@ -11,7 +11,7 @@ export default class NewActivities extends Component {
 
   componentDidMount = async () => {
     const resp = await fetchActivities();
-    const activities = Object.assign(resp.notes, resp.races);
+    const activities = Object.assign(resp.notes, resp.races).sort((a, b) => (b.created_at > a.created_at) ? 1 : -1);
     this.setState({
       activities: activities
     })

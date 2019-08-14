@@ -44,6 +44,7 @@ export default class Race extends React.Component {
   componentDidMount = async () => {
     const race = await oneRace(this.props.id);
     const notes = await fetchNotes(this.props.id);
+    this.props.currentUser &&
     this.setState(prevState => ({
       race: race,
       notes: notes,
