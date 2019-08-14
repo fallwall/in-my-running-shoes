@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { fetchActivities } from '../services/api';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default class NewActivities extends Component {
   constructor() {
@@ -24,14 +25,29 @@ export default class NewActivities extends Component {
 
   render() {
     return (
-      <div className="new-activities">
-        <h2>NEWEST ACTIVITIES</h2>
-        {this.state.activities.map(act =>
-          <div className="act">
-            {this.actType(act)}
-            {act.created_at}
-          </div>)}
-      </div>
+      <ParallaxProvider>
+        <div className="new-activities">
+          <Parallax
+            y={[20, -25]}
+          >
+            <div className="new-act-main">
+              <h2>NEWEST ACTIVITIES</h2>
+              {this.state.activities.map((act, i) =>
+                <div className="act" key={i}>
+                  {this.actType(act)}
+                  {act.created_at}
+                </div>)}
+            </div>
+          </Parallax>
+          <Parallax
+            x={[-13, 13]}
+            y={[50, -50]}
+          >
+            <div className="new-act-back">
+            </div>
+          </Parallax>
+        </div>
+      </ParallaxProvider>
     )
   }
 }

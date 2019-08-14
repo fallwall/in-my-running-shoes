@@ -84,6 +84,13 @@ input, button {
   display: none; 
 }
 
+
+/* race-and-activities-wraper-at-home */
+.race-and-act {
+  display: flex;
+}
+
+
 /* race-list */
 
 .race {
@@ -106,20 +113,59 @@ input, button {
 .detail-link:hover {
   font-size: 1.5em;
 }
+
+
+
+
 /* new race */
 
 .new-races {
-  border: 2px black solid;
-  margin: 2em auto;
-  padding: 2em;
-  width: 20vw;
+  margin: 2em 2em 2em auto;
+  width: 45vw;
+  position: relative;
+}
+
+.new-race-main {
+border: 2px black solid;
+ padding: 4em;
+ width: 40vw;
+ position: absolute;
+ top: 20px;
+ left: 10px;
+}
+
+.new-race-back {
+  background-color:rgba(173, 216, 230, 0.2);
+  width: 40vw;
+  padding: 4em 4em 2em 0;
+  z-index:-1;
+  position: absolute;
+  height: 64vh;
+  top: 46px;
+  left: 178px;
 }
 
 .new-activities {
+  margin: 2em auto 2em 2em;
+  width: 22vw;
+  position: relative;
+}
+
+.new-act-main {
   border: 2px black solid;
-  margin: 2em auto;
-  padding: 2em;
-  width: 20vw;
+  padding: 4em;
+  width: 18vw;
+  position: absolute;
+}
+
+.new-act-back {
+  background-color:rgba(128, 0, 128, 0.2);
+  width: 22vw;
+  position: absolute;
+  z-index:-1;
+  height: 36vh;
+  top: 44px;
+  left: 124px;
 }
 
 
@@ -137,6 +183,7 @@ input, button {
   width: 100vw;
   margin-left: -4vw;
   z-index:-1;
+  opacity: 0.5;
 }
 
 
