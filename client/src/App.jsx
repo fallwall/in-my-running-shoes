@@ -5,7 +5,7 @@ import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
-import NewestRaces from './components/NewestRaces';
+import Home from './components/Home';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
 import CornerLogin from './components/sideBar/CornerLogin';
@@ -185,6 +185,8 @@ class App extends React.Component {
         <Route exact path="/races" render={() => (
           <Races
             races={this.state.races} />)} />
+        <Route exact path="/" render={() => (
+          <Home />)} />
         <Route
           exact
           path="/races/:id"
@@ -212,7 +214,7 @@ class App extends React.Component {
               id={props.match.params.id}
             />
           )} />
-        <NewestRaces />
+
 
         <footer>
           <img

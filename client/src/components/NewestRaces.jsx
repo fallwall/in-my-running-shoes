@@ -22,8 +22,10 @@ export default class NewestRaces extends Component {
     return (
       <div className="new-races">
         {this.state.races.map(race =>
-          <div key={race.id} className="race">
+          <div key={race.id} className="race-new">
             <h2>{race.name}</h2>
+            <p>Creted by {race.user.username}</p>
+            <p>@ {race.user.created_at}</p>
             <Link className="detail-link" to={`/races/${race.id}`}>See details</Link>
           </div>
         )}

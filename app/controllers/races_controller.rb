@@ -8,7 +8,7 @@ class RacesController < ApplicationController
 
   def newest5
     @races = Race.all.order("created_at DESC").limit(5)
-    render json: @races, status: :ok
+    render json: @races, include: :user, status: :ok
   end
 
   def show
