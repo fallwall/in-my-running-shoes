@@ -2,7 +2,7 @@ import React from 'react';
 import RaceUpdate from './RaceUpdate';
 import Notes from './Notes';
 import NoteForm from './NoteForm';
-import Note from './Note';
+import RacePageHeader from './RacePageHeader';
 import { Route } from 'react-router-dom';
 
 
@@ -57,6 +57,7 @@ export default class Race extends React.Component {
         race_id: this.props.id
       }
     }))
+    console.log(this.state.race.name);
   }
 
   handleUpdate = () => {
@@ -144,11 +145,13 @@ export default class Race extends React.Component {
     }))
   }
 
+
+
   render() {
     return (
       <div>
         <div className="race-info">
-          <p>{this.state.race.name}</p>
+          {this.state.race.name && <RacePageHeader race={this.state.race.name} />}
           <p><span>Description:</span> {this.state.race.description}</p>
           <p><span>Location:</span> {this.state.race.city}, {this.state.race.state}, {this.state.race.country}</p>
           <p><span>Organizer:</span> {this.state.race.organization}</p>

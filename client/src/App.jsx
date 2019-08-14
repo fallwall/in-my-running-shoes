@@ -8,6 +8,7 @@ import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
 import SideBar from './components/sideBar/SideBar';
+import Headerr from './components/Headerr';
 
 
 import './App.css';
@@ -144,7 +145,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>IN MY RUNNING SHOES</h1>
+          <h1 className="main-title">IN MY RUNNING SHOES</h1>
+          <Headerr />
           
           <div>
             {this.state.currentUser
