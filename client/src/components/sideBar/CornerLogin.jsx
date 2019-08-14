@@ -43,6 +43,13 @@ export default class CornerLogin extends Component {
     })
   }
 
+  cancelLogout = () => {
+    this.setState({
+      isLogin: false,
+      isReg: false
+    })
+  }
+
   render() {
     return (
       <>
@@ -68,7 +75,7 @@ export default class CornerLogin extends Component {
           handleChange={this.props.handleChange}
           handleRegButton={this.handleRegButton}
           formData={this.props.formData}
-          style={{ display: "none" }}
+          cancelLogout={this.cancelLogout}
         />
 
         <Register
@@ -76,6 +83,7 @@ export default class CornerLogin extends Component {
           handleRegister={this.handleRegister2}
           handleChange={this.props.handleChange}
           formData={this.props.formData}
+          cancelLogout={this.cancelLogout}
         />
       </>
     )

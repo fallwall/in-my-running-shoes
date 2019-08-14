@@ -77,6 +77,8 @@ input, button {
   animation-iteration-count: 1;
   animation-duration: 0.7s;
   animation-delay: 0.5s;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .hidden {
   display: none; 
