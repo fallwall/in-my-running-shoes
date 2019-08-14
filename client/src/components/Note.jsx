@@ -6,6 +6,7 @@ import {
 } from '../services/api';
 import { withRouter } from 'react-router-dom';
 import NoteUpdate from './NoteUpdate';
+import NotePageHeader from './NotePageHeader';
 
 class Note extends React.Component {
   constructor(props) {
@@ -76,7 +77,8 @@ class Note extends React.Component {
   render() {
     return (
       <div>
-        <h2>this is the single note page</h2>
+
+        <NotePageHeader />
         <h2>{this.state.note.message}</h2>
         <p>{this.state.note.finish_time}</p>
         <p>{this.state.note.bib_number}</p>

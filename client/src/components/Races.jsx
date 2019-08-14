@@ -10,7 +10,7 @@ export default function Races(props) {
           <Parallax
             x={i % 2 === 0 ? [0, -20] : [0, 20]}>
             <div key={race.id} className="race"><h2>{race.name}</h2>
-              <Link to={`/races/${race.id}`}>See details</Link>
+              <Link className="detail-link" to={`/races/${race.id}`}>See details</Link>
             </div>
           </Parallax>)}
 

@@ -62,7 +62,13 @@ input, button {
   text-align: left;
 }
 
-/* race-page */
+.detail-link {
+  padding: 0.5em;
+  font-size: 1em;
+}
+.detail-link:hover {
+  font-size: 1.5em;
+}
 
 
 

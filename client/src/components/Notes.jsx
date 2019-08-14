@@ -1,4 +1,5 @@
 import React from 'react';
+import NotePageHeader from './NotePageHeader';
 import { Link } from 'react-router-dom';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
@@ -10,11 +11,10 @@ export default function Notes(props) {
           <Parallax
             x={i % 2 === 0 ? [0, 20] : [0, -20]}>
             <div key={note.id} className="note"><h2>{note.message}</h2>
-              <Link to={`/races/${props.race_id}/notes/${note.id}`}>Note Details</Link>
+              <Link className="detail-link" to={`/races/${props.race_id}/notes/${note.id}`}>Note Details</Link>
             </div>
           </Parallax>)}
-
       </div>
-      </ParallaxProvider>
-      )
-    }
+    </ParallaxProvider>
+  )
+}
