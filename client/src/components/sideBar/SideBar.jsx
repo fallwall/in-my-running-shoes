@@ -29,6 +29,7 @@ export default class SideBar extends Component {
         </div>
         <div className="regular-nav-link">
           <Link to="/races"> All Races </Link>
+          <Link to="/new/race"> Add a Race </Link>
         </div>
 
 
