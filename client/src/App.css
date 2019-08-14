@@ -24,6 +24,15 @@ input, button {
   z-index: 20;
 }
 /* header */
+.login-buttons-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.login-buttons {
+ padding: 1em;
+}
+
 .main-title {
   font-size: 5em;
 }

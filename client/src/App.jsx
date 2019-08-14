@@ -1,14 +1,13 @@
 import React from 'react';
 import { Route, Link, withRouter } from 'react-router-dom';
 import decode from 'jwt-decode';
-import Login from './components/Login';
-import Register from './components/Register';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
+import CornerLogin from './components/sideBar/CornerLogin';
 
 
 import './App.css';
@@ -145,27 +144,25 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
+          <CornerLogin
+            handleLogin={this.handleLogin}
+            currentUse={this.state.currentUser}
+            handleLogout={this.handleLogout}
+            handleLoginButton={this.handleLoginButton}
+            handleRegister={this.handleRegister}
+            handleChange={this.authHandleChange}
+            formData={this.state.authFormData}
+          />
           <h1 className="main-title">IN MY RUNNING SHOES</h1>
           <Headerr />
-          
-          <div>
-            {this.state.currentUser
-              ?
-              <>
-                <p>{this.state.currentUser.username}</p>
-                <button onClick={this.handleLogout}>LOGOUT</button>
-              </>
-              :
-              <button onClick={this.handleLoginButton}>LOGIN/REG</button>
-            }
-          </div>
+
         </header>
         {/* <SideBar currentUser={this.state.currentUser}
           handleLogout={this.handleLogout}
           handleLoginButton={this.handleLoginButton}
         /> */}
 
-        <Route exact path="/login" render={() => (
+        {/* <Route exact path="/login" render={() => (
           <Login
             handleLogin={this.handleLogin}
             handleChange={this.authHandleChange}
@@ -174,7 +171,7 @@ class App extends React.Component {
           <Register
             handleRegister={this.handleRegister}
             handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
+            formData={this.state.authFormData} />)} /> */}
         <Route exact path="/races" render={() => (
           <Races
             races={this.state.races} />)} />
