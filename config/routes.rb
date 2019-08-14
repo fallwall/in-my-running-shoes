@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   get '/newest5', to: 'races#newest5'
+  get '/allnotes', to: 'notes#all'
  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

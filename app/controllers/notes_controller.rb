@@ -1,10 +1,16 @@
 class NotesController < ApplicationController
-  before_action :authorize_request, except: %i[index show]
+  before_action :authorize_request, except: %i[index all show]
 
   def index
     @race = Race.find(params[:race_id])
     @notes = Note.where(race_id: @race.id)
     render json: @notes, status: :ok
+  end
+
+  def all
+    @races = Race.all.order("updated_at DESC")
+    @notes = Note.all.order("updated_at DESC")
+    render json: {notes: @notes, races: @races}, status: :ok
   end
 
   def show

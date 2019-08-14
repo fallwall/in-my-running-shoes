@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, withRouter } from 'react-router-dom';
-import decode from 'jwt-decode';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';

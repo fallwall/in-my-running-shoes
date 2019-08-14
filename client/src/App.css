@@ -106,7 +106,21 @@ input, button {
 .detail-link:hover {
   font-size: 1.5em;
 }
+/* new race */
 
+.new-races {
+  border: 2px black solid;
+  margin: 2em auto;
+  padding: 2em;
+  width: 20vw;
+}
+
+.new-activities {
+  border: 2px black solid;
+  margin: 2em auto;
+  padding: 2em;
+  width: 20vw;
+}
 
 
 /* note-list */

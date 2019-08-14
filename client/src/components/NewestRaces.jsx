@@ -21,6 +21,7 @@ export default class NewestRaces extends Component {
   render() {
     return (
       <div className="new-races">
+        <h2>NEWEST RACE</h2>
         {this.state.races.map(race =>
           <div key={race.id} className="race-new">
             <h2>{race.name}</h2>
