@@ -24,6 +24,8 @@ export default class CornerLogin extends Component {
   }
 
   handleLogin2 = (ev) => {
+    ev.preventDefault();
+    console.log("handleLogin2!");
     this.props.handleLogin();
     this.setState({
       isLogin: false,
@@ -32,6 +34,8 @@ export default class CornerLogin extends Component {
   }
 
   handleRegister2 = (ev) => {
+    ev.preventDefault();
+    console.log("handleReg2!");
     this.props.handleRegister();
     this.setState({
       isLogin: false,

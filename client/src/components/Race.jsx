@@ -55,7 +55,6 @@ export default class Race extends React.Component {
         race_id: this.props.id
       }
     }))
-    console.log(this.state.race.name);
   }
 
   handleUpdate = () => {

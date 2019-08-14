@@ -25831,3 +25831,2271 @@ Processing by NotesController#index as HTML
 Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/races/1" for ::1 at 2019-08-14 10:49:55 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:49:55 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/users/verify" for ::1 at 2019-08-14 10:49:55 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (2.0ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (6.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 6.1ms)
+
+
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 6.1ms)
+
+
+Processing by UsersController#verify as HTML
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:49:55 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:50:03 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:50:03 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:50:03 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (10.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 14ms (Views: 3.2ms | ActiveRecord: 10.8ms)
+
+
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (3.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 12ms (Views: 1.6ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:50:03 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:50:32 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:50:32 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 42ms (Views: 17.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:50:32 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:50:32 -0400
+Processing by UsersController#verify as HTML
+Processing by RacesController#index as HTML
+Processing by NotesController#index as HTML
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Parameters: {"race_id"=>"1"}
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 4.1ms)
+
+
+  [1m[36mRace Load (7.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 11.5ms)
+
+
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 28ms (Views: 4.6ms | ActiveRecord: 15.7ms)
+
+
+Started PUT "/races/1" for ::1 at 2019-08-14 10:50:42 -0400
+Processing by RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"pandaa", "date"=>"2019-08-20", "description"=>"panda", "city"=>"nyc", "state"=>"nyc", "country"=>"united states", "organization"=>"ga", "distance"=>5, "website"=>"http://www.ga.com", "user_id"=>1}, "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/races_controller.rb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:30
+  [1m[36mRace Update (4.9ms)[0m  [1m[33mUPDATE "races" SET "name" = $1, "updated_at" = $2 WHERE "races"."id" = $3[0m  [["name", "pandaa"], ["updated_at", "2019-08-14 14:50:42.186112"], ["id", 1]]
+  ↳ app/controllers/races_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/races_controller.rb:30
+Completed 500 Internal Server Error in 14ms (Views: 0.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:50:42 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:50:42 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:50:42 -0400
+Processing by UsersController#verify as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RacesController#index as HTML
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 8ms (Views: 1.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:50:42 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:50:53 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:50:53 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:50:53 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (7.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (3.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 10ms (Views: 2.6ms | ActiveRecord: 7.5ms)
+
+
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 20ms (Views: 2.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:50:53 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/races/1" for ::1 at 2019-08-14 10:51:00 -0400
+Processing by RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"panda!!", "date"=>"2019-08-20", "description"=>"panda", "city"=>"nyc", "state"=>"nyc", "country"=>"united states", "organization"=>"ga", "distance"=>5, "website"=>"http://www.ga.com", "user_id"=>1}, "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/races_controller.rb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:30
+  [1m[36mRace Update (1.0ms)[0m  [1m[33mUPDATE "races" SET "name" = $1, "updated_at" = $2 WHERE "races"."id" = $3[0m  [["name", "panda!!"], ["updated_at", "2019-08-14 14:51:00.341569"], ["id", 1]]
+  ↳ app/controllers/races_controller.rb:30
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/races_controller.rb:30
+Completed 500 Internal Server Error in 9ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 10:51:00 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 10:51:00 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:51:00 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (1.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 1.3ms)
+
+
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:51:00 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 10:52:06 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 10:52:06 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:52:06 -0400
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+Processing by RacesController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (1.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/application_controller.rb:19
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mRace Load (2.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:52:06 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:52:10 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:52:10 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 10:52:10 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:52:10 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:52:28 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:52:28 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:52:28 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/races/1" for ::1 at 2019-08-14 10:52:34 -0400
+Processing by RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"panda!!!", "date"=>"2019-08-20", "description"=>"panda", "city"=>"nyc", "state"=>"nyc", "country"=>"united states", "organization"=>"ga", "distance"=>5, "website"=>"http://www.ga.com", "user_id"=>""}, "id"=>"1"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:52:34 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:52:34 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:52:34 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:53:05 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:53:05 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:53:05 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:53:07 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:53:07 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:53:07 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:53:27 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:53:27 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:53:27 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/races/1" for ::1 at 2019-08-14 10:53:36 -0400
+Processing by RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"panda!", "date"=>"2019-08-20", "description"=>"panda", "city"=>"nyc", "state"=>"nyc", "country"=>"united states", "organization"=>"ga", "distance"=>5, "website"=>"http://www.ga.com", "user_id"=>""}, "id"=>"1"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:53:36 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:53:36 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:53:36 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (4.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 10ms (Views: 2.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:53:44 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:53:44 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:53:44 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (1.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:54:11 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:54:11 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:54:11 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:54:18 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:54:18 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:54:18 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:54:29 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:54:29 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (1.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:54:29 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:54:45 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:54:45 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:54:45 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 10:55:09 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 10:55:09 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:55:09 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:55:12 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:55:12 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:55:12 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:55:28 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:55:28 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 11ms (Views: 2.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:55:28 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (6.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:56:18 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:56:18 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:56:18 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:56:20 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:56:20 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (3.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (6.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 6.0ms)
+
+
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 16ms (Views: 3.7ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:56:20 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:56:29 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:56:29 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (8.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (10.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 17ms (Views: 6.0ms | ActiveRecord: 10.4ms)
+
+
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 25ms (Views: 3.2ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:56:29 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:57:28 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:57:28 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (3.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+  [1m[36mRace Load (9.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+Completed 200 OK in 18ms (Views: 5.9ms | ActiveRecord: 11.0ms)
+
+
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 21ms (Views: 11.4ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:57:28 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 10:57:38 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:57:38 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (1.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mRace Load (40.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 50ms (Views: 1.9ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 10:57:38 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:06:18 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:06:18 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (1.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:06:18 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:06:39 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:06:39 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (4.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (6.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 6.2ms)
+
+
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 19ms (Views: 2.6ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:06:39 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (4.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:06:47 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:06:47 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mRace Load (1.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:06:47 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:10:50 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:10:50 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:11:06 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:11:06 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+Processing by RacesController#index as HTML
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (0.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:14:17 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:14:17 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (1.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:14:17 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:14:17 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:14:17 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (3.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:15:53 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:15:53 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mRace Load (13.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 25ms (Views: 1.3ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:15:53 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:15:53 -0400
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:15:53 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (3.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (12.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 2.9ms | ActiveRecord: 12.5ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 8.7ms)
+
+
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:23:28 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:23:28 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 11:23:28 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (9.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Processing by RacesController#newest5 as HTML
+Completed 200 OK in 12ms (Views: 2.5ms | ActiveRecord: 9.3ms)
+
+
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+Started GET "/races" for ::1 at 2019-08-14 11:23:28 -0400
+Processing by RacesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (0.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RacesController#show as HTML
+  ↳ app/controllers/races_controller.rb:11
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:23:28 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:23:37 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 11:23:37 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:23:37 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/races" for ::1 at 2019-08-14 11:23:37 -0400
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:23:37 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (9.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+Processing by NotesController#index as HTML
+  ↳ app/controllers/races_controller.rb:6
+  Parameters: {"race_id"=>"1"}
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 9.9ms)
+
+
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (8.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:23:49 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:23:49 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/newest5" for ::1 at 2019-08-14 11:23:49 -0400
+  [1m[36mRace Load (1.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:15
+Processing by RacesController#newest5 as HTML
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:23:49 -0400
+  [1m[36mRace Load (4.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 12ms (Views: 5.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:23:49 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:04 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:24:04 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:04 -0400
+  [1m[36mRace Load (3.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+Processing by RacesController#show as HTML
+  ↳ app/controllers/races_controller.rb:6
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mRace Load (5.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  ↳ app/controllers/races_controller.rb:11
+Started GET "/races" for ::1 at 2019-08-14 11:24:04 -0400
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 13.6ms)
+
+
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Processing by RacesController#index as HTML
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:04 -0400
+Completed 200 OK in 28ms (Views: 8.9ms | ActiveRecord: 19.2ms)
+
+
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (1.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:18 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:24:18 -0400
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:18 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by RacesController#index as HTML
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (12.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (10.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  [1m[36mRace Load (10.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 4.4ms | ActiveRecord: 10.6ms)
+
+
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 18ms (Views: 2.8ms | ActiveRecord: 13.8ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Started GET "/races" for ::1 at 2019-08-14 11:24:18 -0400
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 20ms (Views: 7.9ms | ActiveRecord: 11.6ms)
+
+
+Processing by RacesController#index as HTML
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:18 -0400
+  [1m[36mRace Load (11.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+Processing by NotesController#index as HTML
+  ↳ app/controllers/races_controller.rb:6
+  Parameters: {"race_id"=>"1"}
+Completed 200 OK in 14ms (Views: 2.0ms | ActiveRecord: 11.7ms)
+
+
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:30 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:30 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (1.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:15
+Started GET "/races" for ::1 at 2019-08-14 11:24:30 -0400
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (11.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Processing by RacesController#index as HTML
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 17ms (Views: 3.2ms | ActiveRecord: 12.1ms)
+
+
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 7.2ms)
+
+
+  [1m[36mRace Load (2.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:30 -0400
+Processing by NotesController#index as HTML
+Started GET "/races" for ::1 at 2019-08-14 11:24:30 -0400
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (3.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+Processing by RacesController#index as HTML
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 4.5ms)
+
+
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:33 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:24:33 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.9ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Started GET "/races" for ::1 at 2019-08-14 11:24:33 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:33 -0400
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 2.3ms)
+
+
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (11.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:33 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (1.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:36 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:24:36 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:36 -0400
+  [1m[36mRace Load (10.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (24.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 26ms (Views: 1.3ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:24:36 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (31.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (7.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RacesController#index as HTML
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 2.7ms | ActiveRecord: 8.1ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 52ms (Views: 10.3ms | ActiveRecord: 41.5ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:36 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:37 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:24:37 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:37 -0400
+  [1m[36mRace Load (2.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RacesController#index as HTML
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RacesController#newest5 as HTML
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mRace Load (1.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:24:37 -0400
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by RacesController#index as HTML
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:37 -0400
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Processing by NotesController#index as HTML
+Completed 200 OK in 20ms (Views: 7.4ms | ActiveRecord: 12.0ms)
+
+
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (12.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:24:43 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:24:43 -0400
+Started GET "/races/1" for ::1 at 2019-08-14 11:24:43 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Processing by RacesController#show as HTML
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (2.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (2.6ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 9ms (Views: 2.5ms | ActiveRecord: 4.0ms)
+
+
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:24:43 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:24:43 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races/1" for ::1 at 2019-08-14 11:25:10 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:25:10 -0400
+Processing by RacesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/races/1/notes" for ::1 at 2019-08-14 11:25:10 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"1"}
+  [1m[36mRace Load (5.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 1]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:25:20 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:25:45 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:25:45 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:25:45 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (2.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 24ms (Views: 11.9ms | ActiveRecord: 11.7ms)
+
+
+  [1m[36mRace Load (22.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 25ms (Views: 2.5ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:26:01 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:26:10 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/races" for ::1 at 2019-08-14 11:27:04 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/races" for ::1 at 2019-08-14 11:28:28 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:40:03 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:40:27 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:40:31 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:40:39 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:41:15 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (19.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 22ms (Views: 2.2ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:41:18 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (3.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:41:21 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:41:46 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:43:01 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (8.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 11ms (Views: 1.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:44:29 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:44:37 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:45:46 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:45:55 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (9.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:45:57 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (34.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 37ms (Views: 2.2ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:02 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:06 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:07 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (14.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 16ms (Views: 1.9ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:09 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:13 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:21 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:33 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (9.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 11ms (Views: 1.7ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:46:38 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (33.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 36ms (Views: 2.4ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:47:33 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for ::1 at 2019-08-14 11:47:36 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (8.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-14 11:47:48 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"luis", "password"=>"[FILTERED]", "authentication"=>{"username"=>"luis", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 187ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/races/2" for ::1 at 2019-08-14 11:47:54 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/races/2/notes" for ::1 at 2019-08-14 11:47:54 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"2"}
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 2]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/races/2" for ::1 at 2019-08-14 11:48:04 -0400
+Processing by RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"PANDA MARATHON AGAIN", "date"=>"2019-10-19", "description"=>"AUTH STUFF", "city"=>"NYC", "state"=>"NYC", "country"=>"NYC", "organization"=>"GA", "distance"=>12, "website"=>"http://www.ga.com", "user_id"=>""}, "id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/races_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/races_controller.rb:30
+Completed 422 Unprocessable Entity in 10ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/races/2" for ::1 at 2019-08-14 11:48:04 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:48:04 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 11:48:04 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races/2/notes" for ::1 at 2019-08-14 11:48:04 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"2"}
+  [1m[36mRace Load (2.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 2]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 2.6ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+Processing by UsersController#verify as HTML
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/races/2" for ::1 at 2019-08-14 11:48:09 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:48:09 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 11:48:09 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"2"}
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (3.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (4.8ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 3.8ms)
+
+
+  ↳ app/controllers/races_controller.rb:15
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mUser Load (15.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 27ms (Views: 2.1ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/races/2/notes" for ::1 at 2019-08-14 11:48:09 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"2"}
+  [1m[36mRace Load (2.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 2]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 10ms (Views: 3.2ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/races/2/notes" for ::1 at 2019-08-14 11:48:44 -0400
+Processing by NotesController#create as HTML
+  Parameters: {"note"=>{"messgae"=>"", "finish_time"=>"020000", "bib_number"=>"2019-02-28", "race_id"=>"2", "message"=>"DO I EVEN UNDERSTAND"}, "race_id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Unpermitted parameter: :messgae
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:18
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:18
+  [1m[36mNote Create (6.8ms)[0m  [1m[32mINSERT INTO "notes" ("message", "bib_number", "race_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["message", "DO I EVEN UNDERSTAND"], ["bib_number", 2019], ["race_id", 2], ["created_at", "2019-08-14 15:48:44.153302"], ["updated_at", "2019-08-14 15:48:44.153302"]]
+  ↳ app/controllers/notes_controller.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:18
+Completed 201 Created in 15ms (Views: 0.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/races/2/notes/9" for ::1 at 2019-08-14 11:48:48 -0400
+Processing by NotesController#show as HTML
+  Parameters: {"race_id"=>"2", "id"=>"9"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:11
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:12
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/races/2/notes/9" for ::1 at 2019-08-14 11:48:54 -0400
+Processing by NotesController#update as HTML
+  Parameters: {"note"=>{"message"=>"DO I EVEN UNDERSTAND", "finish_time"=>nil, "bib_number"=>"2018", "race_id"=>2}, "race_id"=>"2", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[36mNote Update (0.3ms)[0m  [1m[33mUPDATE "notes" SET "bib_number" = $1, "updated_at" = $2 WHERE "notes"."id" = $3[0m  [["bib_number", 2018], ["updated_at", "2019-08-14 15:48:54.852228"], ["id", 9]]
+  ↳ app/controllers/notes_controller.rb:27
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notes_controller.rb:27
+Completed 500 Internal Server Error in 11ms (Views: 0.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/races/2/notes/9" for ::1 at 2019-08-14 11:48:54 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:48:54 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 11:48:54 -0400
+Processing by NotesController#show as HTML
+Processing by RacesController#index as HTML
+  Parameters: {"race_id"=>"2", "id"=>"9"}
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (17.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mRace Load (16.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/notes_controller.rb:11
+Completed 200 OK in 21ms (Views: 3.1ms | ActiveRecord: 17.5ms)
+
+
+  [1m[36mNote Load (4.9ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:12
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 21.1ms)
+
+
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/races/2" for ::1 at 2019-08-14 11:49:06 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 11:49:06 -0400
+Processing by RacesController#show as HTML
+Started GET "/races" for ::1 at 2019-08-14 11:49:06 -0400
+  Parameters: {"id"=>"2"}
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (16.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 19ms (Views: 2.6ms | ActiveRecord: 16.4ms)
+
+
+  [1m[36mRace Load (30.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (28.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 28.9ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+Completed 200 OK in 37ms (Views: 1.9ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/races/2/notes" for ::1 at 2019-08-14 11:49:06 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"2"}
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 2]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/races/2" for ::1 at 2019-08-14 11:49:12 -0400
+Processing by RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"PANDA MARATHON2", "date"=>"2019-10-19", "description"=>"AUTH STUFF", "city"=>"NYC", "state"=>"NYC", "country"=>"NYC", "organization"=>"GA", "distance"=>12, "website"=>"http://www.ga.com", "user_id"=>1}, "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/races_controller.rb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:30
+  [1m[36mRace Update (0.7ms)[0m  [1m[33mUPDATE "races" SET "name" = $1, "updated_at" = $2 WHERE "races"."id" = $3[0m  [["name", "PANDA MARATHON2"], ["updated_at", "2019-08-14 15:49:12.228730"], ["id", 2]]
+  ↳ app/controllers/races_controller.rb:30
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/races_controller.rb:30
+Completed 500 Internal Server Error in 10ms (Views: 0.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/races/2" for ::1 at 2019-08-14 11:49:12 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:49:12 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 11:49:12 -0400
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"2"}
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:15
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (2.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mUser Load (31.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (32.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:16
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 31.2ms)
+
+
+Completed 200 OK in 39ms (Views: 3.8ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/races/2/notes" for ::1 at 2019-08-14 11:49:12 -0400
+Processing by NotesController#index as HTML
+  Parameters: {"race_id"=>"2"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:5
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."race_id" = $1[0m  [["race_id", 2]]
+  ↳ app/controllers/notes_controller.rb:7
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:50:29 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:51:10 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:51:10 -0400
+Started GET "/users/verify" for ::1 at 2019-08-14 11:51:10 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Processing by UsersController#verify as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+  ↳ app/controllers/races_controller.rb:6
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-14 11:51:47 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"twistedsister", "name"=>"Mer Chris", "email"=>"mer@sgh.com", "dob"=>"1971-01-02", "password"=>"[FILTERED]"}}
+Started GET "/newest5" for ::1 at 2019-08-14 11:51:47 -0400
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/races" for ::1 at 2019-08-14 11:51:47 -0400
+  ↳ app/controllers/users_controller.rb:16
+Processing by RacesController#newest5 as HTML
+  [1m[36mUser Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "twistedsister"], ["LIMIT", 1]]
+Processing by RacesController#index as HTML
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mRace Load (1.0ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mer@sgh.com"], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/users_controller.rb:16
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "twistedsister"], ["name", "Mer Chris"], ["email", "mer@sgh.com"], ["dob", "1971-01-02"], ["password_digest", "$2a$12$OKAY5BanurE519bpmm/Iqu0x.VmnVk0a/tEmXW9InhP0iOnhUZBKG"], ["created_at", "2019-08-14 15:51:47.885389"], ["updated_at", "2019-08-14 15:51:47.885389"]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.9ms)
+
+
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 201 Created in 229ms (Views: 0.6ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:52:11 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:52:11 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (16.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (1.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:6
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 23ms (Views: 6.2ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:52:23 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (8.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+Started GET "/races" for ::1 at 2019-08-14 11:52:23 -0400
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Processing by RacesController#index as HTML
+Completed 200 OK in 30ms (Views: 18.7ms | ActiveRecord: 10.8ms)
+
+
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:52:24 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:52:24 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mRace Load (3.2ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 11:52:26 -0400
+Started GET "/races" for ::1 at 2019-08-14 11:52:26 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (1.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mRace Load (31.1ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 38ms (Views: 6.0ms | ActiveRecord: 31.4ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-14 11:53:04 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"catnextdoor", "name"=>"nala", "email"=>"nala@cat.com", "dob"=>"1991-12-25", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "catnextdoor"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nala@cat.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "catnextdoor"], ["name", "nala"], ["email", "nala@cat.com"], ["dob", "1991-12-25"], ["password_digest", "$2a$12$kkqP6Rx81byG69N/pgCh4eiH7dTUbMfwdisB1aiNk5HfqUZXWwawC"], ["created_at", "2019-08-14 15:53:04.359982"], ["updated_at", "2019-08-14 15:53:04.359982"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 201 Created in 184ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-14 11:53:04 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"catnextdoor", "password"=>"[FILTERED]", "authentication"=>{"username"=>"catnextdoor", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "catnextdoor"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 175ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+

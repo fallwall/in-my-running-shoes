@@ -16,7 +16,7 @@ import './App.css';
 import {
   loginUser,
   registerUser,
-  verifyUser,
+  verifyToken,
   fetchRaces,
   createRace
 } from './services/api';
@@ -30,7 +30,10 @@ class App extends React.Component {
       races: [],
       authFormData: {
         username: "",
-        password: ""
+        name: "",
+        email: "",
+        dob: "",
+        password: "",
       },
       raceForm: {
         name: "",
@@ -50,7 +53,7 @@ class App extends React.Component {
 
   componentDidMount = async () => {
     this.getRaces();
-    const user = await verifyUser();
+    const user = await verifyToken();
     if (user) {
       console.log(user);
       this.setState(prevState => ({
@@ -87,7 +90,7 @@ class App extends React.Component {
         country: "",
         organization: "",
         distance: "",
-        website: "",
+        website: ""
       }
     }))
   }
@@ -115,16 +118,22 @@ class App extends React.Component {
 
 
   handleLogin = async (ev) => {
-    ev.preventDefault();
-    const userData = await loginUser(this.state.authFormData);
+  
+    const loginData = {
+      username: this.state.authFormData.username,
+      password: this.state.authFormData.password
+    }
+    const user = await loginUser(loginData);
+    console.log(user);
     this.setState({
-      currentUser: decode(userData)
+      currentUser: user
     })
-    localStorage.setItem("jwt", userData);
+    // this.props.history.push('/');
   }
 
   handleRegister = async (ev) => {
-    ev.preventDefault();
+ 
+    console.log("register clicked!");
     await registerUser(this.state.authFormData);
     this.handleLogin();
   }

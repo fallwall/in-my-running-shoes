@@ -6,28 +6,39 @@ const api = axios.create({
   baseURL: baseUrl
 })
 
+const getToken = () => {
+  const token = localStorage.getItem('jwt');
+  api.defaults.headers.common.authorization = `Bearer ${token}`;
+}
+
+const storeToken = (token) => {
+  localStorage.setItem('jwt', token);
+  api.defaults.headers.common.authorization = `Bearer ${token}`;
+};
+
 export const loginUser = async (loginData) => {
-  const resp = await api.post('/auth/login', loginData)
-  localStorage.setItem('jwt', resp.data.token);
-  api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
-  return resp.data.token;
+  const resp = await api.post('/auth/login', loginData);
+  const { user, token } = resp.data;
+  storeToken(token);
+  return user;
 }
 
 export const registerUser = async (registerData) => {
-  const resp = await api.post('/users/', { user: registerData })
-  return resp.data;
+  const resp = await api.post('/users/', { user: registerData });
+  const token = resp.data.token;
+  storeToken(token);
+  return resp.data
 }
 
-export const verifyUser = async () => {
+export const verifyToken = async () => {
   const token = localStorage.getItem('jwt');
   if (token) {
-    api.defaults.headers.common.authorization = `Bearer ${token}`;
+    api.defaults.headers.common.authorization = `Bearer ${token}`
     const resp = await api.get('/users/verify');
-    return resp.data;
+    return resp.data
   }
   return false;
 }
-
 export const fetchRaces = async () => {
   const resp = await api.get('/races');
   return resp.data;
@@ -61,24 +72,24 @@ export const updateRace = async (id, data) => {
 export const fetchNotes = async (race_id) => {
   const resp = await api.get(`/races/${race_id}/notes`);
   return resp.data;
- }
+}
 
- export const createNote = async (race_id, data) => {
+export const createNote = async (race_id, data) => {
   const resp = await api.post(`/races/${race_id}/notes`, { note: data });
   return resp.data;
- }
+}
 
- export const oneNote = async (race_id, id) => {
+export const oneNote = async (race_id, id) => {
   const resp = await api.get(`/races/${race_id}/notes/${id}`);
   return resp.data;
- }
+}
 
- export const updateNote = async (race_id, id, data) => {
+export const updateNote = async (race_id, id, data) => {
   const resp = await api.put(`/races/${race_id}/notes/${id}`, { note: data });
   return resp.data;
- }
+}
 
- export const deleteNote = async (race_id, id) => {
+export const deleteNote = async (race_id, id) => {
   const resp = await api.delete(`/races/${race_id}/notes/${id}`);
   return resp.data;
- }
+}
