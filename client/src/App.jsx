@@ -202,6 +202,7 @@ class App extends React.Component {
             <Race
               id={props.match.params.id}
               user_id={this.state.raceForm.user_id}
+              currentUser={this.state.currentUser}
             />
           )} />
         <Route
@@ -220,6 +221,7 @@ class App extends React.Component {
             <Note
               race_id={props.match.params.race_id}
               id={props.match.params.id}
+              currentUser={this.state.currentUser}
             />
           )} />
 

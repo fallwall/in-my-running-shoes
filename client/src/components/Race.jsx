@@ -35,7 +35,8 @@ export default class Race extends React.Component {
         messgae: "",
         finish_time: "",
         bib_number: "",
-        race_id: ""
+        race_id: "",
+        user_id: ""
       }
     }
   }
@@ -52,7 +53,8 @@ export default class Race extends React.Component {
       },
       noteForm: {
         ...prevState.noteForm,
-        race_id: this.props.id
+        race_id: this.props.id,
+        user_id: this.props.currentUser.id
       }
     }))
   }
@@ -170,6 +172,7 @@ export default class Race extends React.Component {
           handleNoteFormChange={this.handleNoteFormChange}
           noteForm={this.state.noteForm}
           newNote={this.newNote}
+          currentUser={this.props.currentUser}
         />
 
         <Notes race_id={this.props.id} notes={this.state.notes} />

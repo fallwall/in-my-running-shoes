@@ -18,7 +18,8 @@ class Note extends React.Component {
         message: "",
         finish_time: "",
         bib_number: "",
-        race_id: ""
+        race_id: "",
+        user_id: ""
       }
     }
   }
