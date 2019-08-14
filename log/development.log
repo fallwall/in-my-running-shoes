@@ -45841,3 +45841,36 @@ Processing by RacesController#create as HTML
 Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/newest5" for ::1 at 2019-08-14 19:09:22 -0400
+Started GET "/races" for ::1 at 2019-08-14 19:09:22 -0400
+Started GET "/allnotes" for ::1 at 2019-08-14 19:09:22 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.8ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+Processing by NotesController#all as HTML
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (2.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mNote Load (1.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" ORDER BY updated_at DESC[0m
+  ↳ app/controllers/notes_controller.rb:13
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mRace Load (3.4ms)[0m  [1m[34mSELECT "races".* FROM "races" ORDER BY updated_at DESC[0m
+  ↳ app/controllers/notes_controller.rb:13
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 5.1ms)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 23ms (Views: 13.0ms | ActiveRecord: 9.5ms)
+
+

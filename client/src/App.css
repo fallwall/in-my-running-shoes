@@ -85,6 +85,10 @@ input, button {
   display: none; 
 }
 
+.login-content, .reg-content {
+  margin:auto;
+}
+
 
 /* race-and-activities-wraper-at-home */
 .race-and-act {
