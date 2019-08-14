@@ -6,10 +6,10 @@ const api = axios.create({
   baseURL: baseUrl
 })
 
-const getToken = () => {
-  const token = localStorage.getItem('jwt');
-  api.defaults.headers.common.authorization = `Bearer ${token}`;
-}
+// const getToken = () => {
+//   const token = localStorage.getItem('jwt');
+//   api.defaults.headers.common.authorization = `Bearer ${token}`;
+// }
 
 const storeToken = (token) => {
   localStorage.setItem('jwt', token);
@@ -39,6 +39,9 @@ export const verifyToken = async () => {
   }
   return false;
 }
+
+////// races //////
+
 export const fetchRaces = async () => {
   const resp = await api.get('/races');
   return resp.data;
@@ -68,6 +71,8 @@ export const updateRace = async (id, data) => {
   const resp = await api.put(`/races/${id}`, { race: data });
   return resp.data;
 }
+
+////// notes //////
 
 export const fetchNotes = async (race_id) => {
   const resp = await api.get(`/races/${race_id}/notes`);
