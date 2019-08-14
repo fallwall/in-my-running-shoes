@@ -8,6 +8,7 @@ import Note from './components/Note';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
 import CornerLogin from './components/sideBar/CornerLogin';
+import RunningPic from './assets/running.png';
 
 
 import './App.css';
@@ -103,10 +104,10 @@ class App extends React.Component {
 
   sideBar = (ev) => {
     ev.preventDefault();
-    this.setState(prevState=> ({
+    this.setState(prevState => ({
       sidebar: !prevState.sidebar
     }))
-   }
+  }
 
   // -------------- BELOW IS AUTH ------------------
 
@@ -211,7 +212,12 @@ class App extends React.Component {
             />
           )} />
 
-
+        <footer>
+          <img
+            className="footer-img"
+            src={RunningPic}
+            alt="image in the bottom" />
+        </footer>
       </div>
     );
   }

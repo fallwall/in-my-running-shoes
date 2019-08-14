@@ -18,7 +18,7 @@ input, button {
 
 /* side bar */
 .side-bar {
-  background: greenyellow;
+  background-color: rgba(171, 254, 45, 0.8);
   height: 100vh;
   width: 20vw;
   z-index: 20;
@@ -32,6 +32,7 @@ input, button {
   left: 0;
   bottom: 0;
 }
+
 /* header */
 .login-buttons-wrapper {
   display: flex;
@@ -113,6 +114,13 @@ input, button {
   padding: 2em;
   margin: 2em auto;
   width: 40vw; 
+}
+
+/* footer */
+.footer-img {
+  width: 100vw;
+  margin-left: -4vw;
+  z-index:-1;
 }
 
 
