@@ -9,6 +9,7 @@ import Race from './components/Race';
 import Note from './components/Note';
 import SideBar from './components/sideBar/SideBar';
 
+
 import './App.css';
 
 import {
@@ -144,6 +145,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>IN MY RUNNING SHOES</h1>
+          
           <div>
             {this.state.currentUser
               ?
@@ -178,9 +180,9 @@ class App extends React.Component {
           exact
           path="/races/:id"
           render={(props) => (
-          <Race
-            id={props.match.params.id}
-            user_id={this.state.raceForm.user_id}
+            <Race
+              id={props.match.params.id}
+              user_id={this.state.raceForm.user_id}
             />
           )} />
         <Route
