@@ -14,6 +14,7 @@ export default function Headerr() {
           <img
             className="shoe-left"
             src={Shoe}
+            alt="nike cortez"
           />
         </Parallax>
         <Parallax
@@ -23,6 +24,7 @@ export default function Headerr() {
           <img
             className="shoe-right"
             src={Shoe2}
+            alt="nike cortez"
           />
         </Parallax>
       </div>

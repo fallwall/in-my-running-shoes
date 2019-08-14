@@ -24752,3 +24752,305 @@ Processing by RacesController#index as HTML
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2019-08-14 10:23:29 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-14 10:23:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/newest5" for ::1 at 2019-08-14 10:24:51 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:24:51 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (6.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 78ms (Views: 14.2ms | ActiveRecord: 57.9ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:25:25 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:25:25 -0400
+Processing by RacesController#index as HTML
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (10.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 14ms (Views: 3.7ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:25:27 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:25:27 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (1.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:25:38 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:25:38 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Processing by RacesController#index as HTML
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (41.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 44ms (Views: 2.6ms | ActiveRecord: 41.4ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:26:28 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:26:28 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (40.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 43ms (Views: 2.1ms | ActiveRecord: 40.4ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:26:39 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:26:39 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Processing by RacesController#index as HTML
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (3.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:27:02 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:27:02 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Processing by RacesController#index as HTML
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (1.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:27:06 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:27:06 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (18.1ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 20ms (Views: 1.8ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:27:10 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:27:10 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:27:24 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:27:24 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (16.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 19ms (Views: 1.7ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:27:54 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:27:54 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (44.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 47ms (Views: 2.0ms | ActiveRecord: 44.6ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:28:07 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:28:07 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Processing by RacesController#index as HTML
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (29.8ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 32ms (Views: 2.2ms | ActiveRecord: 29.8ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:28:21 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:28:21 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Processing by RacesController#index as HTML
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (30.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 32ms (Views: 2.0ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:28:23 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:28:23 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:28:37 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:28:37 -0400
+Processing by RacesController#newest5 as HTML
+Processing by RacesController#index as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRace Load (0.9ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:28:54 -0400
+Started GET "/races" for ::1 at 2019-08-14 10:28:54 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (9.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 12ms (Views: 2.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:29:10 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:30:05 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:30:06 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:30:08 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:30:17 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:30:18 -0400
+Processing by RacesController#newest5 as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:30:45 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:32:10 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (2.7ms)[0m  [1m[34mSELECT "races".* FROM "races" ORDER BY created_at DESC[0m
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 28ms (Views: 21.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/newest5" for ::1 at 2019-08-14 10:32:29 -0400
+Processing by RacesController#newest5 as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 2.9ms)
+
+

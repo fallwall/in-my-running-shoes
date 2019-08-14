@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Link, withRouter } from 'react-router-dom';
 
 export default function Register(props) {
   return (

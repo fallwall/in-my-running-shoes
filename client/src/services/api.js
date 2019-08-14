@@ -33,6 +33,11 @@ export const fetchRaces = async () => {
   return resp.data;
 }
 
+export const fetchNewRaces = async () => {
+  const resp = await api.get('/newest5');
+  return resp.data;
+}
+
 export const createRace = async (data) => {
   const resp = await api.post('/races', { race: data });
   return resp.data;

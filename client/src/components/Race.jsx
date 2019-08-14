@@ -3,8 +3,6 @@ import RaceUpdate from './RaceUpdate';
 import Notes from './Notes';
 import NoteForm from './NoteForm';
 import RacePageHeader from './RacePageHeader';
-import { Route } from 'react-router-dom';
-
 
 import {
   oneRace,
@@ -47,7 +45,7 @@ export default class Race extends React.Component {
     const notes = await fetchNotes(this.props.id);
     this.setState(prevState => ({
       race: race,
-      notes, notes,
+      notes: notes,
       raceUpdateForm: {
         ...prevState.raceUpdateForm,
         user_id: this.props.user_id
@@ -109,7 +107,7 @@ export default class Race extends React.Component {
   }
 
   removeRace = async (id) => {
-    const resp = deleteRace(id);
+    await deleteRace(id);
     this.props.history.push('/races');
   }
 

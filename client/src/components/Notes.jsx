@@ -1,5 +1,4 @@
 import React from 'react';
-import NotePageHeader from './NotePageHeader';
 import { Link } from 'react-router-dom';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 

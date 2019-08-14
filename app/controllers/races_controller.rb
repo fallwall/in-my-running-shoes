@@ -1,8 +1,13 @@
 class RacesController < ApplicationController
-  before_action :authorize_request, except: %i[index show]
+  before_action :authorize_request, except: %i[index show newest5]
 
   def index
     @races = Race.all
+    render json: @races, status: :ok
+  end
+
+  def newest5
+    @races = Race.all.order("created_at DESC").limit(5)
     render json: @races, status: :ok
   end
 

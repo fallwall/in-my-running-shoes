@@ -1,15 +1,15 @@
 import React from 'react';
-import { Route, Link, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import decode from 'jwt-decode';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
+import NewestRaces from './components/NewestRaces';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
 import CornerLogin from './components/sideBar/CornerLogin';
 import RunningPic from './assets/running.png';
-
 
 import './App.css';
 
@@ -20,6 +20,7 @@ import {
   fetchRaces,
   createRace
 } from './services/api';
+
 
 class App extends React.Component {
   constructor() {
@@ -211,12 +212,13 @@ class App extends React.Component {
               id={props.match.params.id}
             />
           )} />
+        <NewestRaces />
 
         <footer>
           <img
             className="footer-img"
             src={RunningPic}
-            alt="image in the bottom" />
+            alt="decorative in the bottom" />
         </footer>
       </div>
     );
