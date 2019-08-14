@@ -22,11 +22,21 @@ input, button {
   height: 100vh;
   width: 20vw;
   z-index: 20;
+  animation: slidein2;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 /* header */
 .login-buttons-wrapper {
   display: flex;
   flex-direction: row-reverse;
+  align-content: space-between;
 }
 
 .login-buttons {
@@ -110,6 +120,17 @@ input, button {
   0%{
     opacity:0;
     transform: translateX(800px);
+  }
+  100%{
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidein2 {
+  0%{
+    opacity:0;
+    transform: translateX(-800px);
   }
   100%{
     opacity:1;

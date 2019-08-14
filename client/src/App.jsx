@@ -41,7 +41,8 @@ class App extends React.Component {
         distance: "",
         website: "",
         user_id: ""
-      }
+      },
+      sidebar: false
     }
   }
 
@@ -100,6 +101,13 @@ class App extends React.Component {
   }
 
 
+  sideBar = (ev) => {
+    ev.preventDefault();
+    this.setState(prevState=> ({
+      sidebar: !prevState.sidebar
+    }))
+   }
+
   // -------------- BELOW IS AUTH ------------------
 
 
@@ -143,6 +151,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <CornerLogin
+            sidebar={this.sideBar}
             handleLogin={this.handleLogin}
             currentUser={this.state.currentUser}
             handleLogout={this.handleLogout}
@@ -154,10 +163,12 @@ class App extends React.Component {
           <Headerr />
 
         </header>
-        {/* <SideBar currentUser={this.state.currentUser}
+        <SideBar
+          sidebar={this.state.sidebar}
+          currentUser={this.state.currentUser}
           handleLogout={this.handleLogout}
           handleLoginButton={this.handleLoginButton}
-        /> */}
+        />
 
         {/* <Route exact path="/login" render={() => (
           <Login

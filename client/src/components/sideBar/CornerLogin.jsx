@@ -44,6 +44,7 @@ export default class CornerLogin extends Component {
       <>
         <div className="login-buttons-wrapper">
           <div className="login-buttons">
+            <p onClick={this.props.sidebar}>X</p>
             {this.props.currentUser
               ?
               <>
