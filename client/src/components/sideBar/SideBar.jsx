@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Icon from '../../assets/sneaker-icon.png';
 
 export default class SideBar extends Component {
   constructor(props) {
@@ -14,17 +15,20 @@ export default class SideBar extends Component {
       <div className={this.props.sidebar ? "side-bar" : "hidden"}>
         <div className="user-name">
         </div>
-        <button>Profile</button>
+        
 
         <div className="login">
           {this.props.currentUser
             ?
-            <>
-              <p>{this.props.currentUser.username}</p>
+            <div className="sidebar-icon-name">
+              <img src={Icon} className="sidebar-icon" alt="profile" />
+              <div className="sidebar-name">{this.props.currentUser.username}</div>
               <button onClick={this.props.handleLogout}>LOGOUT</button>
-            </>
+            </div>
             :
-            <button onClick={this.props.handleLoginButton}>LOGIN/REG</button>
+            <div className="sidebar-icon-name">
+              <button onClick={this.props.handleLoginButton}>LOGIN/REG</button>
+            </div>
           }
         </div>
         <div className="regular-nav-link">

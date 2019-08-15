@@ -96,6 +96,7 @@ class App extends React.Component {
       },
       addRace: false
     }))
+    this.props.history.push('/races');
   }
 
   handleRaceFormChange = (e) => {
@@ -226,7 +227,8 @@ class App extends React.Component {
           <RaceForm
             handleRaceFormChange={this.handleRaceFormChange}
             raceForm={this.state.raceForm}
-            addRace={this.addRace} />
+            addRace={this.addRace}
+            newRace={this.newRace} />
         }
 
         <Route

@@ -1,16 +1,12 @@
 import React from 'react';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Shake from 'react-reveal/Shake';
 
 export default function RacePageHeader(props) {
   return (
-    <div className="race-page">
-      <ParallaxProvider>
-        <div>
-          <Parallax x={[-5, 5]}>
-            {props.race}
-          </Parallax>
-        </div>
-      </ParallaxProvider>
+    <div className="race-page-race-name">
+      <Shake>
+        {props.race}
+      </Shake>
     </div>
   )
 }
