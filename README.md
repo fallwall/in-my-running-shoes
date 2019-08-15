@@ -17,7 +17,7 @@
 
 ## Tools
 - Rails (jwt, bcrypt, rack-cors)
-- React (react-router-dom, axios)
+- React (react-router-dom, axios, react-waypoint, react-scrollable-anchor, react-parallax-scroll, react-reveal)
 
 ## ERD
 ![erd](https://i.imgur.com/XRQt2go.png)
