@@ -70,7 +70,7 @@ input, button {
   width: auto;
   font-size: auto;
   margin: auto;
-  
+
 }
 
 .social img {
@@ -88,6 +88,20 @@ input, button {
 
 .login-buttons {
  padding: 1em;
+}
+
+.nav-arrow {
+  animation: shake 0.5s; 
+  animation-iteration-count: infinite; 
+}
+
+.nav-arrow:hover {
+  animation: none; 
+}
+
+.nav-arrow img {
+  margin-left: -1.5em;
+  width: 5em;
 }
 
 .main-title {
@@ -140,9 +154,7 @@ input, button {
   display: flex;
 }
 
-
 /* race-list */
-
 .race {
   background-color: grey;
   padding: 2em;
@@ -233,6 +245,37 @@ border: 2px black solid;
   top: 44px;
   left: 124px;
 }
+.newuser {
+  margin: 2em auto 2em 2em;
+  width: 22vw;
+  position: relative;
+
+}
+
+.newuser-main {
+  border: 2px black solid;
+  padding: 4em;
+  width: 18vw;
+  position: absolute;
+  z-index: 1000;
+  top: 70vh;
+}
+
+.newuser-back {
+  background-color:rgba(236, 159, 166, 0.2);
+  width: 22vw;
+  position: absolute;
+  z-index:-1;
+  height: 36vh;
+  top: 70vh;
+  left: 124px;
+}
+
+.race-and-act-left {
+  display: flex;
+  flex-direction: column;
+
+}
 
 /* single race  */
 .race-page-race-name {
@@ -254,13 +297,6 @@ border: 2px black solid;
   margin-left: -4vw;
   z-index:-1;
   opacity: 0.5;
-}
-
-.video-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 /*about*/
@@ -358,4 +394,18 @@ border: 2px black solid;
     opacity:1;
     transform: translateX(0);
   }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

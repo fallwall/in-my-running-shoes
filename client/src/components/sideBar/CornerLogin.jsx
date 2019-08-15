@@ -3,6 +3,8 @@ import Login from './Login';
 import Register from './Register';
 import Wobble from 'react-reveal/Wobble';
 
+import Arrow from '../../assets/arrow2.png';
+
 export default class CornerLogin extends Component {
   constructor(props) {
     super(props);
@@ -54,15 +56,22 @@ export default class CornerLogin extends Component {
       <>
         <div className="login-buttons-wrapper">
           <div className="login-buttons">
-            <p onClick={this.props.sidebar}>X</p>
+            <div
+              onClick={this.props.sidebar}
+              className="nav-arrow"
+            >
+              <img src={Arrow} alt="point to nav" />
+              <img src={Arrow} alt="point to nav" />
+              <img src={Arrow} alt="point to nav" />
+          </div>
             {this.props.currentUser
               ?
               <>
                 <p>{this.props.currentUser.username}</p>
-                <Wobble><button onClick={this.props.handleLogout}>LOGOUT</button></Wobble>
+                <Wobble><button className="login-reg" onClick={this.props.handleLogout}>LOGOUT</button></Wobble>
               </>
               :
-              <Wobble><button onClick={this.handleLoginButton}>LOGIN/REG</button></Wobble>
+              <Wobble><button className="login-reg" onClick={this.handleLoginButton}>LOGIN/REG</button></Wobble>
             }
           </div>
         </div>

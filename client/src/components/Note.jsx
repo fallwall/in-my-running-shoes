@@ -78,7 +78,6 @@ class Note extends React.Component {
   render() {
     return (
       <div>
-
         <NotePageHeader />
         <h2>{this.state.note.message}</h2>
         <p>{this.state.note.finish_time}</p>

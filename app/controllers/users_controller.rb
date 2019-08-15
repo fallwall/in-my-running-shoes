@@ -1,10 +1,15 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[show update destroy]
-  before_action :authorize_request, except: :create
+  before_action :authorize_request, except: %i[create index newusers]
 
   def index
     @users = User.all
     render json: @users
+  end
+
+  def newusers
+    @users = User.all.order("updated_at DESC")
+    render json: @users, except: %i[password_digest created_at updated_at dob email], status: :ok
   end
 
   def show
