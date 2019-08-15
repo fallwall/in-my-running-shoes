@@ -57,7 +57,6 @@ class App extends React.Component {
     this.getRaces();
     const user = await verifyToken();
     if (user) {
-      console.log(user);
       this.setState(prevState => ({
         currentUser: user,
         raceForm: {
@@ -219,7 +218,7 @@ class App extends React.Component {
           render={(props) => (
             <Race
               id={props.match.params.id}
-              user_id={this.state.raceForm.user_id}
+              // user_id={this.state.raceForm.user_id}
               currentUser={this.state.currentUser}
             />
           )} />
