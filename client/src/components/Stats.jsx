@@ -23,7 +23,9 @@ export default class Stats extends Component {
   render() {
     return (
       <div className="site-stats">
-        <div className="stat1">{this.state.usersNumber} Members</div>
+        <div className="stat1">
+          {this.state.usersNumber} Members
+        </div>
       </div>
     )
   }

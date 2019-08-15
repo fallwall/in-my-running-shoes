@@ -4,56 +4,56 @@ export default function RaceUpdate(props) {
   return (
     <div className="race-update">
       <form onSubmit={props.handleUpdateSubmit}>
-        <p>Race name:</p>
+        <label htmlFor="name">Race name</label>
         <input
           type="text"
           name="name"
           value={props.raceUpdateForm.name}
           onChange={props.handleUpdateChange} />
-        <p>Race date:</p>
+        <label htmlFor="date">Race date</label>
         <input
           type="text"
           name="date"
           placeholder="yyyy-mm-dd"
           value={props.raceUpdateForm.date}
           onChange={props.handleUpdateChange} />
-        <p>Decription:</p>
+        <label htmlFor="description">Decription</label>
         <input
           type="text"
           name="description"
           value={props.raceUpdateForm.description}
           onChange={props.handleUpdateChange} />
-        <p>City:</p>
+        <label htmlFor="city">City</label>
         <input
           type="text"
           name="city"
           value={props.raceUpdateForm.city}
           onChange={props.handleUpdateChange} />
-        <p>State:</p>
+        <label htmlFor="state">State</label>
         <input
           type="text"
           name="state"
           value={props.raceUpdateForm.state}
           onChange={props.handleUpdateChange} />
-        <p>Country:</p>
+        <label htmlFor="country">Country</label>
         <input
           type="text"
           name="country"
           value={props.raceUpdateForm.country}
           onChange={props.handleUpdateChange} />
-        <p>Organization:</p>
+        <label htmlFor="organization">Organization:</label>
         <input
           type="text"
           name="organization"
           value={props.raceUpdateForm.organization}
           onChange={props.handleUpdateChange} />
-        <p>Distance:</p>
+        <label htmlFor="distance">Distance:</label>
         <input
           type="text"
           name="distance"
           value={props.raceUpdateForm.distance}
           onChange={props.handleUpdateChange} />
-        <p>Website:</p>
+        <label htmlFor="website">Website:</label>
         <input
           type="text"
           name="website"

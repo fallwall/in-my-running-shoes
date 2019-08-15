@@ -103,6 +103,7 @@ input, button {
 }
 
 .main-title {
+  margin-top: -1em;
   margin-bottom: 1em;
   font-size: 5em;
 }
@@ -195,7 +196,6 @@ input, button {
 }
 
 /* new race */
-
 .new-races {
   margin: 2em 2em 2em auto;
   width: 45vw;
@@ -378,8 +378,6 @@ border: 2px black solid;
   width: 40vw;
   margin: 0 auto;
 }
-
-
 
 @keyframes slidein {
   0%{
