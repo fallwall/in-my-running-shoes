@@ -46,7 +46,6 @@ export default class Race extends React.Component {
   componentDidMount = async () => {
     const race = await oneRace(this.props.id);
     const notes = await fetchNotes(this.props.id);
-
     // this.props.currentUser &&
     this.setState(prevState => ({
       race: race,
@@ -61,7 +60,6 @@ export default class Race extends React.Component {
         user_id: this.props.currentUser
       }
     }))
-    console.log(this.props.currentUser);
   }
 
   handleUpdate = () => {
@@ -118,9 +116,8 @@ export default class Race extends React.Component {
 
   addNote = (ev) => {
     ev.preventDefault();
-    console.log("addnote clicked!");
     this.setState(prevState => ({
-      isAddingNewNote: true,
+      isAddingNewNote: !prevState.isAddingNewNote,
       noteForm: {
         ...prevState.noteForm,
         message: "",
@@ -170,7 +167,7 @@ export default class Race extends React.Component {
           <p><span>Website: </span><a href={this.state.race.website}>{this.state.race.website}</a></p>
           <Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
           <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump>
-          <Jump><button onClick={this.addNote}>Add A Note</button></Jump>
+          <Jump><button onClick={this.addNote}>{this.state.isAddingNewNote ? "Cancel Adding Note" : "Add A Note"}</button></Jump>
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}

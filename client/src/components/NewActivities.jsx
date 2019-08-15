@@ -12,11 +12,13 @@ export default class NewActivities extends Component {
 
   componentDidMount = async () => {
     const resp = await fetchActivities();
-    const activities = Object.assign(resp.notes, resp.races).sort((a, b) => (b.created_at > a.created_at) ? 1 : -1).slice(0, 5);
-    this.setState({
-      activities: activities
-    })
-    console.log(activities);
+    const newData = [...resp.notes, ...resp.races]
+    if (newData) {
+      const activities = newData.sort((a, b) => (Date.parse(a.created_at) < Date.parse(b.created_at)) ? 1 : -1).slice(0, 5);
+      this.setState({
+        activities: activities
+      })
+    }
   }
 
   actType = (item) => {
