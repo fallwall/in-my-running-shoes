@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, withRouter } from 'react-router-dom';
+import LightSpeed from 'react-reveal/LightSpeed';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
 import Race from './components/Race';
@@ -178,7 +179,10 @@ class App extends React.Component {
             handleChange={this.authHandleChange}
             formData={this.state.authFormData}
           />
-          <h1 className="main-title">IN MY RUNNING SHOES</h1>
+          <LightSpeed left>
+            <h1 className="main-title">IN MY RUNNING SHOES</h1>
+          </LightSpeed>
+
           <Headerr />
 
         </header>

@@ -44,20 +44,20 @@ export default class Race extends React.Component {
   componentDidMount = async () => {
     const race = await oneRace(this.props.id);
     const notes = await fetchNotes(this.props.id);
-    this.props.currentUser &&
-      this.setState(prevState => ({
-        race: race,
-        notes: notes,
-        raceUpdateForm: {
-          ...prevState.raceUpdateForm,
-          user_id: this.props.user_id
-        },
-        noteForm: {
-          ...prevState.noteForm,
-          race_id: this.props.id,
-          user_id: this.props.currentUser.id
-        }
-      }))
+    // this.props.currentUser &&
+    this.setState(prevState => ({
+      race: race,
+      notes: notes,
+      raceUpdateForm: {
+        ...prevState.raceUpdateForm,
+        user_id: this.props.user_id
+      },
+      noteForm: {
+        ...prevState.noteForm,
+        race_id: this.props.id,
+        user_id: this.props.currentUser.id
+      }
+    }))
   }
 
   handleUpdate = () => {
@@ -163,7 +163,7 @@ export default class Race extends React.Component {
     return (
       <div>
         <div className="race-info">
-          {this.state.race.name && <RacePageHeader race={this.state.race.name} />}
+          {this.state.race && <RacePageHeader race={this.state.race.name} />}
           <p><span>Description:</span> {this.state.race.description}</p>
           <p><span>Location:</span> {this.state.race.city}, {this.state.race.state}, {this.state.race.country}</p>
           <p><span>Organizer:</span> {this.state.race.organization}</p>
