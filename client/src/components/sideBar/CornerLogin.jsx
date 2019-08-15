@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Login from './Login';
 import Register from './Register';
+import Wobble from 'react-reveal/Wobble';
 
 export default class CornerLogin extends Component {
   constructor(props) {
@@ -58,10 +59,10 @@ export default class CornerLogin extends Component {
               ?
               <>
                 <p>{this.props.currentUser.username}</p>
-                <button onClick={this.props.handleLogout}>LOGOUT</button>
+                <Wobble><button onClick={this.props.handleLogout}>LOGOUT</button></Wobble>
               </>
               :
-              <button onClick={this.handleLoginButton}>LOGIN/REG</button>
+              <Wobble><button onClick={this.handleLoginButton}>LOGIN/REG</button></Wobble>
             }
           </div>
         </div>

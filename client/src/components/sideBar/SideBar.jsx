@@ -28,6 +28,7 @@ export default class SideBar extends Component {
           }
         </div>
         <div className="regular-nav-link">
+          <Link to="/about"> About </Link>
           <Link to="/races"> All Races </Link>
           <button onClick={this.props.addRace}>Add a Race</button>
         </div>

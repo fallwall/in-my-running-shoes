@@ -206,6 +206,87 @@ border: 2px black solid;
   opacity: 0.5;
 }
 
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*about*/
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.story {
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+}
+
+.story-img {
+  height: 200px;
+  padding-right: 10px;
+  border-radius: 15px 15px 0px 15px;
+}
+
+.story-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.story-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.story-head > h1 {
+  background: black;
+  padding: 5px;
+}
+
+.demo-arrow {
+  color: rgb(0, 0, 0, 0);
+}
+
+.demo {
+  display: none;
+}
+
+#story-1 {
+  padding-top: 200px;
+}
+
+#story-2 {
+  padding-top: 200px;
+}
+
+#story-3 {
+  padding-top: 200px;
+}
+
+#story-4 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.music-icon {
+  width:2em;
+  height:2em;
+}
+
+
 
 @keyframes slidein {
   0%{

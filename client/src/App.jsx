@@ -6,6 +6,7 @@ import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
 import Home from './components/Home';
+import About from './components/story/About';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
 import CornerLogin from './components/sideBar/CornerLogin';
@@ -209,6 +210,8 @@ class App extends React.Component {
             races={this.state.races} />)} />
         <Route exact path="/" render={() => (
           <Home />)} />
+        <Route exact path="/about" render={() => (
+          <About />)} />
         <Route
           exact
           path="/races/:id"

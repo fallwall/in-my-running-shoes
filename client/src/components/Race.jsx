@@ -3,6 +3,7 @@ import RaceUpdate from './RaceUpdate';
 import Notes from './Notes';
 import NoteForm from './NoteForm';
 import RacePageHeader from './RacePageHeader';
+import Jump from 'react-reveal/Jump';
 
 import {
   oneRace,
@@ -169,9 +170,9 @@ export default class Race extends React.Component {
           <p><span>Organizer:</span> {this.state.race.organization}</p>
           <p><span>Distance: </span>(in Mile): {this.state.race.distance}</p>
           <p><span>Website: </span><a href={this.state.race.website}>{this.state.race.website}</a></p>
-          <button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button>
-          <button onClick={() => this.removeRace(this.props.id)}>Delete</button>
-          <button onClick={() => this.addNote(this.props.id)}>Add A Note</button>
+          <Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
+          <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump>
+          <Jump><button onClick={() => this.addNote(this.props.id)}>Add A Note</button></Jump>
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}
