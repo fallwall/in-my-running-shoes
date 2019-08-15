@@ -10,6 +10,7 @@ import About from './components/story/About';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
 import CornerLogin from './components/sideBar/CornerLogin';
+import Profile from './components/profile/Profile';
 import RunningPic from './assets/running.png';
 
 import './App.css';
@@ -250,7 +251,15 @@ class App extends React.Component {
               currentUser={this.state.currentUser}
             />
           )} />
-
+        <Route
+          exact
+          path="/profile/:id"
+          render={(props) => (
+            <Profile
+              id={props.match.params.id}
+              currentUser={this.state.currentUser}
+            />
+          )} />
         <footer>
           <img
             className="footer-img"

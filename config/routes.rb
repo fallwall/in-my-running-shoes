@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/newest5', to: 'races#newest5'
   get '/allnotes', to: 'notes#all'
   get '/newusers', to: 'users#newusers'
+  get '/user_profile/:id', to: 'users#show_public'
  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

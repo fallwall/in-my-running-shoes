@@ -111,5 +111,10 @@ export const fetchActivities = async () => {
 export const fetchNewUsers = async () => {
   const resp = await api.get('/newusers');
   return resp.data;
- }
+}
+
+export const fetchUserProfile = async (id) => {
+  const resp = await api.get(`/user_profile/${id}`);
+  return resp.data;
+}
 
