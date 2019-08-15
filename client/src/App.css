@@ -16,6 +16,19 @@ input, button {
   margin-right: auto;
 }
 
+/* corner login */
+.login-reg {
+  padding: 0.5em;
+  font-size: 1em;
+}
+.login-reg:hover {
+  font-size: 1.5em;
+}
+
+.corner-username {
+  font-size: 2em;
+}
+
 /* side bar */
 .side-bar {
   background-color: rgba(171, 254, 45, 0.8);
@@ -77,6 +90,12 @@ input, button {
   margin: 1em;
 }
 
+.social img:hover {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+
 /* header */
 .login-buttons-wrapper {
   display: flex;
@@ -103,7 +122,6 @@ input, button {
 }
 
 .main-title {
-  margin-top: -1em;
   margin-bottom: 1em;
   font-size: 5em;
 }

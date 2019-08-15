@@ -67,7 +67,7 @@ export default class CornerLogin extends Component {
             {this.props.currentUser
               ?
               <>
-                <p>{this.props.currentUser.username}</p>
+                <p className="corner-username">{this.props.currentUser.username}</p>
                 <Wobble><button className="login-reg" onClick={this.props.handleLogout}>LOGOUT</button></Wobble>
               </>
               :
