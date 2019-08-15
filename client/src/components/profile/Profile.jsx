@@ -28,7 +28,6 @@ export default class Profile extends Component {
       profile_races: profile_races,
       profile_notes: profile_notes
     })
-    console.log(this.state.profile_races);
   }
 
   render() {
@@ -42,7 +41,6 @@ export default class Profile extends Component {
           profile_notes={this.state.profile_notes}
           currentUser={this.props.currentUser}
         />
-
       </div>
     )
   }

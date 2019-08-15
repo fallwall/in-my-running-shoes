@@ -104,7 +104,7 @@ input, button {
 
 .main-title {
   margin-bottom: 1em;
-  font-size: 7sisdasfasfdsffem;
+  font-size: 5em;
 }
 
 .shoe-container {
@@ -139,6 +139,7 @@ input, button {
   display: flex;
   flex-direction: row-reverse;
 }
+
 .hidden {
   display: none; 
 }
@@ -170,6 +171,7 @@ input, button {
   padding: 0.5em;
   font-size: 1em;
 }
+
 .detail-link:hover {
   font-size: 1.5em;
 }
@@ -243,11 +245,11 @@ border: 2px black solid;
   top: 44px;
   left: 124px;
 }
+
 .newuser {
   margin: 2em auto 2em 2em;
   width: 22vw;
   position: relative;
-
 }
 
 .newuser-main {
@@ -272,7 +274,6 @@ border: 2px black solid;
 .race-and-act-left {
   display: flex;
   flex-direction: column;
-
 }
 
 /* single race  */
@@ -281,7 +282,6 @@ border: 2px black solid;
 }
 
 /* note-list */
-
 .note {
   background-color: lightpink;
   padding: 2em;
@@ -298,7 +298,6 @@ border: 2px black solid;
 }
 
 /*about*/
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -371,7 +370,14 @@ border: 2px black solid;
 }
 
 /* profile  */
-
+.profile-content {
+  display:flex;
+}
+.profile-race-list, .profile-note-list {
+  border: solid black 2px;
+  width: 40vw;
+  margin: 0 auto;
+}
 
 
 
