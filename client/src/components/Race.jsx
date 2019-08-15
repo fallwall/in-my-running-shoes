@@ -154,6 +154,8 @@ export default class Race extends React.Component {
       }
     }))
   }
+  //   dt = moment('2018-05-10T21:12:08Z');
+  // console.log(dt.format('YYYY-MM-DD h:mm:ss A'));
 
   render() {
     return (
@@ -165,6 +167,8 @@ export default class Race extends React.Component {
           <p><span>Organizer:</span> {this.state.race.organization}</p>
           <p><span>Distance: </span>(in Mile): {this.state.race.distance}</p>
           <p><span>Website: </span><a href={this.state.race.website}>{this.state.race.website}</a></p>
+          <p><span>Created At: </span>{Date(this.state.race.created_at)}</p>
+          <p><span>Updated At: </span>{Date(this.state.race.updated_at)}</p>
           <Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
           <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump>
           <Jump><button onClick={this.addNote}>{this.state.isAddingNewNote ? "Cancel Adding Note" : "Add A Note"}</button></Jump>

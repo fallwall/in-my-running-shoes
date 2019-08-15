@@ -3,7 +3,7 @@
   font-family: 'Ultra', serif;
 }
 
-a {
+a, button {
   text-decoration: none;
   color:white;
   background-color: black;
@@ -36,8 +36,47 @@ input, button {
   align-content: stretch;
 }
 
+.sidebar-login {
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+}
+
 .sidebar-icon-name {
   display: flex;
+  padding: 1em;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav a, .sidebar-nav button {
+  font-size: 3em;
+  width: 15vw;
+  margin: 2vh auto;
+  border:none;
+}
+
+.social {
+  position: absolute;
+  bottom: 2em;
+  margin-left: 2em;
+}
+
+.social a {
+  width: auto;
+  font-size: auto;
+  margin: auto;
+  
+}
+
+.social img {
+  width: 4em;
+  height: 4em;
+  margin: 1em;
 }
 
 /* header */
