@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     except: %i[password_digest created_at updated_at dob email], 
     :include => {
       :races => {:only => %i[id name]},
-      :notes => {:only => %i[id message]}}, status: :ok
+      :notes => {:only => %i[id message race_id]}}, status: :ok
   end
 
   def show
