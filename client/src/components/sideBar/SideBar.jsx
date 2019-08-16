@@ -22,7 +22,7 @@ export default class SideBar extends Component {
         </div>
         <div className="sidebar-nav">
           {this.props.currentUser &&
-            <Link to={`/profile/${this.props.currentUser.id}`}>  <Bounce>Profile</Bounce> </Link>}
+            <Link to={{pathname: `/profile/${this.props.currentUser.id}`, state: "refreshProfile"}}>  <Bounce>Profile</Bounce> </Link>}
           <Link to="/">  <Bounce>Home</Bounce> </Link>
           <Link to="/about"> <Bounce>About</Bounce> </Link>
           <Link to="/races"> <Bounce>All Races</Bounce> </Link>
