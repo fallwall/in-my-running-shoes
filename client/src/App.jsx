@@ -219,7 +219,7 @@ class App extends React.Component {
             newRace={this.newRace} />
         }
 
-        <Route
+        {/* <Route
           exact
           path="/races/:race_id/notes/:id"
           render={(props) => (
@@ -228,7 +228,7 @@ class App extends React.Component {
               id={props.match.params.id}
               currentUser={this.state.currentUser}
             />
-          )} />
+          )} /> */}
         <Route
           exact
           path="/races/:race_id/notes/:id"

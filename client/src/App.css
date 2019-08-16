@@ -350,7 +350,6 @@ border: 2px black solid;
 
 /* footer */
 .footer-img {
-  
   width: 100vw;
   margin-left: -4vw;
   z-index:-1;
@@ -435,6 +434,14 @@ border: 2px black solid;
 }
 .profile-race-list, .profile-note-list {
   border: solid black 2px;
+  width: 40vw;
+  margin: 0 auto;
+}
+
+/* temporary update form border  */
+.note-update, .profile-update, .race-update {
+  border: 2px black solid;
+  padding: 2em;
   width: 40vw;
   margin: 0 auto;
 }
