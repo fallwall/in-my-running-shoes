@@ -128,3 +128,7 @@ export const updateProfile = async (id, data) => {
   return resp.data;
 }
 
+export const deleteProfile = async (id) => {
+  const resp = await api.delete(`/users/${id}`);
+  return resp.data;
+}

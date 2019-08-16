@@ -12,6 +12,7 @@ export default function ProfileInfo(props) {
 
         <Slide left><h2>{props.profile_name}</h2></Slide>
         <Slide right><h2>{props.profile_username}</h2></Slide>
+        
         <div className="profile-content">
           <div className="profile-race-list">
             <HeadShake><h3>{props.profile_username} Added Races</h3></HeadShake>

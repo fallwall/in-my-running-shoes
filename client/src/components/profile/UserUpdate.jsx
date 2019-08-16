@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   getProfile,
-  updateProfile
+  updateProfile,
+  deleteProfile
 } from '../../services/api';
+import { withRouter } from 'react-router-dom';
 
-export default class UserUpdate extends React.Component {
+class UserUpdate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,6 +67,12 @@ export default class UserUpdate extends React.Component {
     }
   }
 
+  cancelAccount = async (ev) => {
+    ev.preventDefault();
+    await deleteProfile(this.state.user_id);
+    this.props.history.push('/');
+  }
+
   render() {
     return (
       <>
@@ -92,6 +100,7 @@ export default class UserUpdate extends React.Component {
               value={this.state.formData.password}
               onChange={this.handleChange} />
             <button>Update</button>
+            <button onClick={this.cancelAccount}>DELETE ACCT</button>
           </form>
         </div>
 
@@ -99,3 +108,5 @@ export default class UserUpdate extends React.Component {
     )
   }
 }
+
+export default withRouter(UserUpdate);
