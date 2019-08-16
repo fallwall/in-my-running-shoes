@@ -67010,3 +67010,323 @@ Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.1ms)
 Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 3.3ms)
 
 
+Started GET "/newest5" for ::1 at 2019-08-15 21:01:25 -0400
+Started GET "/allnotes" for ::1 at 2019-08-15 21:01:25 -0400
+Started GET "/newusers" for ::1 at 2019-08-15 21:01:25 -0400
+Started GET "/users/verify" for ::1 at 2019-08-15 21:01:25 -0400
+Started GET "/races" for ::1 at 2019-08-15 21:01:25 -0400
+Processing by NotesController#all as HTML
+Processing by RacesController#newest5 as HTML
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" ORDER BY updated_at DESC[0m
+  [1m[36mRace Load (0.8ms)[0m  [1m[34mSELECT  "races".* FROM "races" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/controllers/races_controller.rb:11
+  ↳ app/controllers/notes_controller.rb:13
+  [1m[36mRace Load (16.7ms)[0m  [1m[34mSELECT "races".* FROM "races" ORDER BY updated_at DESC[0m
+  ↳ app/controllers/notes_controller.rb:13
+Completed 200 OK in 38ms (Views: 9.3ms | ActiveRecord: 24.2ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/races_controller.rb:11
+Completed 200 OK in 55ms (Views: 29.2ms | ActiveRecord: 21.7ms)
+
+
+Processing by UsersController#newusers as HTML
+Processing by RacesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY updated_at DESC[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 3.2ms)
+
+
+Completed 200 OK in 27ms (Views: 5.5ms | ActiveRecord: 17.5ms)
+
+
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-15 21:02:18 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"Tibby", "name"=>"Tibby Xu", "email"=>"fallwall.xu@gmail.com", "dob"=>"1991-12-25", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tibby"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fallwall.xu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "Tibby"], ["name", "Tibby Xu"], ["email", "fallwall.xu@gmail.com"], ["dob", "1991-12-25"], ["password_digest", "$2a$12$zRsVOrJ28f3CelTO6YXvBebjiIbbp.CwtaYhGxcqlUyPbWZo4cJoa"], ["created_at", "2019-08-16 01:02:18.295895"], ["updated_at", "2019-08-16 01:02:18.295895"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 412.6ms
+Sent mail to fallwall.xu@gmail.com (5.0ms)
+Date: Thu, 15 Aug 2019 21:02:18 -0400
+From: sherunsfreely@gmail.com
+To: fallwall.xu@gmail.com
+Message-ID: <5d56009ad3c51_63893ff1c3c46d385599b@XXs-MBP13.local.mail>
+Subject: Welcome Tibby Xu
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Hi Tibby Xu</h1>
+<p>Welcome to In My Running Shoes.</p>
+<img alt="gif" src="https://media.giphy.com/media/l4JyYCo1POYWC9HmE/giphy.gif" />
+<p>Gotta Run,</p>
+<p>Tibby</p>
+  </body>
+</html>
+
+Completed 201 Created in 767ms (Views: 0.7ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-15 21:02:18 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"Tibby", "password"=>"[FILTERED]", "authentication"=>{"username"=>"Tibby", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tibby"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 182ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-15 21:03:01 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"Tibby", "name"=>"Tibby Xu", "email"=>"fallwall19@gmail.com", "dob"=>"1991-12-25", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tibby"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fallwall19@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:30
+Completed 422 Unprocessable Entity in 200ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/user_profile/1" for ::1 at 2019-08-15 21:07:38 -0400
+Processing by UsersController#show_public as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races" WHERE "races"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" INNER JOIN "races" ON "notes"."race_id" = "races"."id" WHERE "races"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 26ms (Views: 18.9ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-15 21:08:24 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"tibby2", "name"=>"Tibby Xu", "email"=>"fallwall@iclouod.com", "dob"=>"1991-12-25", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tibby2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fallwall@iclouod.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "tibby2"], ["name", "Tibby Xu"], ["email", "fallwall@iclouod.com"], ["dob", "1991-12-25"], ["password_digest", "$2a$12$OhqlFieA.XxKE.svFHsrl.d8LXrVxzaanEdPb8PFW7NIdELLzFYGW"], ["created_at", "2019-08-16 01:08:24.845518"], ["updated_at", "2019-08-16 01:08:24.845518"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.3ms)
+UserMailer#welcome_email: processed outbound mail in 4.2ms
+Sent mail to fallwall@iclouod.com (1.4ms)
+Date: Thu, 15 Aug 2019 21:08:24 -0400
+From: sherunsfreely@gmail.com
+To: fallwall@iclouod.com
+Message-ID: <5d560208cfff7_63893ff1c3c46d38560c0@XXs-MBP13.local.mail>
+Subject: Welcome Tibby Xu
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Hi Tibby Xu</h1>
+<p>Welcome to In My Running Shoes.</p>
+<img alt="gif" src="https://media.giphy.com/media/l4JyYCo1POYWC9HmE/giphy.gif" />
+<p>Gotta Run,</p>
+<p>Tibby</p>
+  </body>
+</html>
+
+Completed 201 Created in 201ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-15 21:08:24 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"tibby2", "password"=>"[FILTERED]", "authentication"=>{"username"=>"tibby2", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tibby2"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 181ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/verify" for ::1 at 2019-08-15 21:12:51 -0400
+Started GET "/races" for ::1 at 2019-08-15 21:12:51 -0400
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.7ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.7ms)
+
+
+Processing by UsersController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user_profile/1" for ::1 at 2019-08-15 21:13:11 -0400
+Processing by UsersController#show_public as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races" WHERE "races"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" INNER JOIN "races" ON "notes"."race_id" = "races"."id" WHERE "races"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/user_profile/10" for ::1 at 2019-08-15 21:13:15 -0400
+Processing by UsersController#show_public as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=10):
+  
+app/controllers/users_controller.rb:16:in `show_public'
+Started GET "/user_profile/9" for ::1 at 2019-08-15 21:13:19 -0400
+Processing by UsersController#show_public as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races" WHERE "races"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" INNER JOIN "races" ON "notes"."race_id" = "races"."id" WHERE "races"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races" WHERE "races"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" INNER JOIN "races" ON "notes"."race_id" = "races"."id" WHERE "races"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races" WHERE "races"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" INNER JOIN "races" ON "notes"."race_id" = "races"."id" WHERE "races"."user_id" = $1[0m  [["user_id", 8]]
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/newusers" for ::1 at 2019-08-15 21:13:41 -0400
+Processing by UsersController#newusers as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY updated_at DESC[0m
+  ↳ app/controllers/users_controller.rb:12
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races" for ::1 at 2019-08-15 21:15:08 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/xx/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RacesController#index as HTML
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  ↳ app/controllers/races_controller.rb:6
+Completed 200 OK in 19ms (Views: 9.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/users/" for ::1 at 2019-08-15 21:15:36 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"testagain", "name"=>"tibby2", "email"=>"fallwall.xu@gmail.com", "dob"=>"1991-10-18", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "testagain"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fallwall.xu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "name", "email", "dob", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["username", "testagain"], ["name", "tibby2"], ["email", "fallwall.xu@gmail.com"], ["dob", "1991-10-18"], ["password_digest", "$2a$12$s3vgYLJ55CaUW6PDp/z5Oe4ZEeH6PQ9hZzS.lJh9OVCsfyW8wG86C"], ["created_at", "2019-08-16 01:15:36.680017"], ["updated_at", "2019-08-16 01:15:36.680017"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 15.3ms
+Sent mail to fallwall.xu@gmail.com (1384.1ms)
+Date: Thu, 15 Aug 2019 21:15:36 -0400
+From: sherunsfreely@gmail.com
+To: fallwall.xu@gmail.com
+Message-ID: <5d5603b8b3356_99e13ff62430acb422293@XXs-MBP13.local.mail>
+Subject: Welcome tibby2
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Hi tibby2</h1>
+<p>Welcome to In My Running Shoes.</p>
+<img src="https://media.giphy.com/media/l4JyYCo1POYWC9HmE/giphy.gif" alt="rss feed" />
+
+<p>Gotta Run,</p>
+<p>Tibby</p>
+  </body>
+</html>
+
+Completed 201 Created in 1642ms (Views: 2.1ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/auth/login" for ::1 at 2019-08-15 21:15:38 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"testagain", "password"=>"[FILTERED]", "authentication"=>{"username"=>"testagain", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "testagain"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:4
+Completed 200 OK in 201ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
