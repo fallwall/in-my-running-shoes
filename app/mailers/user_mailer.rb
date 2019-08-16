@@ -5,4 +5,9 @@ class UserMailer < ApplicationMailer
     @user = user
     mail(to: @user.email, subject: "Welcome #{@user.name}")
   end
+
+  def goodbye_email(user)
+    @user = user
+    mail(to: @user.email, subject: "Laters, #{@user.name}")
+  end
 end

@@ -6,11 +6,6 @@ const api = axios.create({
   baseURL: baseUrl
 })
 
-// const getToken = () => {
-//   const token = localStorage.getItem('jwt');
-//   api.defaults.headers.common.authorization = `Bearer ${token}`;
-// }
-
 const storeToken = (token) => {
   localStorage.setItem('jwt', token);
   api.defaults.headers.common.authorization = `Bearer ${token}`;

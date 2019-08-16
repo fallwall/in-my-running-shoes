@@ -45,6 +45,7 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy
+      UserMailer.goodbye_email(@user).deliver
       head 204
     end
   end
