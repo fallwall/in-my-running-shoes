@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_14_175127) do
+ActiveRecord::Schema.define(version: 2019_08_16_151849) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "notes", force: :cascade do |t|
     t.string "message"
-    t.time "finish_time"
+    t.string "finish_time"
     t.integer "bib_number"
     t.bigint "race_id"
     t.datetime "created_at", null: false
