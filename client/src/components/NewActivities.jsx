@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { fetchActivities } from '../services/api';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Jump from 'react-reveal/Jump';
 
 export default class NewActivities extends Component {
   constructor() {
@@ -33,11 +34,11 @@ export default class NewActivities extends Component {
             y={[20, -25]}
           >
             <div className="new-act-main">
-              <h2>NEWEST ACTIVITIES</h2>
+              <Jump><h2>NEWEST ACTIVITIES</h2></Jump>
               {this.state.activities.map((act, i) =>
                 <div className="act" key={i}>
                   {this.actType(act)}
-                  {act.created_at}
+                  {/* {act.created_at} */}
                 </div>)}
             </div>
           </Parallax>

@@ -179,7 +179,7 @@ border: 2px black solid;
  padding: 4em;
  width: 40vw;
  position: absolute;
- top: 600px;
+ top: 100px;
  left: 10px;
 }
 .stats-back {
@@ -188,14 +188,15 @@ border: 2px black solid;
   padding: 4em 4em 2em 0;
   z-index:-1;
   position: absolute;
-  height: 64vh;
-  top: 46px;
+  height: 25vh;
+  top: 80px;
   left: 178px;
 }
 
 /* race-and-activities-wraper-at-home */
 .race-and-act {
   display: flex;
+  flex-direction: row;
 }
 
 /* race-list */
@@ -263,7 +264,7 @@ border: 2px black solid;
  padding: 4em;
  width: 40vw;
  position: absolute;
- top: 20px;
+ top: 455px;
  left: 10px;
 }
 
@@ -273,8 +274,8 @@ border: 2px black solid;
   padding: 4em 4em 2em 0;
   z-index:-1;
   position: absolute;
-  height: 64vh;
-  top: 46px;
+  height: 75vh;
+  top: 470px;
   left: 178px;
 }
 
@@ -299,7 +300,7 @@ border: 2px black solid;
   z-index:-1;
   height: 36vh;
   top: 44px;
-  left: 124px;
+  left: 50px;
 }
 
 .newuser {
@@ -314,7 +315,7 @@ border: 2px black solid;
   width: 18vw;
   position: absolute;
   z-index: 1000;
-  top: 70vh;
+  top: 63vh;
 }
 
 .newuser-back {
@@ -323,13 +324,15 @@ border: 2px black solid;
   position: absolute;
   z-index:-1;
   height: 36vh;
-  top: 70vh;
+  top: 65vh;
   left: 124px;
 }
 
-.race-and-act-left {
+.race-and-act-left, .race-and-act-right {
   display: flex;
   flex-direction: column;
+  width: 40vw;
+  margin: 0 auto;
 }
 
 /* single race  */
@@ -347,10 +350,11 @@ border: 2px black solid;
 
 /* footer */
 .footer-img {
+  
   width: 100vw;
   margin-left: -4vw;
   z-index:-1;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 /*about*/

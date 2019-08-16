@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { fetchNewRaces } from '../services/api';
 import { Link } from 'react-router-dom';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Jump from 'react-reveal/Jump';
 
 export default class NewestRaces extends Component {
   constructor() {
@@ -27,7 +28,7 @@ export default class NewestRaces extends Component {
             y={[20, -25]}
           >
             <div className="new-race-main">
-              <h2>NEWEST RACE</h2>
+              <Jump><h2>NEWEST RACE</h2></Jump>
               {this.state.races.map(race =>
                 <div key={race.id} className="race-new">
                   <h2>{race.name}</h2>
@@ -39,7 +40,7 @@ export default class NewestRaces extends Component {
             </div>
           </Parallax>
           <Parallax
-            x={[13, -13]}
+            x={[15, -15]}
             y={[50, -50]}
           >
             <div className="new-race-back">

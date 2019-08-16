@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <div>
       <div className="race-and-act">
-        <Stats />
-        <NewestRaces />
+        <div className="race-and-act-right">
+          <Stats />
+          <NewestRaces />
+        </div>
         <div className="race-and-act-left">
           <NewActivities />
           <NewUsers />

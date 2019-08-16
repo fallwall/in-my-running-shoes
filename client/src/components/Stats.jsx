@@ -4,6 +4,7 @@ import {
   fetchActivities
 } from '../services/api';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Jump from 'react-reveal/Jump';
 
 const quotes = [
   "Some people create with words, or with music, or with a brush and paints. I like to make something beautiful when I run. I like to make people stop and say, 'I've never seen anyone run like that before.' It's more than just a race, it's style. It's doing something better than everyone else. It's being creative.",
@@ -49,10 +50,12 @@ export default class Stats extends Component {
     return (
       <ParallaxProvider>
         <div className="site-stats">
+
           <Parallax
             y={[20, -25]}
           >
             <div className="stats-main">
+              <Jump><h2>SITE STATS</h2></Jump>
               <div className="quote">
                 {this.state.quote}
                 <p>(~Steve Prefontaine)</p>
