@@ -4,9 +4,9 @@ import { withRouter } from 'react-router-dom';
 function RaceForm(props) {
   return (
     <div className="race-form">
-      <h2>Create a new race</h2>
+      <h2>CREATE A NEW RACE</h2>
       <form onSubmit={props.newRace}>
-        <label htmlFor="name">Race name</label>
+        <label htmlFor="name">Race Name</label>
         <input
           type="text"
           name="name"
@@ -76,8 +76,8 @@ function RaceForm(props) {
           name="user_id"
           value={props.raceForm.user_id}
           onChange={props.handleRaceFormChange} />
-        <button>Submit</button>
-        <button onClick={props.addRace}>Cancel/Go Back</button>
+        <button className="raceform-submit">Submit</button>
+        <button className="raceform-cancel" onClick={props.addRace}>Cancel/Go Back</button>
       </form>
     </div >
   )

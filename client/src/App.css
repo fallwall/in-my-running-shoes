@@ -197,11 +197,13 @@ input, button {
 
 /* add race form */
 .race-form {
+  font-size: 1em;
   z-index: 40;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(27, 63, 99, 0.7);
+  background-color: rgba(27, 63, 99, 0.9);
+  color:white;
   /* margin-left: 15vw;
   margin-right: 15vh; */
   padding-top: 5em;
@@ -211,6 +213,16 @@ input, button {
   animation-duration: 0.7s;
   animation-delay: 0.5s;
   top: 0;
+}
+
+.race-form button {
+  border:none;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.race-form button:hover {
+  font-size: 1.5em;
 }
 
 /* new race */
