@@ -3,6 +3,7 @@ import {
   fetchNewUsers,
   fetchActivities
 } from '../services/api';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 const quotes = [
   "Some people create with words, or with music, or with a brush and paints. I like to make something beautiful when I run. I like to make people stop and say, 'I've never seen anyone run like that before.' It's more than just a race, it's style. It's doing something better than everyone else. It's being creative.",
@@ -46,21 +47,32 @@ export default class Stats extends Component {
 
   render() {
     return (
-      <div className="site-stats">
-        <div className="stats-main">
-          <div className="quote">
-            {this.state.quote}
-            <p>(~Steve Prefontaine)</p>
-          </div>
-          <div className="stat">
-            <p>{this.state.racesNumber} Races</p>
-            <p>{this.state.notesNumber} Notes</p>
-            <p>{this.state.usersNumber} Members and Counting</p>
-          </div>
-          <div className="stats-back">
-          </div>
+      <ParallaxProvider>
+        <div className="site-stats">
+          <Parallax
+            y={[20, -25]}
+          >
+            <div className="stats-main">
+              <div className="quote">
+                {this.state.quote}
+                <p>(~Steve Prefontaine)</p>
+              </div>
+              <div className="stat">
+                <p>{this.state.racesNumber} Races</p>
+                <p>{this.state.notesNumber} Notes</p>
+                <p>{this.state.usersNumber} Members and Counting</p>
+              </div>
+            </div>
+          </Parallax>
+          <Parallax
+            x={[13, -13]}
+            y={[50, -50]}
+          >
+            <div className="stats-back">
+            </div>
+          </Parallax>
         </div>
-      </div>
+      </ParallaxProvider >
     )
   }
 }
