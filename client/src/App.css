@@ -446,6 +446,10 @@ border: 2px black solid;
   margin: 0 auto;
 }
 
+.login-content, .reg-content {
+  font-size: 3em;
+}
+
 @keyframes slidein {
   0%{
     opacity:0;
