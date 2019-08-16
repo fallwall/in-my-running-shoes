@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[show update destroy]
-  before_action :authorize_request, except: %i[create index newusers show_public]
+  before_action :authorize_request, except: %i[create index newusers show_public update]
 
   def index
     @users = User.all
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    render json: @user, status: :ok
+    render json: @user, except: %i[password_digest created_at updated_at], status: :ok
   end
 
   def create

@@ -3,7 +3,7 @@ import { Waypoint } from 'react-waypoint';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { Fade } from 'react-reveal';
 import Swing from 'react-reveal/Swing';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Music from '../../assets/music.png';
 import Sneaker1 from '../../assets/sneaker1.jpg';
 import Sneaker2 from '../../assets/sneaker2.jpg';

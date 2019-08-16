@@ -143,8 +143,6 @@ class App extends React.Component {
   }
 
   handleRegister = async (ev) => {
-
-    console.log("register clicked!");
     await registerUser(this.state.authFormData);
     this.handleLogin();
   }
@@ -196,16 +194,6 @@ class App extends React.Component {
           addRace={this.addRace}
         />
 
-        {/* <Route exact path="/login" render={() => (
-          <Login
-            handleLogin={this.handleLogin}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} />
-        <Route exact path="/register" render={() => (
-          <Register
-            handleRegister={this.handleRegister}
-            handleChange={this.authHandleChange}
-            formData={this.state.authFormData} />)} /> */}
         <Route exact path="/races" render={() => (
           <Races
             races={this.state.races} />)} />

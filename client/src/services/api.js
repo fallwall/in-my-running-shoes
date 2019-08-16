@@ -118,3 +118,13 @@ export const fetchUserProfile = async (id) => {
   return resp.data;
 }
 
+export const getProfile = async (id) => {
+  const resp = await api.get(`/users/${id}`);
+  return resp.data;
+}
+
+export const updateProfile = async (id, data) => {
+  const resp = await api.put(`/users/${id}`, { user: data });
+  return resp.data;
+}
+

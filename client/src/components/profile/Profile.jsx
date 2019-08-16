@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import ProfileInfo from './ProfileInfo';
-import { fetchUserProfile } from '../../services/api';
+import UserUpdate from './UserUpdate';
+import {
+  fetchUserProfile
+} from '../../services/api';
 
 export default class Profile extends Component {
   constructor(props) {
@@ -10,7 +13,8 @@ export default class Profile extends Component {
       profile_username: "",
       profile_name: "",
       profile_races: [],
-      profile_notes: []
+      profile_notes: [],
+      currentUser_id: ""
     }
   }
 
@@ -21,6 +25,7 @@ export default class Profile extends Component {
     const profile_name = resp.name;
     const profile_races = resp.races;
     const profile_notes = resp.notes;
+
     this.setState({
       profile_id: profile_id,
       profile_username: profile_username,
@@ -28,11 +33,21 @@ export default class Profile extends Component {
       profile_races: profile_races,
       profile_notes: profile_notes
     })
+    this.setCurrentUser();
+  }
+
+  setCurrentUser = () => {
+    if (this.props.currentUser) {
+      this.setState({
+        currentUser_id: this.props.currentUser.id
+      });  
+    }
   }
 
   render() {
     return (
       <div className="profile-page">
+        
         <ProfileInfo
           profile_id={this.state.profile_id}
           profile_username={this.state.profile_username}
@@ -41,6 +56,12 @@ export default class Profile extends Component {
           profile_notes={this.state.profile_notes}
           currentUser={this.props.currentUser}
         />
+        {
+          parseInt(this.state.currentUser_id) === parseInt(this.props.id) &&
+          <UserUpdate
+            profileUser={this.props.id}
+          />}
+      
       </div>
     )
   }
