@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { fetchNewUsers } from '../services/api';
+import {
+  fetchNewUsers,
+  fetchActivities
+} from '../services/api';
 
 const quotes = [
   "Some people create with words, or with music, or with a brush and paints. I like to make something beautiful when I run. I like to make people stop and say, 'I've never seen anyone run like that before.' It's more than just a race, it's style. It's doing something better than everyone else. It's being creative.",
@@ -18,18 +21,25 @@ export default class Stats extends Component {
     this.state = {
       quote: "",
       users: [],
-      usersNumber: ""
+      usersNumber: "",
+      raceSNumber: "",
+      notesNumber: ""
     }
   }
 
   componentDidMount = async () => {
     const users = await fetchNewUsers();
+    const act = await fetchActivities();
     const usersNumber = users.length;
+    const racesNumber = act.races.length;
+    const notesNumber = act.notes.length;
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     this.setState({
       quote: quote,
       users: users,
-      usersNumber: usersNumber
+      usersNumber: usersNumber,
+      racesNumber: racesNumber,
+      notesNumber: notesNumber
     })
   }
 
@@ -37,12 +47,18 @@ export default class Stats extends Component {
   render() {
     return (
       <div className="site-stats">
-        <div className="quote">
-          {this.state.quote}
-          <p>(~Steve Prefontaine)</p>
-        </div>
-        <div className="stat1">
-          {this.state.usersNumber} Members and Counting
+        <div className="stats-main">
+          <div className="quote">
+            {this.state.quote}
+            <p>(~Steve Prefontaine)</p>
+          </div>
+          <div className="stat">
+            <p>{this.state.racesNumber} Races</p>
+            <p>{this.state.notesNumber} Notes</p>
+            <p>{this.state.usersNumber} Members and Counting</p>
+          </div>
+          <div className="stats-back">
+          </div>
         </div>
       </div>
     )

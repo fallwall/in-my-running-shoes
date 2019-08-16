@@ -7,8 +7,8 @@ import Stats from './Stats';
 export default function Home() {
   return (
     <div>
-      <Stats />
       <div className="race-and-act">
+        <Stats />
         <NewestRaces />
         <div className="race-and-act-left">
           <NewActivities />

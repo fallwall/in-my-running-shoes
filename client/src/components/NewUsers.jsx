@@ -26,7 +26,7 @@ export default class NewUsers extends Component {
             <div className="newuser-main">
               <h2>NEW MEMBERS</h2>
               {this.state.users.map(user =>
-                <div className="newuser-user">
+                <div key={user.id} className="newuser-user">
                   {user.username} ( {user.name} )
           </div>)}
             </div>
