@@ -177,10 +177,11 @@ input, button {
 .stats-main {
 border: 2px black solid;
  padding: 4em;
- width: 40vw;
+ width: 30vw;
  position: absolute;
- top: 100px;
- left: 10px;
+ top: 5vh;
+ left: 1vw;
+ 
 }
 .stats-back {
   background-color:rgba(198, 230, 179, 0.2);
@@ -188,9 +189,9 @@ border: 2px black solid;
   padding: 4em 4em 2em 0;
   z-index:-1;
   position: absolute;
-  height: 25vh;
-  top: 80px;
-  left: 178px;
+  height: 57vh;
+  top: 6vh;
+  left: 1.5vw;
 }
 
 /* race-and-activities-wraper-at-home */
@@ -264,8 +265,8 @@ border: 2px black solid;
  padding: 4em;
  width: 40vw;
  position: absolute;
- top: 455px;
- left: 10px;
+ top: 80vh;
+ left: 1vw;
 }
 
 .new-race-back {
@@ -274,9 +275,9 @@ border: 2px black solid;
   padding: 4em 4em 2em 0;
   z-index:-1;
   position: absolute;
-  height: 75vh;
-  top: 470px;
-  left: 178px;
+  height: 120vh;
+  top: 90vh;
+  left: 10vw;
 }
 
 .new-activities {
@@ -288,19 +289,19 @@ border: 2px black solid;
 .new-act-main {
   border: 2px black solid;
   padding: 4em;
-  width: 18vw;
+  width: 22vw;
   position: absolute;
   z-index: 1000;
 }
 
 .new-act-back {
   background-color:rgba(128, 0, 128, 0.2);
-  width: 22vw;
+  width: 30vw;
   position: absolute;
   z-index:-1;
-  height: 36vh;
-  top: 44px;
-  left: 50px;
+  height: 47vh;
+  top: 2vh;
+  left: 2vw;
 }
 
 .newuser {
@@ -320,12 +321,12 @@ border: 2px black solid;
 
 .newuser-back {
   background-color:rgba(236, 159, 166, 0.2);
-  width: 22vw;
+  width: 27vw;
   position: absolute;
   z-index:-1;
-  height: 36vh;
-  top: 65vh;
-  left: 124px;
+  height: 50vh;
+  top: 60vh;
+  left: 4vw;
 }
 
 .race-and-act-left, .race-and-act-right {

@@ -15,7 +15,7 @@ export default class NewestRaces extends Component {
   componentDidMount = async () => {
     const races = await fetchNewRaces();
     this.setState({
-      races: races
+      races: races.slice(0,6)
     })
     console.log(races);
   }
