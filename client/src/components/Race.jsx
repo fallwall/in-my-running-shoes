@@ -168,12 +168,12 @@ export default class Race extends React.Component {
           <p><span>Race Date: </span>{Date(this.state.race.date).toString().split(" ").slice(0, 4).join(" ")}</p>
           {this.props.currentUser &&
             (<>
-            {this.props.currentUser.id === this.state.race.user_id &&
-              (<><Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
-                <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump></>)}
-            <Jump><button onClick={this.addNote}>{this.state.isAddingNewNote ? "Cancel Adding Note" : "Add A Note"}</button></Jump>
-          
-            {!this.props.currentUser && <div className="prompt">LOGIN TO LEAVE A COMMENT</div>}</>)}
+              {this.props.currentUser.id === this.state.race.user_id &&
+                (<><Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
+                  <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump></>)}
+              <Jump><button onClick={this.addNote}>{this.state.isAddingNewNote ? "Cancel Adding Note" : "Add A Note"}</button></Jump>
+
+              {!this.props.currentUser && <div className="prompt">LOGIN TO LEAVE A COMMENT</div>}</>)}
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}
@@ -191,7 +191,9 @@ export default class Race extends React.Component {
             user_id={this.props.currentUser.id}
           />}
 
-        <Notes race_id={this.props.id} notes={this.state.notes} />
+        <Notes race_id={this.props.id}
+          notes={this.state.notes}
+          currentUser={this.props.currentUser} />
 
 
       </div>
