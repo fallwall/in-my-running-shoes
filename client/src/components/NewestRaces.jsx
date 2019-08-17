@@ -24,9 +24,9 @@ export default class NewestRaces extends Component {
     return (
       <ParallaxProvider>
         <div className="new-races">
-          <Parallax
+          {/* <Parallax
             y={[20, -25]}
-          >
+          > */}
             <div className="new-race-main">
               <Jump><h2>NEWEST RACE</h2></Jump>
               {this.state.races.map(race =>
@@ -38,14 +38,14 @@ export default class NewestRaces extends Component {
                 </div>
               )}
             </div>
-          </Parallax>
-          <Parallax
+          {/* </Parallax> */}
+          {/* <Parallax
             x={[15, -15]}
             y={[50, -50]}
-          >
+          > */}
             <div className="new-race-back">
             </div>
-          </Parallax>
+          {/* </Parallax> */}
         </div>
       </ParallaxProvider>
     )
