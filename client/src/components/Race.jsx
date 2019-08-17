@@ -46,7 +46,7 @@ export default class Race extends React.Component {
   componentDidMount = async () => {
     const race = await oneRace(this.props.id);
     const notes = await fetchNotes(this.props.id);
-    // this.props.currentUser &&
+
     this.setState(prevState => ({
       race: race,
       notes: notes,
@@ -154,8 +154,6 @@ export default class Race extends React.Component {
       }
     }))
   }
-  //   dt = moment('2018-05-10T21:12:08Z');
-  // console.log(dt.format('YYYY-MM-DD h:mm:ss A'));
 
   render() {
     return (
@@ -169,14 +167,13 @@ export default class Race extends React.Component {
           <p><span>Website: </span><a href={this.state.race.website}>{this.state.race.website}</a></p>
           <p><span>Race Date: </span>{Date(this.state.race.date).toString().split(" ").slice(0, 4).join(" ")}</p>
           {this.props.currentUser &&
-            <Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>}
-          {this.props.currentUser &&
-            <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump>}
-          {
-            this.props.currentUser &&
+            (<>
+            {this.props.currentUser.id === this.state.race.user_id &&
+              (<><Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
+                <Jump><button onClick={() => this.removeRace(this.props.id)}>Delete</button></Jump></>)}
             <Jump><button onClick={this.addNote}>{this.state.isAddingNewNote ? "Cancel Adding Note" : "Add A Note"}</button></Jump>
-          }
-          {!this.props.currentUser && <div className="prompt">LOGIN TO LEAVE A COMMENT</div>}
+          
+            {!this.props.currentUser && <div className="prompt">LOGIN TO LEAVE A COMMENT</div>}</>)}
         </div>
         {this.state.isEditing &&
           <RaceUpdate id={this.props.id}

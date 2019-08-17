@@ -4,7 +4,7 @@ import {
   updateNote,
   deleteNote
 } from '../services/api';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import NoteUpdate from './NoteUpdate';
 import NotePageHeader from './NotePageHeader';
 
@@ -82,14 +82,19 @@ class Note extends React.Component {
         <h2>{this.state.note.message}</h2>
         <p>{this.state.note.finish_time}</p>
         <p>{this.state.note.bib_number}</p>
-        <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>
-        <button onClick={() => this.removeNote()}>Delete</button>
+        {this.props.currentUser &&
+          this.props.id === this.props.currentUser.id &&
+          <>
+            <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>}
+          <button onClick={() => this.removeNote()}>Delete</button>
+          </>}
         {this.state.isUpdating &&
           <NoteUpdate
             noteForm={this.state.noteUpdateForm}
             handleNoteFormChange={this.handleNoteFormChange}
             updateNote={this.updateSubmit}
           />}
+        <Link to={`/races/${this.state.note.race_id}`}>Return to Race</Link>
       </div>
     )
   }

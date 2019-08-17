@@ -56,14 +56,15 @@ export default class Stats extends Component {
           >
             <div className="stats-main">
               <Jump><h2>SITE STATS</h2></Jump>
-              <div className="quote">
-                {this.state.quote}
-                <p>(~Steve Prefontaine)</p>
-              </div>
+           
               <div className="stat">
                 <p>{this.state.racesNumber} Races</p>
                 <p>{this.state.notesNumber} Notes</p>
                 <p>{this.state.usersNumber} Members and Counting</p>
+              </div>
+              <div className="quote">
+                {this.state.quote}
+                <p>(~Steve Prefontaine)</p>
               </div>
             </div>
           </Parallax>
