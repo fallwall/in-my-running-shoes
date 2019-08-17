@@ -28,13 +28,16 @@ class Note extends React.Component {
     const race_id = parseInt(this.props.race_id);
     const id = parseInt(this.props.id);
     const note = await oneNote(race_id, id);
-    this.setState(prevState => ({
-      note: note,
-      noteUpdateForm: {
-        ...prevState.noteUpdateForm,
-        race_id: race_id
-      }
-    }))
+    if (this.props.currentUser) {
+      this.setState(prevState => ({
+        note: note,
+        noteUpdateForm: {
+          ...prevState.noteUpdateForm,
+          race_id: race_id,
+          user_id: this.props.currentUser.id
+        }
+      }))
+    }
   }
 
   handleUpdate = async () => {
@@ -59,7 +62,7 @@ class Note extends React.Component {
     }))
   }
 
-  updateSubmit = async (ev) => {
+  updateSubmit = async () => {
     const race_id = parseInt(this.props.race_id);
     const id = parseInt(this.props.id);
     const note = await updateNote(race_id, id, this.state.noteUpdateForm);
@@ -69,7 +72,8 @@ class Note extends React.Component {
     this.props.history.push(`/races/${race_id}/notes/${id}`);
   }
 
-  removeNote = async () => {
+  removeNote = async (ev) => {
+    ev.preventDefault();
     await deleteNote(this.props.race_id, this.props.id);
     this.props.history.push(`/races/${this.props.race_id}`);
   }
@@ -83,11 +87,11 @@ class Note extends React.Component {
         <p>{this.state.note.finish_time}</p>
         <p>{this.state.note.bib_number}</p>
         {this.props.currentUser &&
-          this.props.id === this.props.currentUser.id &&
-          <>
+          this.state.note.user_id === this.props.currentUser.id &&
+          (<>
             <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>
-            <button onClick={() => this.removeNote()}>Delete</button>
-          </>}
+            <button onClick={this.removeNote}>Delete</button>
+          </>)}
         {this.state.isUpdating &&
           <NoteUpdate
             noteForm={this.state.noteUpdateForm}
