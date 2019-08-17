@@ -85,8 +85,8 @@ class Note extends React.Component {
         {this.props.currentUser &&
           this.props.id === this.props.currentUser.id &&
           <>
-            <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>}
-          <button onClick={() => this.removeNote()}>Delete</button>
+            <button onClick={this.handleUpdate}>{this.state.isUpdating ? "Cancel Updating" : "Update"}</button>
+            <button onClick={() => this.removeNote()}>Delete</button>
           </>}
         {this.state.isUpdating &&
           <NoteUpdate
@@ -99,6 +99,7 @@ class Note extends React.Component {
     )
   }
 }
+
 
 
 export default withRouter(Note);
