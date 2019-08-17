@@ -190,11 +190,10 @@ export default class Race extends React.Component {
             newNote={this.newNote}
             user_id={this.props.currentUser.id}
           />}
-
-        <Notes race_id={this.props.id}
-          notes={this.state.notes}
-          currentUser={this.props.currentUser} />
-
+        {this.props.currentUser &&
+          <Notes race_id={this.props.id}
+            notes={this.state.notes}
+            user_id={this.props.currentUser.id} />}
 
       </div>
 

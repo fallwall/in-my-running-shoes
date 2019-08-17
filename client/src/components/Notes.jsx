@@ -10,7 +10,7 @@ export default function Notes(props) {
           <Parallax
             x={i % 2 === 0 ? [0, 20] : [0, -20]}>
             <div key={note.id} className="note"><h2>{note.message}</h2>
-              {props.currentUser &&
+              {props.user_id &&
                 <Link className="detail-link" to={`/races/${props.race_id}/notes/${note.id}`}>Note Details</Link>}
             </div>
           </Parallax>)}
