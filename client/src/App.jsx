@@ -23,7 +23,6 @@ import {
   createRace
 } from './services/api';
 
-
 class App extends React.Component {
   constructor() {
     super();
@@ -76,7 +75,6 @@ class App extends React.Component {
     })
   }
 
-
   newRace = async (ev) => {
     ev.preventDefault();
     const race = await createRace(this.state.raceForm);
@@ -109,7 +107,6 @@ class App extends React.Component {
     }))
   }
 
-
   sideBar = (ev) => {
     ev.preventDefault();
     this.setState(prevState => ({
@@ -125,8 +122,6 @@ class App extends React.Component {
   }
 
   // -------------- BELOW IS AUTH ------------------
-
-
 
   handleLogin = async (ev) => {
 

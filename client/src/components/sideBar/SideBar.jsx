@@ -26,7 +26,8 @@ export default class SideBar extends Component {
           <Link to="/">  <Bounce>Home</Bounce> </Link>
           <Link to="/about"> <Bounce>About</Bounce> </Link>
           <Link to="/races"> <Bounce>All Races</Bounce> </Link>
-          <button onClick={this.props.addRace}> <Bounce>Add a Race</Bounce> </button>
+          {this.props.currentUser &&
+            <button onClick={this.props.addRace}> <Bounce>Add a Race</Bounce> </button>}
         </div>
         <div className="social">
           <a href="https://sherunsfreely.com"><Jump><img src={Copyright} alt="link to author" /></Jump></a>
