@@ -76,7 +76,8 @@ export default class Race extends React.Component {
         country: this.state.race.country,
         organization: this.state.race.organization,
         distance: this.state.race.distance,
-        website: this.state.race.website
+        website: this.state.race.website,
+        all_tags: this.state.race.all_tags
       }
     }))
   }
@@ -105,7 +106,8 @@ export default class Race extends React.Component {
         country: "",
         organization: "",
         distance: "",
-        website: ""
+        website: "",
+        all_tags: ""
       }
     }))
   }

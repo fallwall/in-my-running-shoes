@@ -93,7 +93,8 @@ class App extends React.Component {
         country: "",
         organization: "",
         distance: "",
-        website: ""
+        website: "",
+        all_tags: ""
       },
       addRace: false
     }))

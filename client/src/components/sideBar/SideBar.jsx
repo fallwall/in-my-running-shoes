@@ -26,6 +26,7 @@ export default class SideBar extends Component {
           <Link to="/">  <Bounce>Home</Bounce> </Link>
           <Link to="/about"> <Bounce>About</Bounce> </Link>
           <Link to="/races"> <Bounce>All Races</Bounce> </Link>
+          <Link to="/tags"> <Bounce>All Tags</Bounce> </Link>
           {this.props.currentUser &&
             <button onClick={this.props.addRace}> <Bounce>Add a Race</Bounce> </button>}
         </div>
