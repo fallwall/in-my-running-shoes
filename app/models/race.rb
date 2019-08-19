@@ -2,7 +2,7 @@ class Race < ApplicationRecord
   belongs_to :user
   has_many :notes, dependent: :destroy
   has_many :taggings, dependent: :destroy
-  has_many :tags, through: :taggings
+  has_many :tags, through: :taggings, dependent: :destroy
 
   def all_tags=(names)
     self.tags = names.split(",").map do |name|
