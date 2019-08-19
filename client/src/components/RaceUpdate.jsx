@@ -63,8 +63,8 @@ export default function RaceUpdate(props) {
         <input
           type="text"
           name="all_tags"
-          value={props.raceForm.all_tags}
-          onChange={props.handleRaceFormChange}
+          value={props.raceUpdateForm.all_tags}
+          onChange={props.handleUpdateChange}
           placeholder="trail, altitude, summer"
         />
         <input
