@@ -72,6 +72,13 @@ function RaceForm(props) {
           placeholder="http://..."
         />
         <input
+          type="text"
+          name="all_tags"
+          value={props.raceForm.all_tags}
+          onChange={props.handleRaceFormChange}
+          placeholder="trail, altitude, summer"
+        />
+        <input
           type="hidden"
           name="user_id"
           value={props.raceForm.user_id}

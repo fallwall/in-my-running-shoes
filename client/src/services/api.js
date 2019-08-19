@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseUrl = 'https://floating-castle-31828.herokuapp.com';
+// const baseUrl = 'https://floating-castle-31828.herokuapp.com';
+const baseUrl = 'http://localhost:3000';
 
 const api = axios.create({
   baseURL: baseUrl
@@ -125,5 +126,17 @@ export const updateProfile = async (id, data) => {
 
 export const deleteProfile = async (id) => {
   const resp = await api.delete(`/users/${id}`);
+  return resp.data;
+}
+
+////// tags //////
+
+export const searchByTag = async (tagname) => {
+  const resp = await api.get(`/tags/${tagname}`);
+  return resp.data;
+}
+
+export const getTags = async () => {
+  const resp = await api.get(`/alltags/`);
   return resp.data;
 }

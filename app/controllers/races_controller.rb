@@ -2,7 +2,11 @@ class RacesController < ApplicationController
   before_action :authorize_request, except: %i[index show newest5]
 
   def index
-    @races = Race.all
+    if params[:tag]
+      @races = Race.tagged_with(params[:tag])
+    else
+      @races = Race.all
+    end
     render json: @races, status: :ok
   end
 
@@ -44,6 +48,6 @@ class RacesController < ApplicationController
   private
 
   def race_params
-    params.require(:race).permit(:name, :date, :description, :city, :state, :country, :organization, :distance, :website, :user_id)
+    params.require(:race).permit(:name, :date, :description, :city, :state, :country, :organization, :distance, :website, :user_id, :all_tags)
   end
 end

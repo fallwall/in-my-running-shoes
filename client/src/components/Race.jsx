@@ -29,7 +29,8 @@ export default class Race extends React.Component {
         organization: "",
         distance: "",
         website: "",
-        user_id: ""
+        user_id: "",
+        all_tags: ""
       },
       isEditing: false,
       noteForm: {

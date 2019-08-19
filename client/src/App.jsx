@@ -6,6 +6,8 @@ import Races from './components/Races';
 import Race from './components/Race';
 import Note from './components/Note';
 import Home from './components/Home';
+import Tags from './components/Tags';
+import Tag from './components/Tag';
 import About from './components/story/About';
 import SideBar from './components/sideBar/SideBar';
 import Headerr from './components/Headerr';
@@ -46,7 +48,8 @@ class App extends React.Component {
         organization: "",
         distance: "",
         website: "",
-        user_id: ""
+        user_id: "",
+        all_tags: ""
       },
       sidebar: false,
       addRace: false
@@ -194,6 +197,12 @@ class App extends React.Component {
             races={this.state.races} />)} />
         <Route exact path="/" render={() => (
           <Home />)} />
+        <Route exact path="/tags" render={() => (
+          <Tags />)} />
+        <Route exact path="/tags/:name" render={(props) => (
+          <Tag
+            name={props.match.params.name}
+          />)} />
         <Route exact path="/about" render={() => (
           <About />)} />
         <Route
