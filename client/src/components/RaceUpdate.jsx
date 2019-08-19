@@ -59,6 +59,7 @@ export default function RaceUpdate(props) {
           name="website"
           value={props.raceUpdateForm.website}
           onChange={props.handleUpdateChange} />
+        <label htmlFor="all_tags">Tags</label>
         <input
           type="text"
           name="all_tags"

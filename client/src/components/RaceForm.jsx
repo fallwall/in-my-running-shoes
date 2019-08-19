@@ -71,6 +71,7 @@ function RaceForm(props) {
           onChange={props.handleRaceFormChange}
           placeholder="http://..."
         />
+        <label htmlFor="all_tags">Tags</label>
         <input
           type="text"
           name="all_tags"
