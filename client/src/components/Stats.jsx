@@ -54,9 +54,9 @@ export default class Stats extends Component {
               <Jump><h2>SITE STATS</h2></Jump>
 
               <div className="stat">
-                <p>{this.state.racesNumber} Races</p>
-                <p>{this.state.notesNumber} Notes</p>
-                <p>{this.state.usersNumber} Members and Counting</p>
+                <p><Jump>{this.state.racesNumber}</Jump> Races</p>
+                <p><Jump>{this.state.notesNumber}</Jump> Notes</p>
+                <p><Jump>{this.state.usersNumber}</Jump> Members and Counting</p>
               </div>
               <div className="quote">
                 {this.state.quote}
