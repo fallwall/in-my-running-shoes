@@ -1,7 +1,7 @@
 class ActivitiesController < ApplicationController
   def index
     @activities = PublicActivity::Activity.order("created_at DESC").limit(20)
-    render json: @activities, include: :owner, status: :ok
+    render json: @activities, include: %i[owner recipient], status: :ok
   end
 
   def stats
