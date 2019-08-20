@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   def show_public
     @user = User.find(params[:id])
-    render json: @user, 
+    render json: @user.to_json(methods: %i[race_count note_count]), 
     except: %i[password_digest created_at updated_at dob email], 
     :include => {
       :races => {:only => %i[id name]},

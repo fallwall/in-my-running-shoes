@@ -8,7 +8,8 @@ export default function NoteUpdate(props) {
         <input type="text"
           name="message"
           value={props.noteForm.message}
-          onChange={props.handleNoteFormChange} />
+          onChange={props.handleNoteFormChange}
+          required/>
         <label htmlFor="finish_time">Finish Time</label>
         <input type="text"
           name="finish_time"

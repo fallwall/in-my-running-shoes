@@ -12,6 +12,7 @@ function RaceForm(props) {
           name="name"
           value={props.raceForm.name}
           onChange={props.handleRaceFormChange}
+          required
         />
         <label htmlFor="date">Date</label>
         <input
@@ -20,6 +21,7 @@ function RaceForm(props) {
           placeholder="yyyy-mm-dd"
           value={props.raceForm.date}
           onChange={props.handleRaceFormChange}
+          required
         />
         <label htmlFor="description">Description</label>
         <input
@@ -62,6 +64,7 @@ function RaceForm(props) {
           name="distance"
           value={props.raceForm.distance}
           onChange={props.handleRaceFormChange}
+          required
         />
         <label htmlFor="website">Website</label>
         <input
