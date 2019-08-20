@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get '/newusers', to: 'users#newusers'
   get '/user_profile/:id', to: 'users#show_public'
 
+  get '/stats', to: 'activities#stats'
+
   get '/tags/:tag', to: 'races#index', as: "tag"
   get '/alltags', to: 'tags#index'
  

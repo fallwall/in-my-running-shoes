@@ -95,10 +95,15 @@ export const deleteNote = async (race_id, id) => {
   return resp.data;
 }
 
-////// activities: notes and races //////
+////// activities & stats //////
 
 export const fetchActivities = async () => {
   const resp = await api.get('/activities');
+  return resp.data;
+}
+
+export const fetchStats = async () => {
+  const resp = await api.get('/stats');
   return resp.data;
 }
 
