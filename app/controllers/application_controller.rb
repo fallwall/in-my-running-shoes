@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::API
+  include PublicActivity::StoreController
+  
   SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
 
   def encode(payload, exp = 24.hours.from_now)
@@ -23,4 +25,5 @@ class ApplicationController < ActionController::API
       render json: { errors: e.message }, status: :unauthorized
     end
   end
+
 end

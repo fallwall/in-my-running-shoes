@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { fetchActivities } from '../services/api';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { Link } from 'react-router-dom';
 import Jump from 'react-reveal/Jump';
 
 export default class NewActivities extends Component {
@@ -12,19 +13,13 @@ export default class NewActivities extends Component {
   }
 
   componentDidMount = async () => {
-    const resp = await fetchActivities();
-    const newData = [...resp.notes, ...resp.races]
-    if (newData) {
-      const activities = newData.sort((a, b) => (Date.parse(a.created_at) < Date.parse(b.created_at)) ? 1 : -1).slice(0, 5);
-      this.setState({
-        activities: activities
-      })
-    }
+    const activities = await fetchActivities();
+    this.setState({
+      activities: activities
+    })
   }
 
-  actType = (item) => {
-    return item.message ? <div>{item.message}</div> : <div>{item.name}</div>;
-  }
+
 
   render() {
     return (
@@ -35,9 +30,14 @@ export default class NewActivities extends Component {
           >
             <div className="new-act-main">
               <Jump><h2>NEWEST ACTIVITIES</h2></Jump>
-              {this.state.activities.map((act, i) =>
-                <div className="act" key={i}>
-                  {this.actType(act)}
+              {this.state.activities.map(act =>
+                <div className="act" key={act.id}>
+                  {act.owner &&
+                    < Link to={`/profile/${act.owner.id}`}>{act.owner.username}</Link>}
+                  {act.key.split(".")[1] + " "}
+                  a
+                  {act.trackable_type.toLowerCase()}
+                  @ {Date(act.updated_at).slice(3, 24)}.
                   {/* {act.created_at} */}
                 </div>)}
             </div>

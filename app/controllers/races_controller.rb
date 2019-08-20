@@ -1,5 +1,6 @@
 class RacesController < ApplicationController
   before_action :authorize_request, except: %i[index show newest5]
+  # before_action :load_activities, only: %i[index show create update destroy]
 
   def index
     if params[:tag]
@@ -46,6 +47,10 @@ class RacesController < ApplicationController
   end
 
   private
+
+  def load_activities
+    @activities = PublicActivity::Activity.order('created_at DESC').limit(20)
+  end
 
   def race_params
     params.require(:race).permit(:name, :date, :description, :city, :state, :country, :organization, :distance, :website, :user_id, :all_tags)

@@ -12,6 +12,7 @@
     "react-scripts": "3.1.0",
     "react-scroll-parallax": "^2.1.2",
     "react-scrollable-anchor": "^0.6.1",
+    "react-transition-group": "^4.2.2",
     "react-waypoint": "^9.0.2",
     "waypoints": "^4.0.1"
   },

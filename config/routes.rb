@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'activities/index'
   post '/auth/login', to: 'authentication#login'
   get '/users/verify', to: 'users#verify'
   
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   resources :races do
       resources :notes
   end
+  resources :activities
 
   get '/newest5', to: 'races#newest5'
   get '/allnotes', to: 'notes#all'

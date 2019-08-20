@@ -30,19 +30,19 @@ export default class Stats extends Component {
   }
 
   componentDidMount = async () => {
-    const users = await fetchNewUsers();
-    const act = await fetchActivities();
-    const usersNumber = users.length;
-    const racesNumber = act.races.length;
-    const notesNumber = act.notes.length;
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
-    this.setState({
-      quote: quote,
-      users: users,
-      usersNumber: usersNumber,
-      racesNumber: racesNumber,
-      notesNumber: notesNumber
-    })
+    // const users = await fetchNewUsers();
+    // const act = await fetchActivities();
+    // const usersNumber = users.length;
+    // const racesNumber = act.races.length;
+    // const notesNumber = act.notes.length;
+    // const quote = quotes[Math.floor(Math.random() * quotes.length)];
+    // this.setState({
+    //   quote: quote,
+    //   users: users,
+    //   usersNumber: usersNumber,
+    //   racesNumber: racesNumber,
+    //   notesNumber: notesNumber
+    // })
   }
 
 
@@ -58,9 +58,9 @@ export default class Stats extends Component {
               <Jump><h2>SITE STATS</h2></Jump>
            
               <div className="stat">
-                <p>{this.state.racesNumber} Races</p>
+                {/* <p>{this.state.racesNumber} Races</p>
                 <p>{this.state.notesNumber} Notes</p>
-                <p>{this.state.usersNumber} Members and Counting</p>
+                <p>{this.state.usersNumber} Members and Counting</p> */}
               </div>
               <div className="quote">
                 {this.state.quote}
