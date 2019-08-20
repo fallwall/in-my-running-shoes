@@ -34,9 +34,7 @@ export default class NewActivities extends Component {
                 <div className="act" key={act.id}>
                   {act.owner &&
                     < Link to={`/profile/${act.owner.id}`}>{act.owner.username}</Link>}
-                  {act.key.split(".")[1] + " "}
-                  a
-                  {act.trackable_type.toLowerCase()}
+                  {`${act.key.split(".")[1]}  a ${act.trackable_type.toLowerCase()}`}
                   @ {Date(act.updated_at).slice(3, 24)}.
                   {/* {act.created_at} */}
                 </div>)}
