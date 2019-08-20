@@ -1,10 +1,12 @@
 class RacesController < ApplicationController
-  before_action :authorize_request, except: %i[index show newest5]
+  before_action :authorize_request, except: %i[index show newest5 search]
   # before_action :load_activities, only: %i[index show create update destroy]
 
   def index
     if params[:tag]
       @races = Race.tagged_with(params[:tag])
+    elsif params[:search]
+      @races = Race.where("name LIKE ?", "%#{params[:search]}")
     else
       @races = Race.all
     end
@@ -55,4 +57,5 @@ class RacesController < ApplicationController
   def race_params
     params.require(:race).permit(:name, :date, :description, :city, :state, :country, :organization, :distance, :website, :user_id, :all_tags)
   end
+
 end
