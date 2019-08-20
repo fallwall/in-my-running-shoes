@@ -16,7 +16,7 @@
 - Post MVP: (As a runner who participates in races, I want to see the list of my races and notes.)
 
 ## Tools
-- Rails (jwt, bcrypt, rack-cors)
+- Rails (jwt, bcrypt, rack-cors, public_activity)
 - React (react-router-dom, axios, react-waypoint, react-scrollable-anchor, react-parallax-scroll, react-reveal)
 
 ## ERD
