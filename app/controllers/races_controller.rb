@@ -5,8 +5,6 @@ class RacesController < ApplicationController
   def index
     if params[:tag]
       @races = Race.tagged_with(params[:tag])
-    elsif params[:search]
-      @races = Race.where("name LIKE ?", "%#{params[:search]}")
     else
       @races = Race.all
     end

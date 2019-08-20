@@ -24,9 +24,7 @@ class Race extends React.Component {
         name: "",
         date: "",
         description: "",
-        city: "",
-        state: "",
-        country: "",
+        location: "",
         organization: "",
         distance: "",
         website: "",
@@ -72,9 +70,7 @@ class Race extends React.Component {
         name: this.state.race.name,
         date: this.state.race.date,
         description: this.state.race.description,
-        city: this.state.race.city,
-        state: this.state.race.state,
-        country: this.state.race.country,
+        location: this.state.race.location,
         organization: this.state.race.organization,
         distance: this.state.race.distance,
         website: this.state.race.website,
@@ -102,9 +98,7 @@ class Race extends React.Component {
         name: "",
         date: "",
         description: "",
-        city: "",
-        state: "",
-        country: "",
+        location: "",
         organization: "",
         distance: "",
         website: "",
@@ -165,7 +159,7 @@ class Race extends React.Component {
         <div className="race-info">
           {this.state.race && <RacePageHeader race={this.state.race.name} />}
           <p><span>Description:</span> {this.state.race.description}</p>
-          <p><span>Location:</span> {this.state.race.city}, {this.state.race.state}, {this.state.race.country}</p>
+          <p><span>Location:</span> {this.state.race.location}</p>
           <p><span>Organizer:</span> {this.state.race.organization}</p>
           <p><span>Distance: </span>{this.state.race.distance} Miles</p>
           <p><span>Website: </span><a href={this.state.race.website}>{this.state.race.website}</a></p>
@@ -175,7 +169,7 @@ class Race extends React.Component {
             (<>
               {this.props.currentUser.id === this.state.race.user_id &&
                 (<><Jump><button onClick={() => this.handleUpdate()}>{this.state.isEditing ? "Cancel Update" : "Update"}</button></Jump>
-              <Jump><button onClick={(ev) => { ev.preventDefault();this.removeRace(this.props.id) }}>Delete</button></Jump></>)}
+                  <Jump><button onClick={(ev) => { ev.preventDefault(); this.removeRace(this.props.id) }}>Delete</button></Jump></>)}
               <Jump><button onClick={this.addNote}>{this.state.isAddingNewNote ? "Cancel Adding Note" : "Add A Note"}</button></Jump>
 
               {!this.props.currentUser && <div className="prompt">LOGIN TO LEAVE A COMMENT</div>}</>)}

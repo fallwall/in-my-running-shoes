@@ -30,25 +30,11 @@ function RaceForm(props) {
           value={props.raceForm.description}
           onChange={props.handleRaceFormChange}
         />
-        <label htmlFor="city">City</label>
+        <label htmlFor="location">Location</label>
         <input
           type="text"
-          name="city"
-          value={props.raceForm.city}
-          onChange={props.handleRaceFormChange}
-        />
-        <label htmlFor="state">State</label>
-        <input
-          type="text"
-          name="state"
-          value={props.raceForm.state}
-          onChange={props.handleRaceFormChange}
-        />
-        <label htmlFor="country">Country</label>
-        <input
-          type="text"
-          name="country"
-          value={props.raceForm.country}
+          name="location"
+          value={props.raceForm.location}
           onChange={props.handleRaceFormChange}
         />
         <label htmlFor="organization">Organizer</label>

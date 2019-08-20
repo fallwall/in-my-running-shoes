@@ -23,23 +23,11 @@ export default function RaceUpdate(props) {
           name="description"
           value={props.raceUpdateForm.description}
           onChange={props.handleUpdateChange} />
-        <label htmlFor="city">City</label>
+        <label htmlFor="location">Location</label>
         <input
           type="text"
-          name="city"
-          value={props.raceUpdateForm.city}
-          onChange={props.handleUpdateChange} />
-        <label htmlFor="state">State</label>
-        <input
-          type="text"
-          name="state"
-          value={props.raceUpdateForm.state}
-          onChange={props.handleUpdateChange} />
-        <label htmlFor="country">Country</label>
-        <input
-          type="text"
-          name="country"
-          value={props.raceUpdateForm.country}
+          name="location"
+          value={props.raceUpdateForm.location}
           onChange={props.handleUpdateChange} />
         <label htmlFor="organization">Organization:</label>
         <input
