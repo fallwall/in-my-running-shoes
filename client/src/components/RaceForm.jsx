@@ -50,6 +50,7 @@ function RaceForm(props) {
           name="distance"
           value={props.raceForm.distance}
           onChange={props.handleRaceFormChange}
+          placeholder="13.1"
           required
         />
         <label htmlFor="website">Website</label>
