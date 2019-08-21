@@ -149,6 +149,6 @@ export const searchByTag = async (tagname) => {
 }
 
 export const getTags = async () => {
-  const resp = await api.get(`/alltags/`);
+  const resp = await api.get(`/alltags`);
   return resp.data;
 }

@@ -499,5 +499,24 @@ border: 2px black solid;
 
 @media only screen 
   and (max-width: 1000px) {
-
+    .main-title {
+      font-size: 2em;
+    }
+    .race-and-act, .race-and-act-left, .race-and-act-right, .new-races  {
+      display: block;
+      z-index: 1;
+      margin: 0 auto;
+    }
+    .stats-back, .new-race-back, .new-act-back, .newuser-back, .new-activities {
+      display: none;
+    }
+    .stats-main {
+      top: -10vh;
+    }
+    .new-races {
+      top: 46vh;
+    }
+    .newuser-main {
+      top: 208vh;
+    }
 }
