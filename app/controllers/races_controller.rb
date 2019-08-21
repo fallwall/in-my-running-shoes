@@ -46,6 +46,11 @@ class RacesController < ApplicationController
     end
   end
 
+  def search  
+    @races = Race.where("name ILIKE ?", "%#{params[:search]}%") && Race.where("location ILIKE ?", "%#{params[:search]}%")
+    render json: @races
+  end
+
   private
 
   def load_activities
@@ -53,7 +58,7 @@ class RacesController < ApplicationController
   end
 
   def race_params
-    params.require(:race).permit(:name, :date, :description, :city, :state, :country, :organization, :distance, :website, :user_id, :all_tags)
+    params.require(:race).permit(:name, :date, :description, :location, :organization, :distance, :website, :user_id, :all_tags)
   end
 
 end

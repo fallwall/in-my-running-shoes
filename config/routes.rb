@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   get '/tags/:tag', to: 'races#index', as: "tag"
   get '/alltags', to: 'tags#index'
+  get '/search/:search' => 'races#search', :as => 'search_page'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
