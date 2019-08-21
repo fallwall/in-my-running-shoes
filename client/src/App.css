@@ -498,25 +498,25 @@ border: 2px black solid;
 }
 
 @media only screen 
-  and (max-width: 1000px) {
+  and (max-width: 1200px) {
     .main-title {
-      font-size: 2em;
+      font-size: 3em;
     }
     .race-and-act, .race-and-act-left, .race-and-act-right, .new-races  {
       display: block;
       z-index: 1;
       margin: 0 auto;
     }
-    .stats-back, .new-race-back, .new-act-back, .newuser-back, .new-activities {
+    .stats-back, .new-race-back, .new-act-back, .newuser-back, .new-activities, .quote, .newuser-main, .site-stats {
       display: none;
     }
-    .stats-main {
-      top: -10vh;
-    }
+ 
     .new-races {
-      top: 46vh;
+      top: -55vh;
     }
-    .newuser-main {
-      top: 208vh;
+    .new-race-main {
+      width: 40vh;
+      margin-left: -5vh;
     }
+
 }
