@@ -499,6 +499,15 @@ border: 2px black solid;
 
 @media only screen 
   and (max-width: 1200px) {
+    .side-bar {
+      width: 100vw;
+    }
+   .side-bar a {
+      padding: 1em;
+    }
+    .side-bar form {
+      display: none;
+    }
     .main-title {
       font-size: 3em;
     }
@@ -507,7 +516,7 @@ border: 2px black solid;
       z-index: 1;
       margin: 0 auto;
     }
-    .stats-back, .new-race-back, .new-act-back, .newuser-back, .new-activities, .quote, .newuser-main, .site-stats {
+    .stats-back, .new-race-back, .new-act-back, .newuser-back, .new-activities, .search-bar, .social, .quote, .newuser-main, .site-stats {
       display: none;
     }
  

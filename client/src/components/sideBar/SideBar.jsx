@@ -18,6 +18,8 @@ export default class SideBar extends Component {
             (<div className="sidebar-icon-name">
               <img src={Icon} className="sidebar-icon" alt="profile" />
               <div className="sidebar-name"><Jump>{this.props.currentUser.username}</Jump></div>
+              <br />
+              <div className="sidebar-close" onClick={this.props.closeSideBar}>X</div>
             </div>)
           }
         </div>
@@ -30,10 +32,10 @@ export default class SideBar extends Component {
           <Link to="/tags"> <Bounce>All Tags</Bounce> </Link>
           {this.props.currentUser &&
             <button onClick={this.props.addRace}> <Bounce>Add a Race</Bounce> </button>}
-                    {this.props.currentUser &&
+          {this.props.currentUser &&
             <Search
-            searchClick={this.props.searchClick}
-            searchTermChange={this.props.searchTermChange}
+              searchClick={this.props.searchClick}
+              searchTermChange={this.props.searchTermChange}
             />}
         </div>
         <div className="social">

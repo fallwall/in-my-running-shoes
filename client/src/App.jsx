@@ -210,6 +210,7 @@ class App extends React.Component {
           addRace={this.addRace}
           searchClick={this.searchClick}
           searchTermChange={this.searchTermChange}
+          closeSideBar={this.sideBar}
         />
 
         <Route exact path="/races" render={() => (
