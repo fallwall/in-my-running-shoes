@@ -47,7 +47,7 @@ class RacesController < ApplicationController
   end
 
   def search  
-    @races = Race.where("name ILIKE ?", "%#{params[:search]}%") && Race.where("location ILIKE ?", "%#{params[:search]}%")
+    @races = Race.where("name ILIKE ?", "%#{params[:search]}%") && Race.where("location ILIKE ?", "%#{params[:search]}%") && Race.where("organization ILIKE ?", "%#{params[:search]}%")&& Race.where("location ILIKE ?", "%#{params[:search]}%") && Race.where("description ILIKE ?", "%#{params[:search]}%")
     render json: @races
   end
 
