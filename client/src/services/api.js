@@ -71,7 +71,6 @@ export const updateRace = async (id, data) => {
 ////// search - race //////
 
 export const searchRace = async (stuff) => {
-  // const search_stuff = stuff.split(" ").join("+");
   const resp = await api.get(`/search/${stuff}`);
   return resp.data;
 }

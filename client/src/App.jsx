@@ -137,7 +137,6 @@ class App extends React.Component {
     this.setState({
       currentUser: user
     })
-    // this.props.history.push('/');
   }
 
   handleRegister = async (ev) => {
