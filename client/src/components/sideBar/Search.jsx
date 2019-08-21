@@ -5,9 +5,9 @@ export default class Search extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.props.searchClick}>
           <label htmlFor="search-bar">Search Bar</label>
-          <input type="text" name="search-bar" placeholder="Search for a race..." />
+          <input onChange={this.props.searchTermChange}type="text" name="search-bar" placeholder="Search for a race..." />
           <button>Submit</button>
         </form>
         

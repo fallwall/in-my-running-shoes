@@ -3,6 +3,7 @@ import { Route, withRouter } from 'react-router-dom';
 import LightSpeed from 'react-reveal/LightSpeed';
 import RaceForm from './components/RaceForm';
 import Races from './components/Races';
+import RaceResult from './components/RaceResult';
 import Race from './components/Race';
 import Note from './components/Note';
 import Home from './components/Home';
@@ -22,7 +23,8 @@ import {
   registerUser,
   verifyToken,
   fetchRaces,
-  createRace
+  createRace,
+  searchRace
 } from './services/api';
 
 class App extends React.Component {
@@ -50,7 +52,9 @@ class App extends React.Component {
         all_tags: ""
       },
       sidebar: false,
-      addRace: false
+      addRace: false,
+      searchterm: "",
+      searchraces: []
     }
   }
 
@@ -70,7 +74,6 @@ class App extends React.Component {
 
   getRaces = async () => {
     const races = await fetchRaces();
-    console.log(races);
     this.setState({
       races
     })
@@ -161,6 +164,25 @@ class App extends React.Component {
 
   // -------------- ABOVE IS AUTH ------------------
 
+  searchTermChange = (ev) => {
+    const { value } = ev.target;
+    this.setState({
+      searchterm: value
+    })
+  }
+
+  searchClick = async (ev) => {
+    ev.preventDefault();
+    const races = await searchRace(this.state.searchterm);
+    console.log(races);
+    this.setState({
+      searchraces: races,
+      searchterm: ""
+    })
+    races !== [] && this.props.history.push('/raceresult');
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -187,11 +209,16 @@ class App extends React.Component {
           handleLogout={this.handleLogout}
           handleLoginButton={this.handleLoginButton}
           addRace={this.addRace}
+          searchClick={this.searchClick}
+          searchTermChange={this.searchTermChange}
         />
 
         <Route exact path="/races" render={() => (
           <Races
             races={this.state.races} />)} />
+        <Route exact path="/raceresult" render={() => (
+          <RaceResult
+            races={this.state.searchraces} />)} />
         <Route exact path="/" render={() => (
           <Home />)} />
         <Route exact path="/tags" render={() => (
@@ -217,7 +244,8 @@ class App extends React.Component {
             handleRaceFormChange={this.handleRaceFormChange}
             raceForm={this.state.raceForm}
             addRace={this.addRace}
-            newRace={this.newRace} />
+            newRace={this.newRace}
+          />
         }
         <Route
           exact

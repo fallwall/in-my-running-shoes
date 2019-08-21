@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Search from './Search';
 import Icon from '../../assets/sneaker-icon.png';
 import Music from '../../assets/music.png';
 import Github from '../../assets/sidebar-github.png';
@@ -29,6 +30,11 @@ export default class SideBar extends Component {
           <Link to="/tags"> <Bounce>All Tags</Bounce> </Link>
           {this.props.currentUser &&
             <button onClick={this.props.addRace}> <Bounce>Add a Race</Bounce> </button>}
+                    {this.props.currentUser &&
+            <Search
+            searchClick={this.props.searchClick}
+            searchTermChange={this.props.searchTermChange}
+            />}
         </div>
         <div className="social">
           <a href="https://sherunsfreely.com"><Jump><img src={Copyright} alt="link to author" /></Jump></a>

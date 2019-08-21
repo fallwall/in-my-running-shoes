@@ -68,6 +68,14 @@ export const updateRace = async (id, data) => {
   return resp.data;
 }
 
+////// search - race //////
+
+export const searchRace = async (stuff) => {
+  // const search_stuff = stuff.split(" ").join("+");
+  const resp = await api.get(`/search/${stuff}`);
+  return resp.data;
+}
+
 ////// notes //////
 
 export const fetchNotes = async (race_id) => {
