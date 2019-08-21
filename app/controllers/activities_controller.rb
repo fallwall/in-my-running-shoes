@@ -1,6 +1,6 @@
 class ActivitiesController < ApplicationController
   def index
-    @activities = PublicActivity::Activity.order("created_at DESC").limit(20)
+    @activities = PublicActivity::Activity.order("created_at DESC").limit(10)
     render json: @activities, include: %i[owner recipient], status: :ok
   end
 
