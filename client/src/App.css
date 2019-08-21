@@ -74,7 +74,7 @@ input, button {
 .sidebar-close{
   margin-left: 2em;
 }
-.tag {
+.tag, .tag-race {
   margin:10px;
 }
 .social {
@@ -217,6 +217,11 @@ border: 2px black solid;
   font-weight: 600;
   margin: 1em;
   text-align: left;
+}
+
+.race-info p {
+  text-align: left;
+  margin-left:40vw;
 }
 
 .detail-link {

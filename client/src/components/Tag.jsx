@@ -27,7 +27,7 @@ class Tag extends Component {
 
 
         {this.state.races.map(race =>
-          <div key={race.id}>
+          <div className="tag-race" key={race.id}>
             <Link to={`/races/${race.id}`}>{race.name}</Link>
           </div>)}
       </div>
