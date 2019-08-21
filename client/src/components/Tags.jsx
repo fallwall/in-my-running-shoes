@@ -22,7 +22,8 @@ class Tags extends Component {
     return (
       <div>
         {this.state.tags.map(tag =>
-          <div key={tag.id}>
+          <div className="tag"
+            key={tag.id}>
             <Link to={`/tags/${tag.name}`}>{tag.name}</Link>
           </div>)}
       </div>

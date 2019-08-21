@@ -71,7 +71,12 @@ input, button {
   margin: 2vh auto;
   border:none;
 }
-
+.sidebar-close{
+  margin-left: 2em;
+}
+.tag {
+  margin:10px;
+}
 .social {
   position: absolute;
   bottom: 1em;
@@ -299,7 +304,7 @@ border: 2px black solid;
   width: 30vw;
   position: absolute;
   z-index:-1;
-  height: 47vh;
+  height: 81vh;
   top: 2vh;
   left: 2vw;
 }
@@ -308,6 +313,7 @@ border: 2px black solid;
   margin: 2em auto 2em 2em;
   width: 22vw;
   position: relative;
+  top: 51vh;
 }
 
 .newuser-main {
