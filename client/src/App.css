@@ -42,7 +42,7 @@ input, button {
   animation-delay: 0.5s;
   position:fixed;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -63,6 +63,7 @@ input, button {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
+  margin-top: 20vh;
 }
 
 .sidebar-nav a, .sidebar-nav button {
@@ -106,6 +107,8 @@ input, button {
   display: flex;
   flex-direction: row-reverse;
   align-content: space-between;
+  z-index: 200;
+  position: relative;
 }
 
 .login-buttons {
@@ -115,6 +118,7 @@ input, button {
 .nav-arrow {
   animation: shake 0.5s; 
   animation-iteration-count: infinite; 
+ 
 }
 
 .nav-arrow:hover {
@@ -486,7 +490,7 @@ border: 2px black solid;
 @keyframes slidein2 {
   0%{
     opacity:0;
-    transform: translateX(-800px);
+    transform: translateX(800px);
   }
   100%{
     opacity:1;

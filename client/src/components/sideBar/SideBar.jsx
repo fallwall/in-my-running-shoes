@@ -17,9 +17,6 @@ export default class SideBar extends Component {
           {this.props.currentUser &&
             (<div className="sidebar-icon-name">
               <img src={Icon} className="sidebar-icon" alt="profile" />
-              <div className="sidebar-name"><Jump>{this.props.currentUser.username}</Jump></div>
-              <br />
-              <div className="sidebar-close" onClick={this.props.closeSideBar}>X</div>
             </div>)
           }
         </div>

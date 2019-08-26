@@ -48,7 +48,7 @@ export default class Stats extends Component {
         <div className="site-stats">
 
           <Parallax
-            y={[20, -25]}
+          // y={[20, -25]}
           >
             <div className="stats-main">
               <Jump><h2>SITE STATS</h2></Jump>
@@ -66,7 +66,7 @@ export default class Stats extends Component {
           </Parallax>
           <Parallax
             x={[13, -13]}
-            y={[50, -50]}
+          // y={[50, -50]}
           >
             <div className="stats-back">
             </div>

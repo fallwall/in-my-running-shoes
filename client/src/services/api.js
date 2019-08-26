@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const baseUrl = 'https://floating-castle-31828.herokuapp.com';
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://floating-castle-31828.herokuapp.com';
+// const baseUrl = 'http://localhost:3000';
 
 const api = axios.create({
   baseURL: baseUrl

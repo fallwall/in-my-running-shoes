@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Login from './Login';
 import Register from './Register';
 import Wobble from 'react-reveal/Wobble';
-
+import Jump from 'react-reveal/Jump';
 import Arrow from '../../assets/arrow2.png';
 
 export default class CornerLogin extends Component {
@@ -63,11 +63,11 @@ export default class CornerLogin extends Component {
               <img src={Arrow} alt="point to nav" />
               <img src={Arrow} alt="point to nav" />
               <img src={Arrow} alt="point to nav" />
-          </div>
+            </div>
             {this.props.currentUser
               ?
               <>
-                <p className="corner-username">{this.props.currentUser.username}</p>
+                <Jump><p className="corner-username">{this.props.currentUser.username}</p></Jump>
                 <Wobble><button className="login-reg" onClick={this.props.handleLogout}>LOGOUT</button></Wobble>
               </>
               :
